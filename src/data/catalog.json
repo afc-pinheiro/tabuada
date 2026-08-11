@@ -1,0 +1,2546 @@
+{
+  "z": {
+    "body": 10,
+    "head": 20,
+    "eyes": 25,
+    "legs": 30,
+    "feet": 35,
+    "torso": 40,
+    "hair": 60,
+    "hat": 70
+  },
+  "categories": {
+    "body": [
+      {
+        "id": "corpo",
+        "name": "Corpo",
+        "price": 0,
+        "z": 10,
+        "variants": [
+          {
+            "color": "light",
+            "label": "Clara",
+            "swatch": "#f9d5ba",
+            "file": "sprites/body/corpo__light.png"
+          },
+          {
+            "color": "amber",
+            "label": "Ambar",
+            "swatch": "#fdd082",
+            "file": "sprites/body/corpo__amber.png"
+          },
+          {
+            "color": "olive",
+            "label": "Oliva",
+            "swatch": "#d38b59",
+            "file": "sprites/body/corpo__olive.png"
+          },
+          {
+            "color": "taupe",
+            "label": "Morena",
+            "swatch": "#ba8454",
+            "file": "sprites/body/corpo__taupe.png"
+          },
+          {
+            "color": "bronze",
+            "label": "Bronze",
+            "swatch": "#ae6b3f",
+            "file": "sprites/body/corpo__bronze.png"
+          },
+          {
+            "color": "brown",
+            "label": "Castanha",
+            "swatch": "#9c663e",
+            "file": "sprites/body/corpo__brown.png"
+          },
+          {
+            "color": "black",
+            "label": "Negra",
+            "swatch": "#603429",
+            "file": "sprites/body/corpo__black.png"
+          }
+        ]
+      }
+    ],
+    "head": [
+      {
+        "id": "cabeca",
+        "name": "Cabeca",
+        "price": 0,
+        "z": 20,
+        "variants": [
+          {
+            "color": "light",
+            "label": "Clara",
+            "swatch": "#f9d5ba",
+            "file": "sprites/head/cabeca__light.png"
+          },
+          {
+            "color": "amber",
+            "label": "Ambar",
+            "swatch": "#fdd082",
+            "file": "sprites/head/cabeca__amber.png"
+          },
+          {
+            "color": "olive",
+            "label": "Oliva",
+            "swatch": "#d38b59",
+            "file": "sprites/head/cabeca__olive.png"
+          },
+          {
+            "color": "taupe",
+            "label": "Morena",
+            "swatch": "#ba8454",
+            "file": "sprites/head/cabeca__taupe.png"
+          },
+          {
+            "color": "bronze",
+            "label": "Bronze",
+            "swatch": "#ae6b3f",
+            "file": "sprites/head/cabeca__bronze.png"
+          },
+          {
+            "color": "brown",
+            "label": "Castanha",
+            "swatch": "#9c663e",
+            "file": "sprites/head/cabeca__brown.png"
+          },
+          {
+            "color": "black",
+            "label": "Negra",
+            "swatch": "#603429",
+            "file": "sprites/head/cabeca__black.png"
+          }
+        ]
+      }
+    ],
+    "eyes": [
+      {
+        "id": "olhos",
+        "name": "Olhos",
+        "price": 0,
+        "z": 25,
+        "variants": [
+          {
+            "color": "brown",
+            "label": "Castanha",
+            "swatch": "#7e4e20",
+            "file": "sprites/eyes/olhos__brown.png"
+          },
+          {
+            "color": "blue",
+            "label": "Azul",
+            "swatch": "#50d4ec",
+            "file": "sprites/eyes/olhos__blue.png"
+          },
+          {
+            "color": "green",
+            "label": "Verde",
+            "swatch": "#84ec50",
+            "file": "sprites/eyes/olhos__green.png"
+          },
+          {
+            "color": "gray",
+            "label": "Cinza",
+            "swatch": "#ada18f",
+            "file": "sprites/eyes/olhos__gray.png"
+          },
+          {
+            "color": "purple",
+            "label": "Roxo",
+            "swatch": "#eba0e0",
+            "file": "sprites/eyes/olhos__purple.png"
+          }
+        ]
+      }
+    ],
+    "hair": [
+      {
+        "id": "maria-chiquinha",
+        "name": "Maria-chiquinha",
+        "price": 0,
+        "z": 60,
+        "variants": [
+          {
+            "color": "blonde",
+            "label": "Loiro",
+            "swatch": "#fccf56",
+            "file": "sprites/hair/maria-chiquinha__blonde.png"
+          },
+          {
+            "color": "carrot",
+            "label": "Ruivo",
+            "swatch": "#f68764",
+            "file": "sprites/hair/maria-chiquinha__carrot.png"
+          },
+          {
+            "color": "chestnut",
+            "label": "Castanho",
+            "swatch": "#b6550e",
+            "file": "sprites/hair/maria-chiquinha__chestnut.png"
+          },
+          {
+            "color": "raven",
+            "label": "Preto",
+            "swatch": "#0d384d",
+            "file": "sprites/hair/maria-chiquinha__raven.png"
+          },
+          {
+            "color": "redhead",
+            "label": "Acaju",
+            "swatch": "#c7341b",
+            "file": "sprites/hair/maria-chiquinha__redhead.png"
+          },
+          {
+            "color": "platinum",
+            "label": "Platinado",
+            "swatch": "#eddf95",
+            "file": "sprites/hair/maria-chiquinha__platinum.png"
+          },
+          {
+            "color": "pink",
+            "label": "Rosa",
+            "swatch": "#e976c4",
+            "file": "sprites/hair/maria-chiquinha__pink.png"
+          },
+          {
+            "color": "purple",
+            "label": "Roxo",
+            "swatch": "#a966dd",
+            "file": "sprites/hair/maria-chiquinha__purple.png"
+          },
+          {
+            "color": "blue",
+            "label": "Azul",
+            "swatch": "#0074cb",
+            "file": "sprites/hair/maria-chiquinha__blue.png"
+          }
+        ]
+      },
+      {
+        "id": "franjinha",
+        "name": "Franjinha",
+        "price": 30,
+        "z": 60,
+        "variants": [
+          {
+            "color": "blonde",
+            "label": "Loiro",
+            "swatch": "#fccf56",
+            "file": "sprites/hair/franjinha__blonde.png"
+          },
+          {
+            "color": "carrot",
+            "label": "Ruivo",
+            "swatch": "#f68764",
+            "file": "sprites/hair/franjinha__carrot.png"
+          },
+          {
+            "color": "chestnut",
+            "label": "Castanho",
+            "swatch": "#b6550e",
+            "file": "sprites/hair/franjinha__chestnut.png"
+          },
+          {
+            "color": "raven",
+            "label": "Preto",
+            "swatch": "#0d384d",
+            "file": "sprites/hair/franjinha__raven.png"
+          },
+          {
+            "color": "redhead",
+            "label": "Acaju",
+            "swatch": "#c7341b",
+            "file": "sprites/hair/franjinha__redhead.png"
+          },
+          {
+            "color": "platinum",
+            "label": "Platinado",
+            "swatch": "#eddf95",
+            "file": "sprites/hair/franjinha__platinum.png"
+          },
+          {
+            "color": "pink",
+            "label": "Rosa",
+            "swatch": "#e976c4",
+            "file": "sprites/hair/franjinha__pink.png"
+          },
+          {
+            "color": "purple",
+            "label": "Roxo",
+            "swatch": "#a966dd",
+            "file": "sprites/hair/franjinha__purple.png"
+          },
+          {
+            "color": "blue",
+            "label": "Azul",
+            "swatch": "#0074cb",
+            "file": "sprites/hair/franjinha__blue.png"
+          }
+        ]
+      },
+      {
+        "id": "liso-longo",
+        "name": "Liso longo",
+        "price": 30,
+        "z": 60,
+        "variants": [
+          {
+            "color": "blonde",
+            "label": "Loiro",
+            "swatch": "#fccf56",
+            "file": "sprites/hair/liso-longo__blonde.png"
+          },
+          {
+            "color": "carrot",
+            "label": "Ruivo",
+            "swatch": "#f68764",
+            "file": "sprites/hair/liso-longo__carrot.png"
+          },
+          {
+            "color": "chestnut",
+            "label": "Castanho",
+            "swatch": "#b6550e",
+            "file": "sprites/hair/liso-longo__chestnut.png"
+          },
+          {
+            "color": "raven",
+            "label": "Preto",
+            "swatch": "#0d384d",
+            "file": "sprites/hair/liso-longo__raven.png"
+          },
+          {
+            "color": "redhead",
+            "label": "Acaju",
+            "swatch": "#c7341b",
+            "file": "sprites/hair/liso-longo__redhead.png"
+          },
+          {
+            "color": "platinum",
+            "label": "Platinado",
+            "swatch": "#eddf95",
+            "file": "sprites/hair/liso-longo__platinum.png"
+          },
+          {
+            "color": "pink",
+            "label": "Rosa",
+            "swatch": "#e976c4",
+            "file": "sprites/hair/liso-longo__pink.png"
+          },
+          {
+            "color": "purple",
+            "label": "Roxo",
+            "swatch": "#a966dd",
+            "file": "sprites/hair/liso-longo__purple.png"
+          },
+          {
+            "color": "blue",
+            "label": "Azul",
+            "swatch": "#0074cb",
+            "file": "sprites/hair/liso-longo__blue.png"
+          }
+        ]
+      },
+      {
+        "id": "chanel",
+        "name": "Chanel",
+        "price": 40,
+        "z": 60,
+        "variants": [
+          {
+            "color": "blonde",
+            "label": "Loiro",
+            "swatch": "#fccf56",
+            "file": "sprites/hair/chanel__blonde.png"
+          },
+          {
+            "color": "carrot",
+            "label": "Ruivo",
+            "swatch": "#f68764",
+            "file": "sprites/hair/chanel__carrot.png"
+          },
+          {
+            "color": "chestnut",
+            "label": "Castanho",
+            "swatch": "#b6550e",
+            "file": "sprites/hair/chanel__chestnut.png"
+          },
+          {
+            "color": "raven",
+            "label": "Preto",
+            "swatch": "#0d384d",
+            "file": "sprites/hair/chanel__raven.png"
+          },
+          {
+            "color": "redhead",
+            "label": "Acaju",
+            "swatch": "#c7341b",
+            "file": "sprites/hair/chanel__redhead.png"
+          },
+          {
+            "color": "platinum",
+            "label": "Platinado",
+            "swatch": "#eddf95",
+            "file": "sprites/hair/chanel__platinum.png"
+          },
+          {
+            "color": "pink",
+            "label": "Rosa",
+            "swatch": "#e976c4",
+            "file": "sprites/hair/chanel__pink.png"
+          },
+          {
+            "color": "purple",
+            "label": "Roxo",
+            "swatch": "#a966dd",
+            "file": "sprites/hair/chanel__purple.png"
+          },
+          {
+            "color": "blue",
+            "label": "Azul",
+            "swatch": "#0074cb",
+            "file": "sprites/hair/chanel__blue.png"
+          }
+        ]
+      },
+      {
+        "id": "cacheado",
+        "name": "Cacheado",
+        "price": 50,
+        "z": 60,
+        "variants": [
+          {
+            "color": "blonde",
+            "label": "Loiro",
+            "swatch": "#fccf56",
+            "file": "sprites/hair/cacheado__blonde.png"
+          },
+          {
+            "color": "carrot",
+            "label": "Ruivo",
+            "swatch": "#f68764",
+            "file": "sprites/hair/cacheado__carrot.png"
+          },
+          {
+            "color": "chestnut",
+            "label": "Castanho",
+            "swatch": "#b6550e",
+            "file": "sprites/hair/cacheado__chestnut.png"
+          },
+          {
+            "color": "raven",
+            "label": "Preto",
+            "swatch": "#0d384d",
+            "file": "sprites/hair/cacheado__raven.png"
+          },
+          {
+            "color": "redhead",
+            "label": "Acaju",
+            "swatch": "#c7341b",
+            "file": "sprites/hair/cacheado__redhead.png"
+          },
+          {
+            "color": "platinum",
+            "label": "Platinado",
+            "swatch": "#eddf95",
+            "file": "sprites/hair/cacheado__platinum.png"
+          },
+          {
+            "color": "pink",
+            "label": "Rosa",
+            "swatch": "#e976c4",
+            "file": "sprites/hair/cacheado__pink.png"
+          },
+          {
+            "color": "purple",
+            "label": "Roxo",
+            "swatch": "#a966dd",
+            "file": "sprites/hair/cacheado__purple.png"
+          },
+          {
+            "color": "blue",
+            "label": "Azul",
+            "swatch": "#0074cb",
+            "file": "sprites/hair/cacheado__blue.png"
+          }
+        ]
+      },
+      {
+        "id": "black-power",
+        "name": "Black power",
+        "price": 50,
+        "z": 60,
+        "variants": [
+          {
+            "color": "blonde",
+            "label": "Loiro",
+            "swatch": "#fccf56",
+            "file": "sprites/hair/black-power__blonde.png"
+          },
+          {
+            "color": "carrot",
+            "label": "Ruivo",
+            "swatch": "#f68764",
+            "file": "sprites/hair/black-power__carrot.png"
+          },
+          {
+            "color": "chestnut",
+            "label": "Castanho",
+            "swatch": "#b6550e",
+            "file": "sprites/hair/black-power__chestnut.png"
+          },
+          {
+            "color": "raven",
+            "label": "Preto",
+            "swatch": "#0d384d",
+            "file": "sprites/hair/black-power__raven.png"
+          },
+          {
+            "color": "redhead",
+            "label": "Acaju",
+            "swatch": "#c7341b",
+            "file": "sprites/hair/black-power__redhead.png"
+          },
+          {
+            "color": "platinum",
+            "label": "Platinado",
+            "swatch": "#eddf95",
+            "file": "sprites/hair/black-power__platinum.png"
+          },
+          {
+            "color": "pink",
+            "label": "Rosa",
+            "swatch": "#e976c4",
+            "file": "sprites/hair/black-power__pink.png"
+          },
+          {
+            "color": "purple",
+            "label": "Roxo",
+            "swatch": "#a966dd",
+            "file": "sprites/hair/black-power__purple.png"
+          },
+          {
+            "color": "blue",
+            "label": "Azul",
+            "swatch": "#0074cb",
+            "file": "sprites/hair/black-power__blue.png"
+          }
+        ]
+      },
+      {
+        "id": "meio-preso",
+        "name": "Meio preso",
+        "price": 60,
+        "z": 60,
+        "variants": [
+          {
+            "color": "blonde",
+            "label": "Loiro",
+            "swatch": "#fccf56",
+            "file": "sprites/hair/meio-preso__blonde.png"
+          },
+          {
+            "color": "carrot",
+            "label": "Ruivo",
+            "swatch": "#f68764",
+            "file": "sprites/hair/meio-preso__carrot.png"
+          },
+          {
+            "color": "chestnut",
+            "label": "Castanho",
+            "swatch": "#b6550e",
+            "file": "sprites/hair/meio-preso__chestnut.png"
+          },
+          {
+            "color": "raven",
+            "label": "Preto",
+            "swatch": "#0d384d",
+            "file": "sprites/hair/meio-preso__raven.png"
+          },
+          {
+            "color": "redhead",
+            "label": "Acaju",
+            "swatch": "#c7341b",
+            "file": "sprites/hair/meio-preso__redhead.png"
+          },
+          {
+            "color": "platinum",
+            "label": "Platinado",
+            "swatch": "#eddf95",
+            "file": "sprites/hair/meio-preso__platinum.png"
+          },
+          {
+            "color": "pink",
+            "label": "Rosa",
+            "swatch": "#e976c4",
+            "file": "sprites/hair/meio-preso__pink.png"
+          },
+          {
+            "color": "purple",
+            "label": "Roxo",
+            "swatch": "#a966dd",
+            "file": "sprites/hair/meio-preso__purple.png"
+          },
+          {
+            "color": "blue",
+            "label": "Azul",
+            "swatch": "#0074cb",
+            "file": "sprites/hair/meio-preso__blue.png"
+          }
+        ]
+      },
+      {
+        "id": "estrela-pop",
+        "name": "Estrela pop",
+        "price": 80,
+        "z": 60,
+        "variants": [
+          {
+            "color": "blonde",
+            "label": "Loiro",
+            "swatch": "#fccf56",
+            "file": "sprites/hair/estrela-pop__blonde.png"
+          },
+          {
+            "color": "carrot",
+            "label": "Ruivo",
+            "swatch": "#f68764",
+            "file": "sprites/hair/estrela-pop__carrot.png"
+          },
+          {
+            "color": "chestnut",
+            "label": "Castanho",
+            "swatch": "#b6550e",
+            "file": "sprites/hair/estrela-pop__chestnut.png"
+          },
+          {
+            "color": "raven",
+            "label": "Preto",
+            "swatch": "#0d384d",
+            "file": "sprites/hair/estrela-pop__raven.png"
+          },
+          {
+            "color": "redhead",
+            "label": "Acaju",
+            "swatch": "#c7341b",
+            "file": "sprites/hair/estrela-pop__redhead.png"
+          },
+          {
+            "color": "platinum",
+            "label": "Platinado",
+            "swatch": "#eddf95",
+            "file": "sprites/hair/estrela-pop__platinum.png"
+          },
+          {
+            "color": "pink",
+            "label": "Rosa",
+            "swatch": "#e976c4",
+            "file": "sprites/hair/estrela-pop__pink.png"
+          },
+          {
+            "color": "purple",
+            "label": "Roxo",
+            "swatch": "#a966dd",
+            "file": "sprites/hair/estrela-pop__purple.png"
+          },
+          {
+            "color": "blue",
+            "label": "Azul",
+            "swatch": "#0074cb",
+            "file": "sprites/hair/estrela-pop__blue.png"
+          }
+        ]
+      },
+      {
+        "id": "curtinho",
+        "name": "Curtinho",
+        "price": 40,
+        "z": 60,
+        "variants": [
+          {
+            "color": "blonde",
+            "label": "Loiro",
+            "swatch": "#fccf56",
+            "file": "sprites/hair/curtinho__blonde.png"
+          },
+          {
+            "color": "carrot",
+            "label": "Ruivo",
+            "swatch": "#f68764",
+            "file": "sprites/hair/curtinho__carrot.png"
+          },
+          {
+            "color": "chestnut",
+            "label": "Castanho",
+            "swatch": "#b6550e",
+            "file": "sprites/hair/curtinho__chestnut.png"
+          },
+          {
+            "color": "raven",
+            "label": "Preto",
+            "swatch": "#0d384d",
+            "file": "sprites/hair/curtinho__raven.png"
+          },
+          {
+            "color": "redhead",
+            "label": "Acaju",
+            "swatch": "#c7341b",
+            "file": "sprites/hair/curtinho__redhead.png"
+          },
+          {
+            "color": "platinum",
+            "label": "Platinado",
+            "swatch": "#eddf95",
+            "file": "sprites/hair/curtinho__platinum.png"
+          },
+          {
+            "color": "pink",
+            "label": "Rosa",
+            "swatch": "#e976c4",
+            "file": "sprites/hair/curtinho__pink.png"
+          },
+          {
+            "color": "purple",
+            "label": "Roxo",
+            "swatch": "#a966dd",
+            "file": "sprites/hair/curtinho__purple.png"
+          },
+          {
+            "color": "blue",
+            "label": "Azul",
+            "swatch": "#0074cb",
+            "file": "sprites/hair/curtinho__blue.png"
+          }
+        ]
+      },
+      {
+        "id": "trancinhas",
+        "name": "Trancinhas",
+        "price": 70,
+        "z": 60,
+        "variants": [
+          {
+            "color": "blonde",
+            "label": "Loiro",
+            "swatch": "#fccf56",
+            "file": "sprites/hair/trancinhas__blonde.png"
+          },
+          {
+            "color": "carrot",
+            "label": "Ruivo",
+            "swatch": "#f68764",
+            "file": "sprites/hair/trancinhas__carrot.png"
+          },
+          {
+            "color": "chestnut",
+            "label": "Castanho",
+            "swatch": "#b6550e",
+            "file": "sprites/hair/trancinhas__chestnut.png"
+          },
+          {
+            "color": "raven",
+            "label": "Preto",
+            "swatch": "#0d384d",
+            "file": "sprites/hair/trancinhas__raven.png"
+          },
+          {
+            "color": "redhead",
+            "label": "Acaju",
+            "swatch": "#c7341b",
+            "file": "sprites/hair/trancinhas__redhead.png"
+          },
+          {
+            "color": "platinum",
+            "label": "Platinado",
+            "swatch": "#eddf95",
+            "file": "sprites/hair/trancinhas__platinum.png"
+          },
+          {
+            "color": "pink",
+            "label": "Rosa",
+            "swatch": "#e976c4",
+            "file": "sprites/hair/trancinhas__pink.png"
+          },
+          {
+            "color": "purple",
+            "label": "Roxo",
+            "swatch": "#a966dd",
+            "file": "sprites/hair/trancinhas__purple.png"
+          },
+          {
+            "color": "blue",
+            "label": "Azul",
+            "swatch": "#0074cb",
+            "file": "sprites/hair/trancinhas__blue.png"
+          }
+        ]
+      }
+    ],
+    "torso": [
+      {
+        "id": "blusa",
+        "name": "Blusinha",
+        "price": 0,
+        "z": 40,
+        "variants": [
+          {
+            "color": "pink",
+            "label": "Rosa",
+            "swatch": "#c36072",
+            "file": "sprites/torso/blusa__pink.png"
+          },
+          {
+            "color": "sky",
+            "label": "Celeste",
+            "swatch": "#c6eefd",
+            "file": "sprites/torso/blusa__sky.png"
+          },
+          {
+            "color": "lavender",
+            "label": "Lilas",
+            "swatch": "#a966dd",
+            "file": "sprites/torso/blusa__lavender.png"
+          },
+          {
+            "color": "yellow",
+            "label": "Amarelo",
+            "swatch": "#f3c03f",
+            "file": "sprites/torso/blusa__yellow.png"
+          },
+          {
+            "color": "green",
+            "label": "Verde",
+            "swatch": "#2f8136",
+            "file": "sprites/torso/blusa__green.png"
+          },
+          {
+            "color": "red",
+            "label": "Vermelho",
+            "swatch": "#ab1e1e",
+            "file": "sprites/torso/blusa__red.png"
+          },
+          {
+            "color": "purple",
+            "label": "Roxo",
+            "swatch": "#621e78",
+            "file": "sprites/torso/blusa__purple.png"
+          },
+          {
+            "color": "white",
+            "label": "Branco",
+            "swatch": "#e5e6c7",
+            "file": "sprites/torso/blusa__white.png"
+          },
+          {
+            "color": "teal",
+            "label": "Turquesa",
+            "swatch": "#0098b2",
+            "file": "sprites/torso/blusa__teal.png"
+          },
+          {
+            "color": "navy",
+            "label": "Marinho",
+            "swatch": "#3c49ad",
+            "file": "sprites/torso/blusa__navy.png"
+          }
+        ]
+      },
+      {
+        "id": "camiseta",
+        "name": "Camiseta",
+        "price": 25,
+        "z": 40,
+        "variants": [
+          {
+            "color": "pink",
+            "label": "Rosa",
+            "swatch": "#c36072",
+            "file": "sprites/torso/camiseta__pink.png"
+          },
+          {
+            "color": "sky",
+            "label": "Celeste",
+            "swatch": "#c6eefd",
+            "file": "sprites/torso/camiseta__sky.png"
+          },
+          {
+            "color": "lavender",
+            "label": "Lilas",
+            "swatch": "#a966dd",
+            "file": "sprites/torso/camiseta__lavender.png"
+          },
+          {
+            "color": "yellow",
+            "label": "Amarelo",
+            "swatch": "#f3c03f",
+            "file": "sprites/torso/camiseta__yellow.png"
+          },
+          {
+            "color": "green",
+            "label": "Verde",
+            "swatch": "#2f8136",
+            "file": "sprites/torso/camiseta__green.png"
+          },
+          {
+            "color": "red",
+            "label": "Vermelho",
+            "swatch": "#ab1e1e",
+            "file": "sprites/torso/camiseta__red.png"
+          },
+          {
+            "color": "purple",
+            "label": "Roxo",
+            "swatch": "#621e78",
+            "file": "sprites/torso/camiseta__purple.png"
+          },
+          {
+            "color": "white",
+            "label": "Branco",
+            "swatch": "#e5e6c7",
+            "file": "sprites/torso/camiseta__white.png"
+          },
+          {
+            "color": "teal",
+            "label": "Turquesa",
+            "swatch": "#0098b2",
+            "file": "sprites/torso/camiseta__teal.png"
+          },
+          {
+            "color": "navy",
+            "label": "Marinho",
+            "swatch": "#3c49ad",
+            "file": "sprites/torso/camiseta__navy.png"
+          }
+        ]
+      },
+      {
+        "id": "gola-canoa",
+        "name": "Gola canoa",
+        "price": 35,
+        "z": 40,
+        "variants": [
+          {
+            "color": "pink",
+            "label": "Rosa",
+            "swatch": "#c36072",
+            "file": "sprites/torso/gola-canoa__pink.png"
+          },
+          {
+            "color": "sky",
+            "label": "Celeste",
+            "swatch": "#c6eefd",
+            "file": "sprites/torso/gola-canoa__sky.png"
+          },
+          {
+            "color": "lavender",
+            "label": "Lilas",
+            "swatch": "#a966dd",
+            "file": "sprites/torso/gola-canoa__lavender.png"
+          },
+          {
+            "color": "yellow",
+            "label": "Amarelo",
+            "swatch": "#f3c03f",
+            "file": "sprites/torso/gola-canoa__yellow.png"
+          },
+          {
+            "color": "green",
+            "label": "Verde",
+            "swatch": "#2f8136",
+            "file": "sprites/torso/gola-canoa__green.png"
+          },
+          {
+            "color": "red",
+            "label": "Vermelho",
+            "swatch": "#ab1e1e",
+            "file": "sprites/torso/gola-canoa__red.png"
+          },
+          {
+            "color": "purple",
+            "label": "Roxo",
+            "swatch": "#621e78",
+            "file": "sprites/torso/gola-canoa__purple.png"
+          },
+          {
+            "color": "white",
+            "label": "Branco",
+            "swatch": "#e5e6c7",
+            "file": "sprites/torso/gola-canoa__white.png"
+          },
+          {
+            "color": "teal",
+            "label": "Turquesa",
+            "swatch": "#0098b2",
+            "file": "sprites/torso/gola-canoa__teal.png"
+          },
+          {
+            "color": "navy",
+            "label": "Marinho",
+            "swatch": "#3c49ad",
+            "file": "sprites/torso/gola-canoa__navy.png"
+          }
+        ]
+      },
+      {
+        "id": "casaquinho",
+        "name": "Casaquinho",
+        "price": 55,
+        "z": 40,
+        "variants": [
+          {
+            "color": "pink",
+            "label": "Rosa",
+            "swatch": "#c36072",
+            "file": "sprites/torso/casaquinho__pink.png"
+          },
+          {
+            "color": "sky",
+            "label": "Celeste",
+            "swatch": "#c6eefd",
+            "file": "sprites/torso/casaquinho__sky.png"
+          },
+          {
+            "color": "lavender",
+            "label": "Lilas",
+            "swatch": "#a966dd",
+            "file": "sprites/torso/casaquinho__lavender.png"
+          },
+          {
+            "color": "yellow",
+            "label": "Amarelo",
+            "swatch": "#f3c03f",
+            "file": "sprites/torso/casaquinho__yellow.png"
+          },
+          {
+            "color": "green",
+            "label": "Verde",
+            "swatch": "#2f8136",
+            "file": "sprites/torso/casaquinho__green.png"
+          },
+          {
+            "color": "red",
+            "label": "Vermelho",
+            "swatch": "#ab1e1e",
+            "file": "sprites/torso/casaquinho__red.png"
+          },
+          {
+            "color": "purple",
+            "label": "Roxo",
+            "swatch": "#621e78",
+            "file": "sprites/torso/casaquinho__purple.png"
+          },
+          {
+            "color": "white",
+            "label": "Branco",
+            "swatch": "#e5e6c7",
+            "file": "sprites/torso/casaquinho__white.png"
+          },
+          {
+            "color": "teal",
+            "label": "Turquesa",
+            "swatch": "#0098b2",
+            "file": "sprites/torso/casaquinho__teal.png"
+          },
+          {
+            "color": "navy",
+            "label": "Marinho",
+            "swatch": "#3c49ad",
+            "file": "sprites/torso/casaquinho__navy.png"
+          }
+        ]
+      },
+      {
+        "id": "polo",
+        "name": "Polo",
+        "price": 45,
+        "z": 40,
+        "variants": [
+          {
+            "color": "pink",
+            "label": "Rosa",
+            "swatch": "#c36072",
+            "file": "sprites/torso/polo__pink.png"
+          },
+          {
+            "color": "sky",
+            "label": "Celeste",
+            "swatch": "#c6eefd",
+            "file": "sprites/torso/polo__sky.png"
+          },
+          {
+            "color": "lavender",
+            "label": "Lilas",
+            "swatch": "#a966dd",
+            "file": "sprites/torso/polo__lavender.png"
+          },
+          {
+            "color": "yellow",
+            "label": "Amarelo",
+            "swatch": "#f3c03f",
+            "file": "sprites/torso/polo__yellow.png"
+          },
+          {
+            "color": "green",
+            "label": "Verde",
+            "swatch": "#2f8136",
+            "file": "sprites/torso/polo__green.png"
+          },
+          {
+            "color": "red",
+            "label": "Vermelho",
+            "swatch": "#ab1e1e",
+            "file": "sprites/torso/polo__red.png"
+          },
+          {
+            "color": "purple",
+            "label": "Roxo",
+            "swatch": "#621e78",
+            "file": "sprites/torso/polo__purple.png"
+          },
+          {
+            "color": "white",
+            "label": "Branco",
+            "swatch": "#e5e6c7",
+            "file": "sprites/torso/polo__white.png"
+          },
+          {
+            "color": "teal",
+            "label": "Turquesa",
+            "swatch": "#0098b2",
+            "file": "sprites/torso/polo__teal.png"
+          },
+          {
+            "color": "navy",
+            "label": "Marinho",
+            "swatch": "#3c49ad",
+            "file": "sprites/torso/polo__navy.png"
+          }
+        ]
+      },
+      {
+        "id": "moletom",
+        "name": "Moletom",
+        "price": 45,
+        "z": 40,
+        "variants": [
+          {
+            "color": "pink",
+            "label": "Rosa",
+            "swatch": "#c36072",
+            "file": "sprites/torso/moletom__pink.png"
+          },
+          {
+            "color": "sky",
+            "label": "Celeste",
+            "swatch": "#c6eefd",
+            "file": "sprites/torso/moletom__sky.png"
+          },
+          {
+            "color": "lavender",
+            "label": "Lilas",
+            "swatch": "#a966dd",
+            "file": "sprites/torso/moletom__lavender.png"
+          },
+          {
+            "color": "yellow",
+            "label": "Amarelo",
+            "swatch": "#f3c03f",
+            "file": "sprites/torso/moletom__yellow.png"
+          },
+          {
+            "color": "green",
+            "label": "Verde",
+            "swatch": "#2f8136",
+            "file": "sprites/torso/moletom__green.png"
+          },
+          {
+            "color": "red",
+            "label": "Vermelho",
+            "swatch": "#ab1e1e",
+            "file": "sprites/torso/moletom__red.png"
+          },
+          {
+            "color": "purple",
+            "label": "Roxo",
+            "swatch": "#621e78",
+            "file": "sprites/torso/moletom__purple.png"
+          },
+          {
+            "color": "white",
+            "label": "Branco",
+            "swatch": "#e5e6c7",
+            "file": "sprites/torso/moletom__white.png"
+          },
+          {
+            "color": "teal",
+            "label": "Turquesa",
+            "swatch": "#0098b2",
+            "file": "sprites/torso/moletom__teal.png"
+          },
+          {
+            "color": "navy",
+            "label": "Marinho",
+            "swatch": "#3c49ad",
+            "file": "sprites/torso/moletom__navy.png"
+          }
+        ]
+      }
+    ],
+    "legs": [
+      {
+        "id": "saia",
+        "name": "Saia",
+        "price": 0,
+        "z": 30,
+        "variants": [
+          {
+            "color": "pink",
+            "label": "Rosa",
+            "swatch": "#c36072",
+            "file": "sprites/legs/saia__pink.png"
+          },
+          {
+            "color": "sky",
+            "label": "Celeste",
+            "swatch": "#c6eefd",
+            "file": "sprites/legs/saia__sky.png"
+          },
+          {
+            "color": "lavender",
+            "label": "Lilas",
+            "swatch": "#a966dd",
+            "file": "sprites/legs/saia__lavender.png"
+          },
+          {
+            "color": "yellow",
+            "label": "Amarelo",
+            "swatch": "#f3c03f",
+            "file": "sprites/legs/saia__yellow.png"
+          },
+          {
+            "color": "green",
+            "label": "Verde",
+            "swatch": "#2f8136",
+            "file": "sprites/legs/saia__green.png"
+          },
+          {
+            "color": "red",
+            "label": "Vermelho",
+            "swatch": "#ab1e1e",
+            "file": "sprites/legs/saia__red.png"
+          },
+          {
+            "color": "purple",
+            "label": "Roxo",
+            "swatch": "#621e78",
+            "file": "sprites/legs/saia__purple.png"
+          },
+          {
+            "color": "white",
+            "label": "Branco",
+            "swatch": "#e5e6c7",
+            "file": "sprites/legs/saia__white.png"
+          },
+          {
+            "color": "teal",
+            "label": "Turquesa",
+            "swatch": "#0098b2",
+            "file": "sprites/legs/saia__teal.png"
+          },
+          {
+            "color": "navy",
+            "label": "Marinho",
+            "swatch": "#3c49ad",
+            "file": "sprites/legs/saia__navy.png"
+          }
+        ]
+      },
+      {
+        "id": "saia-longa",
+        "name": "Saia longa",
+        "price": 30,
+        "z": 30,
+        "variants": [
+          {
+            "color": "pink",
+            "label": "Rosa",
+            "swatch": "#c36072",
+            "file": "sprites/legs/saia-longa__pink.png"
+          },
+          {
+            "color": "sky",
+            "label": "Celeste",
+            "swatch": "#c6eefd",
+            "file": "sprites/legs/saia-longa__sky.png"
+          },
+          {
+            "color": "lavender",
+            "label": "Lilas",
+            "swatch": "#a966dd",
+            "file": "sprites/legs/saia-longa__lavender.png"
+          },
+          {
+            "color": "yellow",
+            "label": "Amarelo",
+            "swatch": "#f3c03f",
+            "file": "sprites/legs/saia-longa__yellow.png"
+          },
+          {
+            "color": "green",
+            "label": "Verde",
+            "swatch": "#2f8136",
+            "file": "sprites/legs/saia-longa__green.png"
+          },
+          {
+            "color": "red",
+            "label": "Vermelho",
+            "swatch": "#ab1e1e",
+            "file": "sprites/legs/saia-longa__red.png"
+          },
+          {
+            "color": "purple",
+            "label": "Roxo",
+            "swatch": "#621e78",
+            "file": "sprites/legs/saia-longa__purple.png"
+          },
+          {
+            "color": "white",
+            "label": "Branco",
+            "swatch": "#e5e6c7",
+            "file": "sprites/legs/saia-longa__white.png"
+          },
+          {
+            "color": "teal",
+            "label": "Turquesa",
+            "swatch": "#0098b2",
+            "file": "sprites/legs/saia-longa__teal.png"
+          },
+          {
+            "color": "navy",
+            "label": "Marinho",
+            "swatch": "#3c49ad",
+            "file": "sprites/legs/saia-longa__navy.png"
+          }
+        ]
+      },
+      {
+        "id": "saia-princesa",
+        "name": "Saia princesa",
+        "price": 70,
+        "z": 30,
+        "variants": [
+          {
+            "color": "pink",
+            "label": "Rosa",
+            "swatch": "#c36072",
+            "file": "sprites/legs/saia-princesa__pink.png"
+          },
+          {
+            "color": "sky",
+            "label": "Celeste",
+            "swatch": "#c6eefd",
+            "file": "sprites/legs/saia-princesa__sky.png"
+          },
+          {
+            "color": "lavender",
+            "label": "Lilas",
+            "swatch": "#a966dd",
+            "file": "sprites/legs/saia-princesa__lavender.png"
+          },
+          {
+            "color": "yellow",
+            "label": "Amarelo",
+            "swatch": "#f3c03f",
+            "file": "sprites/legs/saia-princesa__yellow.png"
+          },
+          {
+            "color": "green",
+            "label": "Verde",
+            "swatch": "#2f8136",
+            "file": "sprites/legs/saia-princesa__green.png"
+          },
+          {
+            "color": "red",
+            "label": "Vermelho",
+            "swatch": "#ab1e1e",
+            "file": "sprites/legs/saia-princesa__red.png"
+          },
+          {
+            "color": "purple",
+            "label": "Roxo",
+            "swatch": "#621e78",
+            "file": "sprites/legs/saia-princesa__purple.png"
+          },
+          {
+            "color": "white",
+            "label": "Branco",
+            "swatch": "#e5e6c7",
+            "file": "sprites/legs/saia-princesa__white.png"
+          },
+          {
+            "color": "teal",
+            "label": "Turquesa",
+            "swatch": "#0098b2",
+            "file": "sprites/legs/saia-princesa__teal.png"
+          },
+          {
+            "color": "navy",
+            "label": "Marinho",
+            "swatch": "#3c49ad",
+            "file": "sprites/legs/saia-princesa__navy.png"
+          }
+        ]
+      },
+      {
+        "id": "saia-babado",
+        "name": "Saia de babado",
+        "price": 60,
+        "z": 30,
+        "variants": [
+          {
+            "color": "pink",
+            "label": "Rosa",
+            "swatch": "#c36072",
+            "file": "sprites/legs/saia-babado__pink.png"
+          },
+          {
+            "color": "sky",
+            "label": "Celeste",
+            "swatch": "#c6eefd",
+            "file": "sprites/legs/saia-babado__sky.png"
+          },
+          {
+            "color": "lavender",
+            "label": "Lilas",
+            "swatch": "#a966dd",
+            "file": "sprites/legs/saia-babado__lavender.png"
+          },
+          {
+            "color": "yellow",
+            "label": "Amarelo",
+            "swatch": "#f3c03f",
+            "file": "sprites/legs/saia-babado__yellow.png"
+          },
+          {
+            "color": "green",
+            "label": "Verde",
+            "swatch": "#2f8136",
+            "file": "sprites/legs/saia-babado__green.png"
+          },
+          {
+            "color": "red",
+            "label": "Vermelho",
+            "swatch": "#ab1e1e",
+            "file": "sprites/legs/saia-babado__red.png"
+          },
+          {
+            "color": "purple",
+            "label": "Roxo",
+            "swatch": "#621e78",
+            "file": "sprites/legs/saia-babado__purple.png"
+          },
+          {
+            "color": "white",
+            "label": "Branco",
+            "swatch": "#e5e6c7",
+            "file": "sprites/legs/saia-babado__white.png"
+          },
+          {
+            "color": "teal",
+            "label": "Turquesa",
+            "swatch": "#0098b2",
+            "file": "sprites/legs/saia-babado__teal.png"
+          },
+          {
+            "color": "navy",
+            "label": "Marinho",
+            "swatch": "#3c49ad",
+            "file": "sprites/legs/saia-babado__navy.png"
+          }
+        ]
+      },
+      {
+        "id": "legging",
+        "name": "Legging",
+        "price": 25,
+        "z": 30,
+        "variants": [
+          {
+            "color": "pink",
+            "label": "Rosa",
+            "swatch": "#c36072",
+            "file": "sprites/legs/legging__pink.png"
+          },
+          {
+            "color": "sky",
+            "label": "Celeste",
+            "swatch": "#c6eefd",
+            "file": "sprites/legs/legging__sky.png"
+          },
+          {
+            "color": "lavender",
+            "label": "Lilas",
+            "swatch": "#a966dd",
+            "file": "sprites/legs/legging__lavender.png"
+          },
+          {
+            "color": "yellow",
+            "label": "Amarelo",
+            "swatch": "#f3c03f",
+            "file": "sprites/legs/legging__yellow.png"
+          },
+          {
+            "color": "green",
+            "label": "Verde",
+            "swatch": "#2f8136",
+            "file": "sprites/legs/legging__green.png"
+          },
+          {
+            "color": "red",
+            "label": "Vermelho",
+            "swatch": "#ab1e1e",
+            "file": "sprites/legs/legging__red.png"
+          },
+          {
+            "color": "purple",
+            "label": "Roxo",
+            "swatch": "#621e78",
+            "file": "sprites/legs/legging__purple.png"
+          },
+          {
+            "color": "white",
+            "label": "Branco",
+            "swatch": "#e5e6c7",
+            "file": "sprites/legs/legging__white.png"
+          },
+          {
+            "color": "teal",
+            "label": "Turquesa",
+            "swatch": "#0098b2",
+            "file": "sprites/legs/legging__teal.png"
+          },
+          {
+            "color": "navy",
+            "label": "Marinho",
+            "swatch": "#3c49ad",
+            "file": "sprites/legs/legging__navy.png"
+          }
+        ]
+      },
+      {
+        "id": "calca",
+        "name": "Calca",
+        "price": 35,
+        "z": 30,
+        "variants": [
+          {
+            "color": "pink",
+            "label": "Rosa",
+            "swatch": "#c36072",
+            "file": "sprites/legs/calca__pink.png"
+          },
+          {
+            "color": "sky",
+            "label": "Celeste",
+            "swatch": "#c6eefd",
+            "file": "sprites/legs/calca__sky.png"
+          },
+          {
+            "color": "lavender",
+            "label": "Lilas",
+            "swatch": "#a966dd",
+            "file": "sprites/legs/calca__lavender.png"
+          },
+          {
+            "color": "yellow",
+            "label": "Amarelo",
+            "swatch": "#f3c03f",
+            "file": "sprites/legs/calca__yellow.png"
+          },
+          {
+            "color": "green",
+            "label": "Verde",
+            "swatch": "#2f8136",
+            "file": "sprites/legs/calca__green.png"
+          },
+          {
+            "color": "red",
+            "label": "Vermelho",
+            "swatch": "#ab1e1e",
+            "file": "sprites/legs/calca__red.png"
+          },
+          {
+            "color": "purple",
+            "label": "Roxo",
+            "swatch": "#621e78",
+            "file": "sprites/legs/calca__purple.png"
+          },
+          {
+            "color": "white",
+            "label": "Branco",
+            "swatch": "#e5e6c7",
+            "file": "sprites/legs/calca__white.png"
+          },
+          {
+            "color": "teal",
+            "label": "Turquesa",
+            "swatch": "#0098b2",
+            "file": "sprites/legs/calca__teal.png"
+          },
+          {
+            "color": "navy",
+            "label": "Marinho",
+            "swatch": "#3c49ad",
+            "file": "sprites/legs/calca__navy.png"
+          }
+        ]
+      },
+      {
+        "id": "calca-social",
+        "name": "Calca social",
+        "price": 45,
+        "z": 30,
+        "variants": [
+          {
+            "color": "pink",
+            "label": "Rosa",
+            "swatch": "#c36072",
+            "file": "sprites/legs/calca-social__pink.png"
+          },
+          {
+            "color": "sky",
+            "label": "Celeste",
+            "swatch": "#c6eefd",
+            "file": "sprites/legs/calca-social__sky.png"
+          },
+          {
+            "color": "lavender",
+            "label": "Lilas",
+            "swatch": "#a966dd",
+            "file": "sprites/legs/calca-social__lavender.png"
+          },
+          {
+            "color": "yellow",
+            "label": "Amarelo",
+            "swatch": "#f3c03f",
+            "file": "sprites/legs/calca-social__yellow.png"
+          },
+          {
+            "color": "green",
+            "label": "Verde",
+            "swatch": "#2f8136",
+            "file": "sprites/legs/calca-social__green.png"
+          },
+          {
+            "color": "red",
+            "label": "Vermelho",
+            "swatch": "#ab1e1e",
+            "file": "sprites/legs/calca-social__red.png"
+          },
+          {
+            "color": "purple",
+            "label": "Roxo",
+            "swatch": "#621e78",
+            "file": "sprites/legs/calca-social__purple.png"
+          },
+          {
+            "color": "white",
+            "label": "Branco",
+            "swatch": "#e5e6c7",
+            "file": "sprites/legs/calca-social__white.png"
+          },
+          {
+            "color": "teal",
+            "label": "Turquesa",
+            "swatch": "#0098b2",
+            "file": "sprites/legs/calca-social__teal.png"
+          },
+          {
+            "color": "navy",
+            "label": "Marinho",
+            "swatch": "#3c49ad",
+            "file": "sprites/legs/calca-social__navy.png"
+          }
+        ]
+      }
+    ],
+    "feet": [
+      {
+        "id": "sapatilha",
+        "name": "Sapatilha",
+        "price": 0,
+        "z": 35,
+        "variants": [
+          {
+            "color": "pink",
+            "label": "Rosa",
+            "swatch": "#c36072",
+            "file": "sprites/feet/sapatilha__pink.png"
+          },
+          {
+            "color": "sky",
+            "label": "Celeste",
+            "swatch": "#c6eefd",
+            "file": "sprites/feet/sapatilha__sky.png"
+          },
+          {
+            "color": "lavender",
+            "label": "Lilas",
+            "swatch": "#a966dd",
+            "file": "sprites/feet/sapatilha__lavender.png"
+          },
+          {
+            "color": "yellow",
+            "label": "Amarelo",
+            "swatch": "#f3c03f",
+            "file": "sprites/feet/sapatilha__yellow.png"
+          },
+          {
+            "color": "green",
+            "label": "Verde",
+            "swatch": "#2f8136",
+            "file": "sprites/feet/sapatilha__green.png"
+          },
+          {
+            "color": "red",
+            "label": "Vermelho",
+            "swatch": "#ab1e1e",
+            "file": "sprites/feet/sapatilha__red.png"
+          },
+          {
+            "color": "purple",
+            "label": "Roxo",
+            "swatch": "#621e78",
+            "file": "sprites/feet/sapatilha__purple.png"
+          },
+          {
+            "color": "white",
+            "label": "Branco",
+            "swatch": "#e5e6c7",
+            "file": "sprites/feet/sapatilha__white.png"
+          },
+          {
+            "color": "teal",
+            "label": "Turquesa",
+            "swatch": "#0098b2",
+            "file": "sprites/feet/sapatilha__teal.png"
+          },
+          {
+            "color": "navy",
+            "label": "Marinho",
+            "swatch": "#3c49ad",
+            "file": "sprites/feet/sapatilha__navy.png"
+          }
+        ]
+      },
+      {
+        "id": "tenis",
+        "name": "Tenis",
+        "price": 25,
+        "z": 35,
+        "variants": [
+          {
+            "color": "pink",
+            "label": "Rosa",
+            "swatch": "#c36072",
+            "file": "sprites/feet/tenis__pink.png"
+          },
+          {
+            "color": "sky",
+            "label": "Celeste",
+            "swatch": "#c6eefd",
+            "file": "sprites/feet/tenis__sky.png"
+          },
+          {
+            "color": "lavender",
+            "label": "Lilas",
+            "swatch": "#a966dd",
+            "file": "sprites/feet/tenis__lavender.png"
+          },
+          {
+            "color": "yellow",
+            "label": "Amarelo",
+            "swatch": "#f3c03f",
+            "file": "sprites/feet/tenis__yellow.png"
+          },
+          {
+            "color": "green",
+            "label": "Verde",
+            "swatch": "#2f8136",
+            "file": "sprites/feet/tenis__green.png"
+          },
+          {
+            "color": "red",
+            "label": "Vermelho",
+            "swatch": "#ab1e1e",
+            "file": "sprites/feet/tenis__red.png"
+          },
+          {
+            "color": "purple",
+            "label": "Roxo",
+            "swatch": "#621e78",
+            "file": "sprites/feet/tenis__purple.png"
+          },
+          {
+            "color": "white",
+            "label": "Branco",
+            "swatch": "#e5e6c7",
+            "file": "sprites/feet/tenis__white.png"
+          },
+          {
+            "color": "teal",
+            "label": "Turquesa",
+            "swatch": "#0098b2",
+            "file": "sprites/feet/tenis__teal.png"
+          },
+          {
+            "color": "navy",
+            "label": "Marinho",
+            "swatch": "#3c49ad",
+            "file": "sprites/feet/tenis__navy.png"
+          }
+        ]
+      },
+      {
+        "id": "sapato-boneca",
+        "name": "Sapato boneca",
+        "price": 35,
+        "z": 35,
+        "variants": [
+          {
+            "color": "pink",
+            "label": "Rosa",
+            "swatch": "#c36072",
+            "file": "sprites/feet/sapato-boneca__pink.png"
+          },
+          {
+            "color": "sky",
+            "label": "Celeste",
+            "swatch": "#c6eefd",
+            "file": "sprites/feet/sapato-boneca__sky.png"
+          },
+          {
+            "color": "lavender",
+            "label": "Lilas",
+            "swatch": "#a966dd",
+            "file": "sprites/feet/sapato-boneca__lavender.png"
+          },
+          {
+            "color": "yellow",
+            "label": "Amarelo",
+            "swatch": "#f3c03f",
+            "file": "sprites/feet/sapato-boneca__yellow.png"
+          },
+          {
+            "color": "green",
+            "label": "Verde",
+            "swatch": "#2f8136",
+            "file": "sprites/feet/sapato-boneca__green.png"
+          },
+          {
+            "color": "red",
+            "label": "Vermelho",
+            "swatch": "#ab1e1e",
+            "file": "sprites/feet/sapato-boneca__red.png"
+          },
+          {
+            "color": "purple",
+            "label": "Roxo",
+            "swatch": "#621e78",
+            "file": "sprites/feet/sapato-boneca__purple.png"
+          },
+          {
+            "color": "white",
+            "label": "Branco",
+            "swatch": "#e5e6c7",
+            "file": "sprites/feet/sapato-boneca__white.png"
+          },
+          {
+            "color": "teal",
+            "label": "Turquesa",
+            "swatch": "#0098b2",
+            "file": "sprites/feet/sapato-boneca__teal.png"
+          },
+          {
+            "color": "navy",
+            "label": "Marinho",
+            "swatch": "#3c49ad",
+            "file": "sprites/feet/sapato-boneca__navy.png"
+          }
+        ]
+      },
+      {
+        "id": "pantufa",
+        "name": "Pantufa",
+        "price": 30,
+        "z": 35,
+        "variants": [
+          {
+            "color": "pink",
+            "label": "Rosa",
+            "swatch": "#c36072",
+            "file": "sprites/feet/pantufa__pink.png"
+          },
+          {
+            "color": "sky",
+            "label": "Celeste",
+            "swatch": "#c6eefd",
+            "file": "sprites/feet/pantufa__sky.png"
+          },
+          {
+            "color": "lavender",
+            "label": "Lilas",
+            "swatch": "#a966dd",
+            "file": "sprites/feet/pantufa__lavender.png"
+          },
+          {
+            "color": "yellow",
+            "label": "Amarelo",
+            "swatch": "#f3c03f",
+            "file": "sprites/feet/pantufa__yellow.png"
+          },
+          {
+            "color": "green",
+            "label": "Verde",
+            "swatch": "#2f8136",
+            "file": "sprites/feet/pantufa__green.png"
+          },
+          {
+            "color": "red",
+            "label": "Vermelho",
+            "swatch": "#ab1e1e",
+            "file": "sprites/feet/pantufa__red.png"
+          },
+          {
+            "color": "purple",
+            "label": "Roxo",
+            "swatch": "#621e78",
+            "file": "sprites/feet/pantufa__purple.png"
+          },
+          {
+            "color": "white",
+            "label": "Branco",
+            "swatch": "#e5e6c7",
+            "file": "sprites/feet/pantufa__white.png"
+          },
+          {
+            "color": "teal",
+            "label": "Turquesa",
+            "swatch": "#0098b2",
+            "file": "sprites/feet/pantufa__teal.png"
+          },
+          {
+            "color": "navy",
+            "label": "Marinho",
+            "swatch": "#3c49ad",
+            "file": "sprites/feet/pantufa__navy.png"
+          }
+        ]
+      },
+      {
+        "id": "bota",
+        "name": "Botinha",
+        "price": 55,
+        "z": 35,
+        "variants": [
+          {
+            "color": "pink",
+            "label": "Rosa",
+            "swatch": "#c36072",
+            "file": "sprites/feet/bota__pink.png"
+          },
+          {
+            "color": "sky",
+            "label": "Celeste",
+            "swatch": "#c6eefd",
+            "file": "sprites/feet/bota__sky.png"
+          },
+          {
+            "color": "lavender",
+            "label": "Lilas",
+            "swatch": "#a966dd",
+            "file": "sprites/feet/bota__lavender.png"
+          },
+          {
+            "color": "yellow",
+            "label": "Amarelo",
+            "swatch": "#f3c03f",
+            "file": "sprites/feet/bota__yellow.png"
+          },
+          {
+            "color": "green",
+            "label": "Verde",
+            "swatch": "#2f8136",
+            "file": "sprites/feet/bota__green.png"
+          },
+          {
+            "color": "red",
+            "label": "Vermelho",
+            "swatch": "#ab1e1e",
+            "file": "sprites/feet/bota__red.png"
+          },
+          {
+            "color": "purple",
+            "label": "Roxo",
+            "swatch": "#621e78",
+            "file": "sprites/feet/bota__purple.png"
+          },
+          {
+            "color": "white",
+            "label": "Branco",
+            "swatch": "#e5e6c7",
+            "file": "sprites/feet/bota__white.png"
+          },
+          {
+            "color": "teal",
+            "label": "Turquesa",
+            "swatch": "#0098b2",
+            "file": "sprites/feet/bota__teal.png"
+          },
+          {
+            "color": "navy",
+            "label": "Marinho",
+            "swatch": "#3c49ad",
+            "file": "sprites/feet/bota__navy.png"
+          }
+        ]
+      },
+      {
+        "id": "sandalia",
+        "name": "Sandalia",
+        "price": 30,
+        "z": 35,
+        "variants": [
+          {
+            "color": "pink",
+            "label": "Rosa",
+            "swatch": "#c36072",
+            "file": "sprites/feet/sandalia__pink.png"
+          },
+          {
+            "color": "sky",
+            "label": "Celeste",
+            "swatch": "#c6eefd",
+            "file": "sprites/feet/sandalia__sky.png"
+          },
+          {
+            "color": "lavender",
+            "label": "Lilas",
+            "swatch": "#a966dd",
+            "file": "sprites/feet/sandalia__lavender.png"
+          },
+          {
+            "color": "yellow",
+            "label": "Amarelo",
+            "swatch": "#f3c03f",
+            "file": "sprites/feet/sandalia__yellow.png"
+          },
+          {
+            "color": "green",
+            "label": "Verde",
+            "swatch": "#2f8136",
+            "file": "sprites/feet/sandalia__green.png"
+          },
+          {
+            "color": "red",
+            "label": "Vermelho",
+            "swatch": "#ab1e1e",
+            "file": "sprites/feet/sandalia__red.png"
+          },
+          {
+            "color": "purple",
+            "label": "Roxo",
+            "swatch": "#621e78",
+            "file": "sprites/feet/sandalia__purple.png"
+          },
+          {
+            "color": "white",
+            "label": "Branco",
+            "swatch": "#e5e6c7",
+            "file": "sprites/feet/sandalia__white.png"
+          },
+          {
+            "color": "teal",
+            "label": "Turquesa",
+            "swatch": "#0098b2",
+            "file": "sprites/feet/sandalia__teal.png"
+          },
+          {
+            "color": "navy",
+            "label": "Marinho",
+            "swatch": "#3c49ad",
+            "file": "sprites/feet/sandalia__navy.png"
+          }
+        ]
+      }
+    ],
+    "hat": [
+      {
+        "id": "tiara",
+        "name": "Tiara",
+        "price": 30,
+        "z": 70,
+        "variants": [
+          {
+            "color": "pink",
+            "label": "Rosa",
+            "swatch": "#c36072",
+            "file": "sprites/hat/tiara__pink.png"
+          },
+          {
+            "color": "sky",
+            "label": "Celeste",
+            "swatch": "#c6eefd",
+            "file": "sprites/hat/tiara__sky.png"
+          },
+          {
+            "color": "lavender",
+            "label": "Lilas",
+            "swatch": "#a966dd",
+            "file": "sprites/hat/tiara__lavender.png"
+          },
+          {
+            "color": "yellow",
+            "label": "Amarelo",
+            "swatch": "#f3c03f",
+            "file": "sprites/hat/tiara__yellow.png"
+          },
+          {
+            "color": "green",
+            "label": "Verde",
+            "swatch": "#2f8136",
+            "file": "sprites/hat/tiara__green.png"
+          },
+          {
+            "color": "red",
+            "label": "Vermelho",
+            "swatch": "#ab1e1e",
+            "file": "sprites/hat/tiara__red.png"
+          },
+          {
+            "color": "purple",
+            "label": "Roxo",
+            "swatch": "#621e78",
+            "file": "sprites/hat/tiara__purple.png"
+          },
+          {
+            "color": "white",
+            "label": "Branco",
+            "swatch": "#e5e6c7",
+            "file": "sprites/hat/tiara__white.png"
+          },
+          {
+            "color": "teal",
+            "label": "Turquesa",
+            "swatch": "#0098b2",
+            "file": "sprites/hat/tiara__teal.png"
+          },
+          {
+            "color": "navy",
+            "label": "Marinho",
+            "swatch": "#3c49ad",
+            "file": "sprites/hat/tiara__navy.png"
+          }
+        ]
+      },
+      {
+        "id": "faixa",
+        "name": "Faixa",
+        "price": 30,
+        "z": 70,
+        "variants": [
+          {
+            "color": "pink",
+            "label": "Rosa",
+            "swatch": "#c36072",
+            "file": "sprites/hat/faixa__pink.png"
+          },
+          {
+            "color": "sky",
+            "label": "Celeste",
+            "swatch": "#c6eefd",
+            "file": "sprites/hat/faixa__sky.png"
+          },
+          {
+            "color": "lavender",
+            "label": "Lilas",
+            "swatch": "#a966dd",
+            "file": "sprites/hat/faixa__lavender.png"
+          },
+          {
+            "color": "yellow",
+            "label": "Amarelo",
+            "swatch": "#f3c03f",
+            "file": "sprites/hat/faixa__yellow.png"
+          },
+          {
+            "color": "green",
+            "label": "Verde",
+            "swatch": "#2f8136",
+            "file": "sprites/hat/faixa__green.png"
+          },
+          {
+            "color": "red",
+            "label": "Vermelho",
+            "swatch": "#ab1e1e",
+            "file": "sprites/hat/faixa__red.png"
+          },
+          {
+            "color": "purple",
+            "label": "Roxo",
+            "swatch": "#621e78",
+            "file": "sprites/hat/faixa__purple.png"
+          },
+          {
+            "color": "white",
+            "label": "Branco",
+            "swatch": "#e5e6c7",
+            "file": "sprites/hat/faixa__white.png"
+          },
+          {
+            "color": "teal",
+            "label": "Turquesa",
+            "swatch": "#0098b2",
+            "file": "sprites/hat/faixa__teal.png"
+          },
+          {
+            "color": "navy",
+            "label": "Marinho",
+            "swatch": "#3c49ad",
+            "file": "sprites/hat/faixa__navy.png"
+          }
+        ]
+      },
+      {
+        "id": "lenco",
+        "name": "Lencinho",
+        "price": 40,
+        "z": 70,
+        "variants": [
+          {
+            "color": "pink",
+            "label": "Rosa",
+            "swatch": "#c36072",
+            "file": "sprites/hat/lenco__pink.png"
+          },
+          {
+            "color": "sky",
+            "label": "Celeste",
+            "swatch": "#c6eefd",
+            "file": "sprites/hat/lenco__sky.png"
+          },
+          {
+            "color": "lavender",
+            "label": "Lilas",
+            "swatch": "#a966dd",
+            "file": "sprites/hat/lenco__lavender.png"
+          },
+          {
+            "color": "yellow",
+            "label": "Amarelo",
+            "swatch": "#f3c03f",
+            "file": "sprites/hat/lenco__yellow.png"
+          },
+          {
+            "color": "green",
+            "label": "Verde",
+            "swatch": "#2f8136",
+            "file": "sprites/hat/lenco__green.png"
+          },
+          {
+            "color": "red",
+            "label": "Vermelho",
+            "swatch": "#ab1e1e",
+            "file": "sprites/hat/lenco__red.png"
+          },
+          {
+            "color": "purple",
+            "label": "Roxo",
+            "swatch": "#621e78",
+            "file": "sprites/hat/lenco__purple.png"
+          },
+          {
+            "color": "white",
+            "label": "Branco",
+            "swatch": "#e5e6c7",
+            "file": "sprites/hat/lenco__white.png"
+          },
+          {
+            "color": "teal",
+            "label": "Turquesa",
+            "swatch": "#0098b2",
+            "file": "sprites/hat/lenco__teal.png"
+          },
+          {
+            "color": "navy",
+            "label": "Marinho",
+            "swatch": "#3c49ad",
+            "file": "sprites/hat/lenco__navy.png"
+          }
+        ]
+      },
+      {
+        "id": "capuz",
+        "name": "Capuz",
+        "price": 60,
+        "z": 70,
+        "variants": [
+          {
+            "color": "pink",
+            "label": "Rosa",
+            "swatch": "#c36072",
+            "file": "sprites/hat/capuz__pink.png"
+          },
+          {
+            "color": "sky",
+            "label": "Celeste",
+            "swatch": "#c6eefd",
+            "file": "sprites/hat/capuz__sky.png"
+          },
+          {
+            "color": "lavender",
+            "label": "Lilas",
+            "swatch": "#a966dd",
+            "file": "sprites/hat/capuz__lavender.png"
+          },
+          {
+            "color": "yellow",
+            "label": "Amarelo",
+            "swatch": "#f3c03f",
+            "file": "sprites/hat/capuz__yellow.png"
+          },
+          {
+            "color": "green",
+            "label": "Verde",
+            "swatch": "#2f8136",
+            "file": "sprites/hat/capuz__green.png"
+          },
+          {
+            "color": "red",
+            "label": "Vermelho",
+            "swatch": "#ab1e1e",
+            "file": "sprites/hat/capuz__red.png"
+          },
+          {
+            "color": "purple",
+            "label": "Roxo",
+            "swatch": "#621e78",
+            "file": "sprites/hat/capuz__purple.png"
+          },
+          {
+            "color": "white",
+            "label": "Branco",
+            "swatch": "#e5e6c7",
+            "file": "sprites/hat/capuz__white.png"
+          },
+          {
+            "color": "teal",
+            "label": "Turquesa",
+            "swatch": "#0098b2",
+            "file": "sprites/hat/capuz__teal.png"
+          },
+          {
+            "color": "navy",
+            "label": "Marinho",
+            "swatch": "#3c49ad",
+            "file": "sprites/hat/capuz__navy.png"
+          }
+        ]
+      },
+      {
+        "id": "chapeu",
+        "name": "Chapeuzinho",
+        "price": 70,
+        "z": 70,
+        "variants": [
+          {
+            "color": "pink",
+            "label": "Rosa",
+            "swatch": "#c36072",
+            "file": "sprites/hat/chapeu__pink.png"
+          },
+          {
+            "color": "sky",
+            "label": "Celeste",
+            "swatch": "#c6eefd",
+            "file": "sprites/hat/chapeu__sky.png"
+          },
+          {
+            "color": "lavender",
+            "label": "Lilas",
+            "swatch": "#a966dd",
+            "file": "sprites/hat/chapeu__lavender.png"
+          },
+          {
+            "color": "yellow",
+            "label": "Amarelo",
+            "swatch": "#f3c03f",
+            "file": "sprites/hat/chapeu__yellow.png"
+          },
+          {
+            "color": "green",
+            "label": "Verde",
+            "swatch": "#2f8136",
+            "file": "sprites/hat/chapeu__green.png"
+          },
+          {
+            "color": "red",
+            "label": "Vermelho",
+            "swatch": "#ab1e1e",
+            "file": "sprites/hat/chapeu__red.png"
+          },
+          {
+            "color": "purple",
+            "label": "Roxo",
+            "swatch": "#621e78",
+            "file": "sprites/hat/chapeu__purple.png"
+          },
+          {
+            "color": "white",
+            "label": "Branco",
+            "swatch": "#e5e6c7",
+            "file": "sprites/hat/chapeu__white.png"
+          },
+          {
+            "color": "teal",
+            "label": "Turquesa",
+            "swatch": "#0098b2",
+            "file": "sprites/hat/chapeu__teal.png"
+          },
+          {
+            "color": "navy",
+            "label": "Marinho",
+            "swatch": "#3c49ad",
+            "file": "sprites/hat/chapeu__navy.png"
+          }
+        ]
+      },
+      {
+        "id": "gorro-natal",
+        "name": "Gorro de Natal",
+        "price": 90,
+        "z": 70,
+        "variants": [
+          {
+            "color": "pink",
+            "label": "Rosa",
+            "swatch": "#c36072",
+            "file": "sprites/hat/gorro-natal__pink.png"
+          },
+          {
+            "color": "sky",
+            "label": "Celeste",
+            "swatch": "#c6eefd",
+            "file": "sprites/hat/gorro-natal__sky.png"
+          },
+          {
+            "color": "lavender",
+            "label": "Lilas",
+            "swatch": "#a966dd",
+            "file": "sprites/hat/gorro-natal__lavender.png"
+          },
+          {
+            "color": "yellow",
+            "label": "Amarelo",
+            "swatch": "#f3c03f",
+            "file": "sprites/hat/gorro-natal__yellow.png"
+          },
+          {
+            "color": "green",
+            "label": "Verde",
+            "swatch": "#2f8136",
+            "file": "sprites/hat/gorro-natal__green.png"
+          },
+          {
+            "color": "red",
+            "label": "Vermelho",
+            "swatch": "#ab1e1e",
+            "file": "sprites/hat/gorro-natal__red.png"
+          },
+          {
+            "color": "purple",
+            "label": "Roxo",
+            "swatch": "#621e78",
+            "file": "sprites/hat/gorro-natal__purple.png"
+          },
+          {
+            "color": "white",
+            "label": "Branco",
+            "swatch": "#e5e6c7",
+            "file": "sprites/hat/gorro-natal__white.png"
+          },
+          {
+            "color": "teal",
+            "label": "Turquesa",
+            "swatch": "#0098b2",
+            "file": "sprites/hat/gorro-natal__teal.png"
+          },
+          {
+            "color": "navy",
+            "label": "Marinho",
+            "swatch": "#3c49ad",
+            "file": "sprites/hat/gorro-natal__navy.png"
+          }
+        ]
+      },
+      {
+        "id": "coroa",
+        "name": "Coroa",
+        "price": 150,
+        "z": 70,
+        "variants": [
+          {
+            "color": "gold",
+            "label": "Dourado",
+            "swatch": "#4f2313",
+            "file": "sprites/hat/coroa__gold.png"
+          },
+          {
+            "color": "silver",
+            "label": "Prateado",
+            "swatch": "#2e2533",
+            "file": "sprites/hat/coroa__silver.png"
+          },
+          {
+            "color": "crown_red",
+            "label": "Rubi",
+            "swatch": "#400000",
+            "file": "sprites/hat/coroa__crown_red.png"
+          },
+          {
+            "color": "purple",
+            "label": "Roxo",
+            "swatch": "#261044",
+            "file": "sprites/hat/coroa__purple.png"
+          }
+        ]
+      },
+      {
+        "id": "tiara-princesa",
+        "name": "Tiara de princesa",
+        "price": 120,
+        "z": 70,
+        "variants": [
+          {
+            "color": "tiara_gold",
+            "label": "Dourada",
+            "swatch": "#a3761c",
+            "file": "sprites/hat/tiara-princesa__tiara_gold.png"
+          },
+          {
+            "color": "tiara_silver",
+            "label": "Prateada",
+            "swatch": "#797979",
+            "file": "sprites/hat/tiara-princesa__tiara_silver.png"
+          },
+          {
+            "color": "tiara_purple",
+            "label": "Lilas",
+            "swatch": "#976ed9",
+            "file": "sprites/hat/tiara-princesa__tiara_purple.png"
+          }
+        ]
+      }
+    ]
+  }
+}

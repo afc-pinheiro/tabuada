@@ -1,0 +1,7 @@
+node_modules
+dist
+.asset-cache
+.git
+.github
+.claude
+tools
