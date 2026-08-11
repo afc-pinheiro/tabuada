@@ -1,14 +1,17 @@
 # Tabuada Mágica
 
-Jogo de tabuada com personagem para vestir. Acerta as contas → ganha estrelas → compra
-roupinhas na lojinha → monta o visual no guarda-roupa. Tudo em pixel art, tudo salvo no
-`localStorage` do próprio navegador (sem login, sem servidor, sem dados saindo do aparelho).
+Jogo de tabuada com personagem para vestir. Um mapa de fases leva pelas tabuadas de 1 a
+10; em cada fase a personagem caminha por um cenário, um passo a cada acerto, até o
+presente no fim da trilha. Acertar rende estrelas, estrelas compram roupinhas na lojinha
+e o guarda-roupa monta o visual. Tudo em pixel art e tudo salvo no `localStorage` do
+próprio navegador (sem login, sem servidor, sem dados saindo do aparelho).
 
 ## Rodar local
 
 ```bash
 npm install
 npm run dev
+npm test    # gerador de perguntas: cobre as entradas que ja travaram o jogo
 ```
 
 ## Assets
@@ -21,8 +24,9 @@ recorta o quadro frontal e gera as variações de cor por troca de paleta:
 npm run assets
 ```
 
-Ele escreve `public/sprites/`, `src/data/catalog.json` e `CREDITS.md`. Só precisa rodar
-de novo quando o catálogo em `CATALOG_SPEC` mudar — a saída fica versionada no repo.
+Ele escreve `public/sprites/`, `src/data/catalog.json` e `CREDITS.md`. Cada peça sai em
+duas poses: parada de frente (2 quadros) e andando de perfil (9 quadros). Só precisa
+rodar de novo quando o catálogo em `CATALOG_SPEC` mudar — a saída fica versionada.
 
 ## Deploy
 
@@ -40,10 +44,12 @@ Secrets necessários no repositório (`Settings → Secrets → Actions`):
 ## Estrutura
 
 ```
-src/game/      regras: catálogo, save no localStorage, geração das perguntas, sons
-src/components/ telas: Home, Quiz, Shop, Closet e o personagem em camadas
-public/sprites/ PNGs gerados (128x64 = 2 quadros de 64x64, virados para a frente)
-tools/         script de preparação dos assets
+src/game/       regras: catálogo, save no localStorage, geração das perguntas, sons
+src/components/ Home + LevelMap (mapa de fases), Quiz + Trail (cena da fase),
+                Shop, Closet e o personagem em camadas
+public/sprites/ PNGs gerados, nas poses parada e andando
+tools/          script de preparação dos assets
+tests/          teste do gerador de perguntas
 ```
 
 O personagem é uma pilha de camadas PNG posicionadas no mesmo quadro de 64×64, ordenadas

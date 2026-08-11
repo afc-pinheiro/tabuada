@@ -1,11 +1,11 @@
 import { CATEGORIES, catalog, findItem, spriteUrl } from '../game/catalog'
-import type { Category, Outfit } from '../game/types'
+import type { Category, Outfit, Pose } from '../game/types'
 
 interface Props {
   outfit: Outfit
   /** Multiplicador do sprite de 64x64. */
   scale?: number
-  /** Uma peca extra desenhada por cima, para previa na loja/guarda-roupa. */
+  pose?: Pose
   className?: string
 }
 
@@ -15,12 +15,12 @@ interface Layer {
   z: number
 }
 
-export function buildLayers(outfit: Outfit): Layer[] {
+export function buildLayers(outfit: Outfit, pose: Pose): Layer[] {
   const layers: Layer[] = []
   for (const category of CATEGORIES) {
     const worn = outfit[category]
     if (!worn) continue
-    const url = spriteUrl(category, worn)
+    const url = spriteUrl(category, worn, pose)
     if (!url) continue
     const item = findItem(category, worn.item)
     layers.push({
@@ -32,8 +32,8 @@ export function buildLayers(outfit: Outfit): Layer[] {
   return layers.sort((a, b) => a.z - b.z)
 }
 
-export function Character({ outfit, scale = 4, className }: Props) {
-  const layers = buildLayers(outfit)
+export function Character({ outfit, scale = 4, pose = 'idle', className }: Props) {
+  const layers = buildLayers(outfit, pose)
   return (
     <div
       className={`character ${className ?? ''}`}
@@ -42,7 +42,11 @@ export function Character({ outfit, scale = 4, className }: Props) {
     >
       <div className="character__inner" style={{ transform: `scale(${scale})` }}>
         {layers.map((layer) => (
-          <span key={layer.key} className="character__layer" style={{ backgroundImage: `url("${layer.url}")`, zIndex: layer.z }} />
+          <span
+            key={layer.key}
+            className={`character__layer character__layer--${pose}`}
+            style={{ backgroundImage: `url("${layer.url}")`, zIndex: layer.z }}
+          />
         ))}
       </div>
     </div>

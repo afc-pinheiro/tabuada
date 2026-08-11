@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """Gera os sprites do jogo a partir do Universal LPC Spritesheet Character Generator.
 
-Baixa apenas as folhas `idle.png` que interessam, recorta a linha virada para a
-frente (sul) e aplica troca de paleta para gerar as variacoes de cor do catalogo.
+Baixa apenas as folhas que interessam, recorta as linhas de cada pose (ver POSES)
+e aplica troca de paleta para gerar as variacoes de cor do catalogo.
 
 Saida:
-  public/sprites/<categoria>/<item>__<cor>.png   (128x64 = 2 frames de 64x64)
+  public/sprites/<categoria>/<item>__<cor>.png          parado, de frente (2 quadros)
+  public/sprites/<categoria>/<item>__<cor>--walk.png    andando p/ direita (9 quadros)
   src/data/catalog.json                           (catalogo consumido pelo app)
   CREDITS.md                                      (creditos/licencas dos assets)
 
@@ -33,8 +34,13 @@ OUT_CATALOG = ROOT / "src" / "data" / "catalog.json"
 CACHE = ROOT / ".asset-cache"
 
 FRAME = 64
-SOUTH_ROW = 2  # ordem das linhas LPC: 0=norte 1=oeste 2=sul 3=leste
-FRAMES_KEPT = 2  # idle.png tem 2 quadros por direcao
+
+# Poses geradas. Ordem das linhas LPC: 0=norte 1=oeste 2=sul 3=leste.
+# `idle` olha para a frente (telas de vestir); `walk` anda para a direita (cena do quiz).
+POSES = {
+    "idle": {"sheet": "idle", "row": 2, "frames": 2, "suffix": ""},
+    "walk": {"sheet": "walk", "row": 3, "frames": 9, "suffix": "--walk"},
+}
 
 # ---------------------------------------------------------------------------
 # Paletas: cada item tem um "material"; a folha original vem pintada com a cor
@@ -66,7 +72,7 @@ HAIR_COLORS = ["blonde", "carrot", "chestnut", "raven", "redhead", "platinum", "
 CLOTH_COLORS = ["pink", "sky", "lavender", "yellow", "green", "red", "purple", "white", "teal", "navy"]
 
 # ---------------------------------------------------------------------------
-# Catalogo. `src` e o caminho dentro de spritesheets/ (sem /idle.png).
+# Catalogo. `src` e o caminho dentro de spritesheets/ (sem o nome da folha).
 # `colors` = lista de cores; se `precolored`, os arquivos ja existem coloridos
 # em <src>/idle/<cor>.png e nao ha troca de paleta.
 # `price` em estrelas; 0 = ja vem desbloqueado.
@@ -168,10 +174,11 @@ def hex_to_rgb(value: str) -> tuple[int, int, int]:
     return tuple(int(value[i:i + 2], 16) for i in (0, 2, 4))  # type: ignore[return-value]
 
 
-def crop_south(sheet: Image.Image) -> Image.Image:
-    """Recorta os quadros da linha virada para a frente."""
-    width = min(FRAMES_KEPT * FRAME, sheet.width)
-    return sheet.crop((0, SOUTH_ROW * FRAME, width, (SOUTH_ROW + 1) * FRAME)).convert("RGBA")
+def crop_pose(sheet: Image.Image, pose: dict) -> Image.Image:
+    """Recorta a faixa de quadros de uma pose (uma linha da folha LPC)."""
+    width = min(pose["frames"] * FRAME, sheet.width)
+    top = pose["row"] * FRAME
+    return sheet.crop((0, top, width, top + FRAME)).convert("RGBA")
 
 
 def recolor(image: Image.Image, source: list[str], target: list[str]) -> Image.Image:
@@ -218,36 +225,43 @@ def build() -> None:
         precolored = item.get("precolored", False)
         ramps, base = palettes[material]
 
+        def render(pose: dict, color: str) -> Image.Image | None:
+            """Recorta e recolore uma pose. `None` quando a folha nao existe."""
+            sheet = pose["sheet"]
+            src = f"spritesheets/{item['src']}/{sheet}/{color}.png" if precolored \
+                else f"spritesheets/{item['src']}/{sheet}.png"
+            strip = crop_pose(Image.open(_bytes_io(fetch(src))), pose)
+            if not precolored and color != base:
+                if color not in ramps:
+                    raise KeyError(f"cor {color} nao existe na paleta {material}")
+                strip = recolor(strip, ramps[base], ramps[color])
+            return None if is_blank(strip) else strip
+
         variants = []
         for color in colors:
             try:
-                if precolored:
-                    raw = fetch(f"spritesheets/{item['src']}/idle/{color}.png")
-                    frame = crop_south(Image.open(_bytes_io(raw)))
-                else:
-                    raw = fetch(f"spritesheets/{item['src']}/idle.png")
-                    frame = crop_south(Image.open(_bytes_io(raw)))
-                    if color != base:
-                        if color not in ramps:
-                            print(f"  ! cor {color} nao existe na paleta {material}", file=sys.stderr)
-                            continue
-                        frame = recolor(frame, ramps[base], ramps[color])
+                frames = {name: render(pose, color) for name, pose in POSES.items()}
             except Exception as exc:  # noqa: BLE001
                 print(f"  ! falhou {item['src']} / {color}: {exc}", file=sys.stderr)
                 continue
 
-            if is_blank(frame):
+            if frames["idle"] is None:
                 print(f"  ! quadro vazio {item['src']} / {color}", file=sys.stderr)
                 continue
 
-            target = OUT_SPRITES / category / f"{item['id']}__{color}.png"
-            target.parent.mkdir(parents=True, exist_ok=True)
-            frame.save(target, optimize=True)
-            swatch = f"#{''.join(f'{c:02x}' for c in hex_to_rgb(ramps[color][4]))}" \
-                if not precolored and color in ramps else dominant_color(frame)
-            variants.append({"color": color, "label": COLOR_LABELS.get(color, color),
-                             "swatch": swatch,
-                             "file": f"sprites/{category}/{item['id']}__{color}.png"})
+            variant = {"color": color, "label": COLOR_LABELS.get(color, color)}
+            for name, strip in frames.items():
+                if strip is None:
+                    continue
+                filename = f"{item['id']}__{color}{POSES[name]['suffix']}.png"
+                target = OUT_SPRITES / category / filename
+                target.parent.mkdir(parents=True, exist_ok=True)
+                strip.save(target, optimize=True)
+                variant["file" if name == "idle" else name] = f"sprites/{category}/{filename}"
+
+            variant["swatch"] = f"#{''.join(f'{c:02x}' for c in hex_to_rgb(ramps[color][4]))}" \
+                if not precolored and color in ramps else dominant_color(frames["idle"])
+            variants.append(variant)
 
         if not variants:
             return None
@@ -268,7 +282,7 @@ def build() -> None:
             print(f"   {entry['id']}: {len(entry['variants'])} cores")
 
     OUT_CATALOG.parent.mkdir(parents=True, exist_ok=True)
-    OUT_CATALOG.write_text(json.dumps({"z": CATEGORY_Z, "categories": catalog},
+    OUT_CATALOG.write_text(json.dumps({"z": CATEGORY_Z, "frames": {n: p["frames"] for n, p in POSES.items()}, "categories": catalog},
                                       ensure_ascii=False, indent=2) + "\n")
 
     total = sum(len(e["variants"]) for cat in catalog.values() for e in cat)

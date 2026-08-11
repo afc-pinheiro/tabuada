@@ -1,5 +1,5 @@
 import { Character } from './Character'
-import { MEDAL_EMOJI, TABLES } from '../game/quiz'
+import { LevelMap } from './LevelMap'
 import { sfx } from '../game/sfx'
 import type { Outfit, SaveData } from '../game/types'
 
@@ -29,7 +29,7 @@ export function Home({ save, onPlay, onOpenShop, onOpenCloset, onToggleSound, so
       </header>
 
       <div className="home__stage">
-        <Character outfit={outfit} scale={4} className="character--float" />
+        <Character outfit={outfit} scale={3.5} className="character--float" />
       </div>
 
       <div className="row">
@@ -53,35 +53,13 @@ export function Home({ save, onPlay, onOpenShop, onOpenCloset, onToggleSound, so
         </button>
       </div>
 
-      <h2 className="title title--small">Escolha a tabuada</h2>
-      <div className="tables">
-        {TABLES.map((table) => {
-          const progress = save.progress[String(table)]
-          return (
-            <button
-              key={table}
-              className="table-btn"
-              onClick={() => {
-                sfx.click()
-                onPlay(table)
-              }}
-            >
-              <span className="table-btn__n">{table}</span>
-              <span className="table-btn__medal">{progress ? MEDAL_EMOJI[progress.medal] : ''}</span>
-            </button>
-          )
-        })}
-      </div>
-
-      <button
-        className="btn btn--mix"
-        onClick={() => {
+      <LevelMap
+        save={save}
+        onPlay={(table) => {
           sfx.click()
-          onPlay('mix')
+          onPlay(table)
         }}
-      >
-        🎲 Desafio misturado
-      </button>
+      />
     </section>
   )
 }

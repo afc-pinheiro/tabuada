@@ -1,5 +1,5 @@
 import raw from '../data/catalog.json'
-import type { Catalog, Category, Item, Worn } from './types'
+import type { Catalog, Category, Item, Pose, Worn } from './types'
 
 export const catalog = raw as unknown as Catalog
 
@@ -41,11 +41,14 @@ export function findItem(category: Category, id: string): Item | undefined {
   return itemsOf(category).find((i) => i.id === id)
 }
 
-export function spriteUrl(category: Category, worn: Worn): string | undefined {
+export function spriteUrl(category: Category, worn: Worn, pose: Pose = 'idle'): string | undefined {
   const item = findItem(category, worn.item)
   if (!item) return undefined
   const variant = item.variants.find((v) => v.color === worn.color) ?? item.variants[0]
-  return variant && `${import.meta.env.BASE_URL}${variant.file}`
+  if (!variant) return undefined
+  // Nem toda peca tem folha de caminhada; nesse caso a camada fica de fora.
+  const file = pose === 'walk' ? variant.walk : variant.file
+  return file && `${import.meta.env.BASE_URL}${file}`
 }
 
 export function ownedKey(category: Category, itemId: string): string {

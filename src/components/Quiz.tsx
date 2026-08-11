@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { Character } from './Character'
+import { Trail, sceneFor } from './Trail'
 import { MEDAL_EMOJI, QUESTIONS_PER_ROUND, STARS_PER_HIT, medalFor, mixedRound, roundForTable } from '../game/quiz'
 import type { Question } from '../game/quiz'
 import { sfx } from '../game/sfx'
@@ -54,11 +55,15 @@ export function Quiz({ table, outfit, unlockedTables, onFinish, onExit }: Props)
       sfx.wrong()
       setStreak(0)
     }
+    // No ultimo acerto vale esperar a caminhada terminar: e a hora em que ela
+    // chega no presente, o ponto alto da fase.
+    const last = index + 1 >= questions.length
+    const wait = right ? (last ? 1600 : 650) : 1200
     window.setTimeout(() => {
       setPicked(null)
-      if (index + 1 >= questions.length) setPhase('done')
+      if (last) setPhase('done')
       else setIndex((i) => i + 1)
-    }, right ? 650 : 1200)
+    }, wait)
   }
 
   if (phase === 'done') {
@@ -94,11 +99,7 @@ export function Quiz({ table, outfit, unlockedTables, onFinish, onExit }: Props)
         <span className="quiz__stars">{stars} ⭐</span>
       </header>
 
-      <Character
-        outfit={outfit}
-        scale={3}
-        className={picked === null ? '' : picked === question.answer ? 'character--bounce' : 'character--sad'}
-      />
+      <Trail outfit={outfit} step={hits} total={questions.length} scene={sceneFor(table)} />
 
       {streak >= 3 && <p className="quiz__streak">🔥 {streak} seguidas!</p>}
 

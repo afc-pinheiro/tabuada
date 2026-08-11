@@ -8,10 +8,16 @@ sem backend: todo o estado mora no `localStorage`.
 
 ## Como o jogo funciona
 
-Uma rodada = 10 perguntas de múltipla escolha. Cada acerto dá 3 ⭐, e a partir da 4ª
-seguida vale +2 de bônus. Estrelas compram peças na lojinha; comprar já veste a peça.
-Cada peça vem com todas as cores — a compra é por item, nunca por cor. Medalhas por
-tabuada: 🥉 6+ acertos, 🥈 8+, 🥇 10.
+A home é um **mapa de fases**: uma trilha serpenteando pelas tabuadas de 1 a 10, cada
+uma com um cenário próprio (campo/praia/floresta/neve/noite, ver `sceneFor`). O castelo
+no fim é o desafio misturado e só abre depois da primeira medalha — antes disso ele
+sortearia contas que a criança ainda não praticou.
+
+Uma fase = 10 perguntas de múltipla escolha. A tela mostra a **trilha**: a personagem
+começa na esquerda e **caminha um passo a cada acerto** até o presente no fim do
+caminho. Cada acerto dá 3 ⭐, e a partir da 4ª seguida vale +2 de bônus. Estrelas
+compram peças na lojinha; comprar já veste a peça. Cada peça vem com todas as cores — a
+compra é por item, nunca por cor. Medalhas: 🥉 6+ acertos, 🥈 8+, 🥇 10.
 
 ## Personagem em camadas
 
@@ -21,8 +27,20 @@ O personagem é uma pilha de PNGs de 64×64 desenhados no mesmo quadro, ordenado
 body 10 → head 20 → eyes 25 → legs 30 → feet 35 → torso 40 → hair 60 → hat 70
 ```
 
-Cada arquivo é `128x64`: dois quadros lado a lado, animados com `steps(2)` para o
-personagem "respirar". Só existe a vista frontal (linha sul do spritesheet LPC).
+Existem duas poses, definidas em `POSES` no script de assets e refletidas em
+`catalog.frames`:
+
+| Pose | Arquivo | Tamanho | Uso |
+| --- | --- | --- | --- |
+| `idle` | `<item>__<cor>.png` | 128×64 (2 quadros) | de frente, telas de vestir |
+| `walk` | `<item>__<cor>--walk.png` | 576×64 (9 quadros) | de perfil, trilha da fase |
+
+A animação é CSS puro: `.character__layer--idle` / `--walk` trocam o `background-size` e
+o `steps()` juntos. Se acrescentar uma pose, os três lugares precisam casar — script,
+`Pose` em `types.ts` e o CSS.
+
+Nem toda peça do LPC tem folha de caminhada; `spriteUrl` devolve `undefined` nesse caso
+e a camada simplesmente não entra na pose `walk`.
 
 **Cuidado:** `body` (corpo) e `head` (rosto) são categorias separadas de propósito —
 `outfit` guarda um item por categoria, então juntar as duas faz uma sumir. A cor de pele
@@ -51,6 +69,15 @@ Docker não roda Python.
 - App UUID: `xoxsq5xeo4xipaduki5snfuq`, projeto `tabuada` (`xeopf2epwrnfbsxjpo9pj3mc`)
 - Domínio: sslip.io por enquanto. Para trocar por `tabuada.acdev.com.br`, criar o CNAME
   na Cloudflare e mudar o FQDN da aplicação no Coolify.
+
+## Armadilhas já pagas
+
+- `save.progress` é indexado por tabuada **e** pela chave `'mix'`. Qualquer código que
+  transforme essas chaves em número precisa filtrar as não numéricas: um `NaN` vazando
+  para `makeQuestion` já congelou a aba inteira num loop infinito.
+- As perguntas da rodada são sorteadas **uma vez**, na montagem do `Quiz`. Não voltar a
+  derivá-las de props que mudam de identidade a cada render.
+- `npm test` cobre exatamente esses casos. Rodar antes de mexer em `src/game/quiz.ts`.
 
 ## Convenções
 

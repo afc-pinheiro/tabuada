@@ -63,17 +63,35 @@ body {
   position: absolute;
   inset: 0;
   background-repeat: no-repeat;
-  background-size: 128px 64px;
   image-rendering: pixelated;
-  animation: idle-frames 1.4s steps(2) infinite;
 }
 
-@keyframes idle-frames {
+/* Uma classe por pose: a largura da folha e a contagem de passos mudam junto. */
+.character__layer--idle {
+  background-size: 128px 64px;
+  animation: frames-2 1.4s steps(2) infinite;
+}
+
+.character__layer--walk {
+  background-size: 576px 64px;
+  animation: frames-9 0.75s steps(9) infinite;
+}
+
+@keyframes frames-2 {
   from {
     background-position: 0 0;
   }
   to {
     background-position: -128px 0;
+  }
+}
+
+@keyframes frames-9 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -576px 0;
   }
 }
 
@@ -107,8 +125,177 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .character__layer,
   .character--float,
-  .character--bounce {
+  .character--bounce,
+  .trail__cloud,
+  .trail__goal {
     animation: none;
+  }
+
+  .trail__walker {
+    transition: none;
+  }
+}
+
+/* ---------- trilha da fase ---------- */
+
+.trail {
+  position: relative;
+  width: 100%;
+  height: 168px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.12);
+  --sky-top: #7fd4ff;
+  --sky-bottom: #cdf1ff;
+  --hill: #63c86b;
+  --dirt: #b9834f;
+  --dirt-top: #d8a76c;
+  --orb: #fff3a8;
+}
+
+.trail--praia {
+  --sky-top: #6ec9ff;
+  --sky-bottom: #ffe6b8;
+  --hill: #48c4d6;
+  --dirt: #e6c98c;
+  --dirt-top: #f6e3b0;
+}
+
+.trail--floresta {
+  --sky-top: #8fdcb4;
+  --sky-bottom: #e2f7d4;
+  --hill: #2f8f5b;
+  --dirt: #8a6a3f;
+  --dirt-top: #a98551;
+}
+
+.trail--neve {
+  --sky-top: #a9c9f0;
+  --sky-bottom: #eaf4ff;
+  --hill: #cfe4f7;
+  --dirt: #dfeaf6;
+  --dirt-top: #ffffff;
+}
+
+.trail--noite {
+  --sky-top: #1b1147;
+  --sky-bottom: #4a2d7a;
+  --hill: #2c1c5c;
+  --dirt: #3a2a63;
+  --dirt-top: #57408c;
+  --orb: #fdfbe6;
+}
+
+.trail__sky {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, var(--sky-top), var(--sky-bottom));
+}
+
+.trail__orb {
+  position: absolute;
+  top: 16px;
+  right: 26px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--orb);
+  box-shadow: 0 0 22px var(--orb);
+}
+
+.trail__cloud {
+  position: absolute;
+  height: 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 14px -6px 0 2px rgba(255, 255, 255, 0.85);
+}
+
+.trail__cloud--a {
+  top: 24px;
+  width: 34px;
+  animation: drift 26s linear infinite;
+}
+
+.trail__cloud--b {
+  top: 52px;
+  width: 24px;
+  animation: drift 38s linear infinite reverse;
+}
+
+@keyframes drift {
+  from {
+    transform: translateX(-70px);
+  }
+  to {
+    transform: translateX(560px);
+  }
+}
+
+.trail__hills {
+  position: absolute;
+  left: -10%;
+  right: -10%;
+  bottom: 46px;
+  height: 62px;
+  background: var(--hill);
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  opacity: 0.9;
+}
+
+.trail__ground {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50px;
+  background: linear-gradient(180deg, var(--dirt-top) 0 8px, var(--dirt) 8px);
+}
+
+.trail__marks {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  top: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.trail__mark {
+  width: 8px;
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(0, 0, 0, 0.18);
+}
+
+.trail__mark--done {
+  background: var(--lemon);
+  box-shadow: 0 0 6px var(--lemon);
+}
+
+.trail__walker {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  width: 102px;
+  transition: left 0.9s ease-in-out;
+}
+
+.trail__goal {
+  position: absolute;
+  right: 8px;
+  bottom: 36px;
+  font-size: 30px;
+  animation: nudge 1.6s ease-in-out infinite;
+}
+
+.trail__goal--open {
+  animation: pop 0.5s ease 3;
+}
+
+@keyframes nudge {
+  50% {
+    transform: translateY(-5px) rotate(-6deg);
   }
 }
 
@@ -154,7 +341,7 @@ body {
   display: grid;
   place-items: center;
   width: 100%;
-  padding: 12px 0 4px;
+  padding: 4px 0;
   background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.06));
   border-radius: 20px;
 }
@@ -236,40 +423,141 @@ body {
   font-size: 18px;
 }
 
-/* ---------- grade de tabuadas ---------- */
+/* ---------- mapa de fases ---------- */
 
-.tables {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
+.map {
   width: 100%;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.22);
+  border-radius: 20px;
+  padding: 14px 12px 18px;
 }
 
-.table-btn {
+.map__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.map__count {
+  font-weight: 800;
+  font-size: 15px;
+  color: var(--lemon);
+}
+
+.map__trail {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   position: relative;
-  aspect-ratio: 1;
+}
+
+.map__row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+/* Pegadinhas ligando uma fase a proxima — a trilha serpenteia junto com os nos,
+   entao uma linha reta nao acompanharia. */
+.map__row:not(:last-child)::after {
+  content: '';
+  flex: none;
+  width: 26px;
+  height: 6px;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.3) 45%, transparent 46%);
+  background-size: 9px 6px;
+  background-repeat: repeat-x;
+}
+
+.map__row--boss {
+  margin-left: 0 !important;
+  justify-content: center;
+  margin-top: 6px;
+}
+
+.node {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   border: none;
-  border-radius: 16px;
+  border-radius: 999px;
+  padding: 8px 18px 8px 10px;
   background: linear-gradient(180deg, var(--panel-2), var(--panel));
   color: var(--ink);
-  font-family: var(--pixel);
-  font-size: 16px;
   cursor: pointer;
   box-shadow: var(--shadow);
-  display: grid;
-  place-items: center;
 }
 
-.table-btn:active {
+.node:active:not(:disabled) {
   transform: translateY(3px);
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.35);
 }
 
-.table-btn__medal {
-  position: absolute;
-  right: 2px;
-  bottom: 0;
-  font-size: 15px;
+.node--campo {
+  background: linear-gradient(180deg, #6fbf73, #3f8f52);
+}
+
+.node--praia {
+  background: linear-gradient(180deg, #5cc9d8, #2b8ea6);
+}
+
+.node--floresta {
+  background: linear-gradient(180deg, #4fae7a, #23694a);
+}
+
+.node--neve {
+  background: linear-gradient(180deg, #9fc6ea, #5b84b3);
+}
+
+.node--noite {
+  background: linear-gradient(180deg, #6a4fb5, #3a2570);
+}
+
+.node--done {
+  box-shadow: var(--shadow), 0 0 0 3px var(--lemon);
+}
+
+.node--boss {
+  background: linear-gradient(180deg, var(--pink), var(--pink-dark));
+  padding-right: 22px;
+}
+
+.node--locked {
+  background: rgba(255, 255, 255, 0.1);
+  opacity: 0.6;
+  cursor: default;
+}
+
+.node__scene {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.node__n {
+  font-family: var(--pixel);
+  font-size: 16px;
+}
+
+.node__n--boss {
+  font-family: var(--round);
+  font-weight: 800;
+  font-size: 17px;
+}
+
+.node__medal {
+  font-size: 18px;
+  margin-left: 2px;
+}
+
+.map__hint {
+  margin: 10px 0 0;
+  text-align: center;
+  font-size: 14px;
+  color: var(--ink-dim);
 }
 
 /* ---------- quiz ---------- */

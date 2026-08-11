@@ -9,6 +9,10 @@
     "hair": 60,
     "hat": 70
   },
+  "frames": {
+    "idle": 2,
+    "walk": 9
+  },
   "categories": {
     "body": [
       {
@@ -20,44 +24,51 @@
           {
             "color": "light",
             "label": "Clara",
-            "swatch": "#f9d5ba",
-            "file": "sprites/body/corpo__light.png"
+            "file": "sprites/body/corpo__light.png",
+            "walk": "sprites/body/corpo__light--walk.png",
+            "swatch": "#f9d5ba"
           },
           {
             "color": "amber",
             "label": "Ambar",
-            "swatch": "#fdd082",
-            "file": "sprites/body/corpo__amber.png"
+            "file": "sprites/body/corpo__amber.png",
+            "walk": "sprites/body/corpo__amber--walk.png",
+            "swatch": "#fdd082"
           },
           {
             "color": "olive",
             "label": "Oliva",
-            "swatch": "#d38b59",
-            "file": "sprites/body/corpo__olive.png"
+            "file": "sprites/body/corpo__olive.png",
+            "walk": "sprites/body/corpo__olive--walk.png",
+            "swatch": "#d38b59"
           },
           {
             "color": "taupe",
             "label": "Morena",
-            "swatch": "#ba8454",
-            "file": "sprites/body/corpo__taupe.png"
+            "file": "sprites/body/corpo__taupe.png",
+            "walk": "sprites/body/corpo__taupe--walk.png",
+            "swatch": "#ba8454"
           },
           {
             "color": "bronze",
             "label": "Bronze",
-            "swatch": "#ae6b3f",
-            "file": "sprites/body/corpo__bronze.png"
+            "file": "sprites/body/corpo__bronze.png",
+            "walk": "sprites/body/corpo__bronze--walk.png",
+            "swatch": "#ae6b3f"
           },
           {
             "color": "brown",
             "label": "Castanha",
-            "swatch": "#9c663e",
-            "file": "sprites/body/corpo__brown.png"
+            "file": "sprites/body/corpo__brown.png",
+            "walk": "sprites/body/corpo__brown--walk.png",
+            "swatch": "#9c663e"
           },
           {
             "color": "black",
             "label": "Negra",
-            "swatch": "#603429",
-            "file": "sprites/body/corpo__black.png"
+            "file": "sprites/body/corpo__black.png",
+            "walk": "sprites/body/corpo__black--walk.png",
+            "swatch": "#603429"
           }
         ]
       }
@@ -72,44 +83,51 @@
           {
             "color": "light",
             "label": "Clara",
-            "swatch": "#f9d5ba",
-            "file": "sprites/head/cabeca__light.png"
+            "file": "sprites/head/cabeca__light.png",
+            "walk": "sprites/head/cabeca__light--walk.png",
+            "swatch": "#f9d5ba"
           },
           {
             "color": "amber",
             "label": "Ambar",
-            "swatch": "#fdd082",
-            "file": "sprites/head/cabeca__amber.png"
+            "file": "sprites/head/cabeca__amber.png",
+            "walk": "sprites/head/cabeca__amber--walk.png",
+            "swatch": "#fdd082"
           },
           {
             "color": "olive",
             "label": "Oliva",
-            "swatch": "#d38b59",
-            "file": "sprites/head/cabeca__olive.png"
+            "file": "sprites/head/cabeca__olive.png",
+            "walk": "sprites/head/cabeca__olive--walk.png",
+            "swatch": "#d38b59"
           },
           {
             "color": "taupe",
             "label": "Morena",
-            "swatch": "#ba8454",
-            "file": "sprites/head/cabeca__taupe.png"
+            "file": "sprites/head/cabeca__taupe.png",
+            "walk": "sprites/head/cabeca__taupe--walk.png",
+            "swatch": "#ba8454"
           },
           {
             "color": "bronze",
             "label": "Bronze",
-            "swatch": "#ae6b3f",
-            "file": "sprites/head/cabeca__bronze.png"
+            "file": "sprites/head/cabeca__bronze.png",
+            "walk": "sprites/head/cabeca__bronze--walk.png",
+            "swatch": "#ae6b3f"
           },
           {
             "color": "brown",
             "label": "Castanha",
-            "swatch": "#9c663e",
-            "file": "sprites/head/cabeca__brown.png"
+            "file": "sprites/head/cabeca__brown.png",
+            "walk": "sprites/head/cabeca__brown--walk.png",
+            "swatch": "#9c663e"
           },
           {
             "color": "black",
             "label": "Negra",
-            "swatch": "#603429",
-            "file": "sprites/head/cabeca__black.png"
+            "file": "sprites/head/cabeca__black.png",
+            "walk": "sprites/head/cabeca__black--walk.png",
+            "swatch": "#603429"
           }
         ]
       }
@@ -124,32 +142,37 @@
           {
             "color": "brown",
             "label": "Castanha",
-            "swatch": "#7e4e20",
-            "file": "sprites/eyes/olhos__brown.png"
+            "file": "sprites/eyes/olhos__brown.png",
+            "walk": "sprites/eyes/olhos__brown--walk.png",
+            "swatch": "#7e4e20"
           },
           {
             "color": "blue",
             "label": "Azul",
-            "swatch": "#50d4ec",
-            "file": "sprites/eyes/olhos__blue.png"
+            "file": "sprites/eyes/olhos__blue.png",
+            "walk": "sprites/eyes/olhos__blue--walk.png",
+            "swatch": "#50d4ec"
           },
           {
             "color": "green",
             "label": "Verde",
-            "swatch": "#84ec50",
-            "file": "sprites/eyes/olhos__green.png"
+            "file": "sprites/eyes/olhos__green.png",
+            "walk": "sprites/eyes/olhos__green--walk.png",
+            "swatch": "#84ec50"
           },
           {
             "color": "gray",
             "label": "Cinza",
-            "swatch": "#ada18f",
-            "file": "sprites/eyes/olhos__gray.png"
+            "file": "sprites/eyes/olhos__gray.png",
+            "walk": "sprites/eyes/olhos__gray--walk.png",
+            "swatch": "#ada18f"
           },
           {
             "color": "purple",
             "label": "Roxo",
-            "swatch": "#eba0e0",
-            "file": "sprites/eyes/olhos__purple.png"
+            "file": "sprites/eyes/olhos__purple.png",
+            "walk": "sprites/eyes/olhos__purple--walk.png",
+            "swatch": "#eba0e0"
           }
         ]
       }
@@ -164,56 +187,65 @@
           {
             "color": "blonde",
             "label": "Loiro",
-            "swatch": "#fccf56",
-            "file": "sprites/hair/maria-chiquinha__blonde.png"
+            "file": "sprites/hair/maria-chiquinha__blonde.png",
+            "walk": "sprites/hair/maria-chiquinha__blonde--walk.png",
+            "swatch": "#fccf56"
           },
           {
             "color": "carrot",
             "label": "Ruivo",
-            "swatch": "#f68764",
-            "file": "sprites/hair/maria-chiquinha__carrot.png"
+            "file": "sprites/hair/maria-chiquinha__carrot.png",
+            "walk": "sprites/hair/maria-chiquinha__carrot--walk.png",
+            "swatch": "#f68764"
           },
           {
             "color": "chestnut",
             "label": "Castanho",
-            "swatch": "#b6550e",
-            "file": "sprites/hair/maria-chiquinha__chestnut.png"
+            "file": "sprites/hair/maria-chiquinha__chestnut.png",
+            "walk": "sprites/hair/maria-chiquinha__chestnut--walk.png",
+            "swatch": "#b6550e"
           },
           {
             "color": "raven",
             "label": "Preto",
-            "swatch": "#0d384d",
-            "file": "sprites/hair/maria-chiquinha__raven.png"
+            "file": "sprites/hair/maria-chiquinha__raven.png",
+            "walk": "sprites/hair/maria-chiquinha__raven--walk.png",
+            "swatch": "#0d384d"
           },
           {
             "color": "redhead",
             "label": "Acaju",
-            "swatch": "#c7341b",
-            "file": "sprites/hair/maria-chiquinha__redhead.png"
+            "file": "sprites/hair/maria-chiquinha__redhead.png",
+            "walk": "sprites/hair/maria-chiquinha__redhead--walk.png",
+            "swatch": "#c7341b"
           },
           {
             "color": "platinum",
             "label": "Platinado",
-            "swatch": "#eddf95",
-            "file": "sprites/hair/maria-chiquinha__platinum.png"
+            "file": "sprites/hair/maria-chiquinha__platinum.png",
+            "walk": "sprites/hair/maria-chiquinha__platinum--walk.png",
+            "swatch": "#eddf95"
           },
           {
             "color": "pink",
             "label": "Rosa",
-            "swatch": "#e976c4",
-            "file": "sprites/hair/maria-chiquinha__pink.png"
+            "file": "sprites/hair/maria-chiquinha__pink.png",
+            "walk": "sprites/hair/maria-chiquinha__pink--walk.png",
+            "swatch": "#e976c4"
           },
           {
             "color": "purple",
             "label": "Roxo",
-            "swatch": "#a966dd",
-            "file": "sprites/hair/maria-chiquinha__purple.png"
+            "file": "sprites/hair/maria-chiquinha__purple.png",
+            "walk": "sprites/hair/maria-chiquinha__purple--walk.png",
+            "swatch": "#a966dd"
           },
           {
             "color": "blue",
             "label": "Azul",
-            "swatch": "#0074cb",
-            "file": "sprites/hair/maria-chiquinha__blue.png"
+            "file": "sprites/hair/maria-chiquinha__blue.png",
+            "walk": "sprites/hair/maria-chiquinha__blue--walk.png",
+            "swatch": "#0074cb"
           }
         ]
       },
@@ -226,56 +258,65 @@
           {
             "color": "blonde",
             "label": "Loiro",
-            "swatch": "#fccf56",
-            "file": "sprites/hair/franjinha__blonde.png"
+            "file": "sprites/hair/franjinha__blonde.png",
+            "walk": "sprites/hair/franjinha__blonde--walk.png",
+            "swatch": "#fccf56"
           },
           {
             "color": "carrot",
             "label": "Ruivo",
-            "swatch": "#f68764",
-            "file": "sprites/hair/franjinha__carrot.png"
+            "file": "sprites/hair/franjinha__carrot.png",
+            "walk": "sprites/hair/franjinha__carrot--walk.png",
+            "swatch": "#f68764"
           },
           {
             "color": "chestnut",
             "label": "Castanho",
-            "swatch": "#b6550e",
-            "file": "sprites/hair/franjinha__chestnut.png"
+            "file": "sprites/hair/franjinha__chestnut.png",
+            "walk": "sprites/hair/franjinha__chestnut--walk.png",
+            "swatch": "#b6550e"
           },
           {
             "color": "raven",
             "label": "Preto",
-            "swatch": "#0d384d",
-            "file": "sprites/hair/franjinha__raven.png"
+            "file": "sprites/hair/franjinha__raven.png",
+            "walk": "sprites/hair/franjinha__raven--walk.png",
+            "swatch": "#0d384d"
           },
           {
             "color": "redhead",
             "label": "Acaju",
-            "swatch": "#c7341b",
-            "file": "sprites/hair/franjinha__redhead.png"
+            "file": "sprites/hair/franjinha__redhead.png",
+            "walk": "sprites/hair/franjinha__redhead--walk.png",
+            "swatch": "#c7341b"
           },
           {
             "color": "platinum",
             "label": "Platinado",
-            "swatch": "#eddf95",
-            "file": "sprites/hair/franjinha__platinum.png"
+            "file": "sprites/hair/franjinha__platinum.png",
+            "walk": "sprites/hair/franjinha__platinum--walk.png",
+            "swatch": "#eddf95"
           },
           {
             "color": "pink",
             "label": "Rosa",
-            "swatch": "#e976c4",
-            "file": "sprites/hair/franjinha__pink.png"
+            "file": "sprites/hair/franjinha__pink.png",
+            "walk": "sprites/hair/franjinha__pink--walk.png",
+            "swatch": "#e976c4"
           },
           {
             "color": "purple",
             "label": "Roxo",
-            "swatch": "#a966dd",
-            "file": "sprites/hair/franjinha__purple.png"
+            "file": "sprites/hair/franjinha__purple.png",
+            "walk": "sprites/hair/franjinha__purple--walk.png",
+            "swatch": "#a966dd"
           },
           {
             "color": "blue",
             "label": "Azul",
-            "swatch": "#0074cb",
-            "file": "sprites/hair/franjinha__blue.png"
+            "file": "sprites/hair/franjinha__blue.png",
+            "walk": "sprites/hair/franjinha__blue--walk.png",
+            "swatch": "#0074cb"
           }
         ]
       },
@@ -288,56 +329,65 @@
           {
             "color": "blonde",
             "label": "Loiro",
-            "swatch": "#fccf56",
-            "file": "sprites/hair/liso-longo__blonde.png"
+            "file": "sprites/hair/liso-longo__blonde.png",
+            "walk": "sprites/hair/liso-longo__blonde--walk.png",
+            "swatch": "#fccf56"
           },
           {
             "color": "carrot",
             "label": "Ruivo",
-            "swatch": "#f68764",
-            "file": "sprites/hair/liso-longo__carrot.png"
+            "file": "sprites/hair/liso-longo__carrot.png",
+            "walk": "sprites/hair/liso-longo__carrot--walk.png",
+            "swatch": "#f68764"
           },
           {
             "color": "chestnut",
             "label": "Castanho",
-            "swatch": "#b6550e",
-            "file": "sprites/hair/liso-longo__chestnut.png"
+            "file": "sprites/hair/liso-longo__chestnut.png",
+            "walk": "sprites/hair/liso-longo__chestnut--walk.png",
+            "swatch": "#b6550e"
           },
           {
             "color": "raven",
             "label": "Preto",
-            "swatch": "#0d384d",
-            "file": "sprites/hair/liso-longo__raven.png"
+            "file": "sprites/hair/liso-longo__raven.png",
+            "walk": "sprites/hair/liso-longo__raven--walk.png",
+            "swatch": "#0d384d"
           },
           {
             "color": "redhead",
             "label": "Acaju",
-            "swatch": "#c7341b",
-            "file": "sprites/hair/liso-longo__redhead.png"
+            "file": "sprites/hair/liso-longo__redhead.png",
+            "walk": "sprites/hair/liso-longo__redhead--walk.png",
+            "swatch": "#c7341b"
           },
           {
             "color": "platinum",
             "label": "Platinado",
-            "swatch": "#eddf95",
-            "file": "sprites/hair/liso-longo__platinum.png"
+            "file": "sprites/hair/liso-longo__platinum.png",
+            "walk": "sprites/hair/liso-longo__platinum--walk.png",
+            "swatch": "#eddf95"
           },
           {
             "color": "pink",
             "label": "Rosa",
-            "swatch": "#e976c4",
-            "file": "sprites/hair/liso-longo__pink.png"
+            "file": "sprites/hair/liso-longo__pink.png",
+            "walk": "sprites/hair/liso-longo__pink--walk.png",
+            "swatch": "#e976c4"
           },
           {
             "color": "purple",
             "label": "Roxo",
-            "swatch": "#a966dd",
-            "file": "sprites/hair/liso-longo__purple.png"
+            "file": "sprites/hair/liso-longo__purple.png",
+            "walk": "sprites/hair/liso-longo__purple--walk.png",
+            "swatch": "#a966dd"
           },
           {
             "color": "blue",
             "label": "Azul",
-            "swatch": "#0074cb",
-            "file": "sprites/hair/liso-longo__blue.png"
+            "file": "sprites/hair/liso-longo__blue.png",
+            "walk": "sprites/hair/liso-longo__blue--walk.png",
+            "swatch": "#0074cb"
           }
         ]
       },
@@ -350,56 +400,65 @@
           {
             "color": "blonde",
             "label": "Loiro",
-            "swatch": "#fccf56",
-            "file": "sprites/hair/chanel__blonde.png"
+            "file": "sprites/hair/chanel__blonde.png",
+            "walk": "sprites/hair/chanel__blonde--walk.png",
+            "swatch": "#fccf56"
           },
           {
             "color": "carrot",
             "label": "Ruivo",
-            "swatch": "#f68764",
-            "file": "sprites/hair/chanel__carrot.png"
+            "file": "sprites/hair/chanel__carrot.png",
+            "walk": "sprites/hair/chanel__carrot--walk.png",
+            "swatch": "#f68764"
           },
           {
             "color": "chestnut",
             "label": "Castanho",
-            "swatch": "#b6550e",
-            "file": "sprites/hair/chanel__chestnut.png"
+            "file": "sprites/hair/chanel__chestnut.png",
+            "walk": "sprites/hair/chanel__chestnut--walk.png",
+            "swatch": "#b6550e"
           },
           {
             "color": "raven",
             "label": "Preto",
-            "swatch": "#0d384d",
-            "file": "sprites/hair/chanel__raven.png"
+            "file": "sprites/hair/chanel__raven.png",
+            "walk": "sprites/hair/chanel__raven--walk.png",
+            "swatch": "#0d384d"
           },
           {
             "color": "redhead",
             "label": "Acaju",
-            "swatch": "#c7341b",
-            "file": "sprites/hair/chanel__redhead.png"
+            "file": "sprites/hair/chanel__redhead.png",
+            "walk": "sprites/hair/chanel__redhead--walk.png",
+            "swatch": "#c7341b"
           },
           {
             "color": "platinum",
             "label": "Platinado",
-            "swatch": "#eddf95",
-            "file": "sprites/hair/chanel__platinum.png"
+            "file": "sprites/hair/chanel__platinum.png",
+            "walk": "sprites/hair/chanel__platinum--walk.png",
+            "swatch": "#eddf95"
           },
           {
             "color": "pink",
             "label": "Rosa",
-            "swatch": "#e976c4",
-            "file": "sprites/hair/chanel__pink.png"
+            "file": "sprites/hair/chanel__pink.png",
+            "walk": "sprites/hair/chanel__pink--walk.png",
+            "swatch": "#e976c4"
           },
           {
             "color": "purple",
             "label": "Roxo",
-            "swatch": "#a966dd",
-            "file": "sprites/hair/chanel__purple.png"
+            "file": "sprites/hair/chanel__purple.png",
+            "walk": "sprites/hair/chanel__purple--walk.png",
+            "swatch": "#a966dd"
           },
           {
             "color": "blue",
             "label": "Azul",
-            "swatch": "#0074cb",
-            "file": "sprites/hair/chanel__blue.png"
+            "file": "sprites/hair/chanel__blue.png",
+            "walk": "sprites/hair/chanel__blue--walk.png",
+            "swatch": "#0074cb"
           }
         ]
       },
@@ -412,56 +471,65 @@
           {
             "color": "blonde",
             "label": "Loiro",
-            "swatch": "#fccf56",
-            "file": "sprites/hair/cacheado__blonde.png"
+            "file": "sprites/hair/cacheado__blonde.png",
+            "walk": "sprites/hair/cacheado__blonde--walk.png",
+            "swatch": "#fccf56"
           },
           {
             "color": "carrot",
             "label": "Ruivo",
-            "swatch": "#f68764",
-            "file": "sprites/hair/cacheado__carrot.png"
+            "file": "sprites/hair/cacheado__carrot.png",
+            "walk": "sprites/hair/cacheado__carrot--walk.png",
+            "swatch": "#f68764"
           },
           {
             "color": "chestnut",
             "label": "Castanho",
-            "swatch": "#b6550e",
-            "file": "sprites/hair/cacheado__chestnut.png"
+            "file": "sprites/hair/cacheado__chestnut.png",
+            "walk": "sprites/hair/cacheado__chestnut--walk.png",
+            "swatch": "#b6550e"
           },
           {
             "color": "raven",
             "label": "Preto",
-            "swatch": "#0d384d",
-            "file": "sprites/hair/cacheado__raven.png"
+            "file": "sprites/hair/cacheado__raven.png",
+            "walk": "sprites/hair/cacheado__raven--walk.png",
+            "swatch": "#0d384d"
           },
           {
             "color": "redhead",
             "label": "Acaju",
-            "swatch": "#c7341b",
-            "file": "sprites/hair/cacheado__redhead.png"
+            "file": "sprites/hair/cacheado__redhead.png",
+            "walk": "sprites/hair/cacheado__redhead--walk.png",
+            "swatch": "#c7341b"
           },
           {
             "color": "platinum",
             "label": "Platinado",
-            "swatch": "#eddf95",
-            "file": "sprites/hair/cacheado__platinum.png"
+            "file": "sprites/hair/cacheado__platinum.png",
+            "walk": "sprites/hair/cacheado__platinum--walk.png",
+            "swatch": "#eddf95"
           },
           {
             "color": "pink",
             "label": "Rosa",
-            "swatch": "#e976c4",
-            "file": "sprites/hair/cacheado__pink.png"
+            "file": "sprites/hair/cacheado__pink.png",
+            "walk": "sprites/hair/cacheado__pink--walk.png",
+            "swatch": "#e976c4"
           },
           {
             "color": "purple",
             "label": "Roxo",
-            "swatch": "#a966dd",
-            "file": "sprites/hair/cacheado__purple.png"
+            "file": "sprites/hair/cacheado__purple.png",
+            "walk": "sprites/hair/cacheado__purple--walk.png",
+            "swatch": "#a966dd"
           },
           {
             "color": "blue",
             "label": "Azul",
-            "swatch": "#0074cb",
-            "file": "sprites/hair/cacheado__blue.png"
+            "file": "sprites/hair/cacheado__blue.png",
+            "walk": "sprites/hair/cacheado__blue--walk.png",
+            "swatch": "#0074cb"
           }
         ]
       },
@@ -474,56 +542,65 @@
           {
             "color": "blonde",
             "label": "Loiro",
-            "swatch": "#fccf56",
-            "file": "sprites/hair/black-power__blonde.png"
+            "file": "sprites/hair/black-power__blonde.png",
+            "walk": "sprites/hair/black-power__blonde--walk.png",
+            "swatch": "#fccf56"
           },
           {
             "color": "carrot",
             "label": "Ruivo",
-            "swatch": "#f68764",
-            "file": "sprites/hair/black-power__carrot.png"
+            "file": "sprites/hair/black-power__carrot.png",
+            "walk": "sprites/hair/black-power__carrot--walk.png",
+            "swatch": "#f68764"
           },
           {
             "color": "chestnut",
             "label": "Castanho",
-            "swatch": "#b6550e",
-            "file": "sprites/hair/black-power__chestnut.png"
+            "file": "sprites/hair/black-power__chestnut.png",
+            "walk": "sprites/hair/black-power__chestnut--walk.png",
+            "swatch": "#b6550e"
           },
           {
             "color": "raven",
             "label": "Preto",
-            "swatch": "#0d384d",
-            "file": "sprites/hair/black-power__raven.png"
+            "file": "sprites/hair/black-power__raven.png",
+            "walk": "sprites/hair/black-power__raven--walk.png",
+            "swatch": "#0d384d"
           },
           {
             "color": "redhead",
             "label": "Acaju",
-            "swatch": "#c7341b",
-            "file": "sprites/hair/black-power__redhead.png"
+            "file": "sprites/hair/black-power__redhead.png",
+            "walk": "sprites/hair/black-power__redhead--walk.png",
+            "swatch": "#c7341b"
           },
           {
             "color": "platinum",
             "label": "Platinado",
-            "swatch": "#eddf95",
-            "file": "sprites/hair/black-power__platinum.png"
+            "file": "sprites/hair/black-power__platinum.png",
+            "walk": "sprites/hair/black-power__platinum--walk.png",
+            "swatch": "#eddf95"
           },
           {
             "color": "pink",
             "label": "Rosa",
-            "swatch": "#e976c4",
-            "file": "sprites/hair/black-power__pink.png"
+            "file": "sprites/hair/black-power__pink.png",
+            "walk": "sprites/hair/black-power__pink--walk.png",
+            "swatch": "#e976c4"
           },
           {
             "color": "purple",
             "label": "Roxo",
-            "swatch": "#a966dd",
-            "file": "sprites/hair/black-power__purple.png"
+            "file": "sprites/hair/black-power__purple.png",
+            "walk": "sprites/hair/black-power__purple--walk.png",
+            "swatch": "#a966dd"
           },
           {
             "color": "blue",
             "label": "Azul",
-            "swatch": "#0074cb",
-            "file": "sprites/hair/black-power__blue.png"
+            "file": "sprites/hair/black-power__blue.png",
+            "walk": "sprites/hair/black-power__blue--walk.png",
+            "swatch": "#0074cb"
           }
         ]
       },
@@ -536,56 +613,65 @@
           {
             "color": "blonde",
             "label": "Loiro",
-            "swatch": "#fccf56",
-            "file": "sprites/hair/meio-preso__blonde.png"
+            "file": "sprites/hair/meio-preso__blonde.png",
+            "walk": "sprites/hair/meio-preso__blonde--walk.png",
+            "swatch": "#fccf56"
           },
           {
             "color": "carrot",
             "label": "Ruivo",
-            "swatch": "#f68764",
-            "file": "sprites/hair/meio-preso__carrot.png"
+            "file": "sprites/hair/meio-preso__carrot.png",
+            "walk": "sprites/hair/meio-preso__carrot--walk.png",
+            "swatch": "#f68764"
           },
           {
             "color": "chestnut",
             "label": "Castanho",
-            "swatch": "#b6550e",
-            "file": "sprites/hair/meio-preso__chestnut.png"
+            "file": "sprites/hair/meio-preso__chestnut.png",
+            "walk": "sprites/hair/meio-preso__chestnut--walk.png",
+            "swatch": "#b6550e"
           },
           {
             "color": "raven",
             "label": "Preto",
-            "swatch": "#0d384d",
-            "file": "sprites/hair/meio-preso__raven.png"
+            "file": "sprites/hair/meio-preso__raven.png",
+            "walk": "sprites/hair/meio-preso__raven--walk.png",
+            "swatch": "#0d384d"
           },
           {
             "color": "redhead",
             "label": "Acaju",
-            "swatch": "#c7341b",
-            "file": "sprites/hair/meio-preso__redhead.png"
+            "file": "sprites/hair/meio-preso__redhead.png",
+            "walk": "sprites/hair/meio-preso__redhead--walk.png",
+            "swatch": "#c7341b"
           },
           {
             "color": "platinum",
             "label": "Platinado",
-            "swatch": "#eddf95",
-            "file": "sprites/hair/meio-preso__platinum.png"
+            "file": "sprites/hair/meio-preso__platinum.png",
+            "walk": "sprites/hair/meio-preso__platinum--walk.png",
+            "swatch": "#eddf95"
           },
           {
             "color": "pink",
             "label": "Rosa",
-            "swatch": "#e976c4",
-            "file": "sprites/hair/meio-preso__pink.png"
+            "file": "sprites/hair/meio-preso__pink.png",
+            "walk": "sprites/hair/meio-preso__pink--walk.png",
+            "swatch": "#e976c4"
           },
           {
             "color": "purple",
             "label": "Roxo",
-            "swatch": "#a966dd",
-            "file": "sprites/hair/meio-preso__purple.png"
+            "file": "sprites/hair/meio-preso__purple.png",
+            "walk": "sprites/hair/meio-preso__purple--walk.png",
+            "swatch": "#a966dd"
           },
           {
             "color": "blue",
             "label": "Azul",
-            "swatch": "#0074cb",
-            "file": "sprites/hair/meio-preso__blue.png"
+            "file": "sprites/hair/meio-preso__blue.png",
+            "walk": "sprites/hair/meio-preso__blue--walk.png",
+            "swatch": "#0074cb"
           }
         ]
       },
@@ -598,56 +684,65 @@
           {
             "color": "blonde",
             "label": "Loiro",
-            "swatch": "#fccf56",
-            "file": "sprites/hair/estrela-pop__blonde.png"
+            "file": "sprites/hair/estrela-pop__blonde.png",
+            "walk": "sprites/hair/estrela-pop__blonde--walk.png",
+            "swatch": "#fccf56"
           },
           {
             "color": "carrot",
             "label": "Ruivo",
-            "swatch": "#f68764",
-            "file": "sprites/hair/estrela-pop__carrot.png"
+            "file": "sprites/hair/estrela-pop__carrot.png",
+            "walk": "sprites/hair/estrela-pop__carrot--walk.png",
+            "swatch": "#f68764"
           },
           {
             "color": "chestnut",
             "label": "Castanho",
-            "swatch": "#b6550e",
-            "file": "sprites/hair/estrela-pop__chestnut.png"
+            "file": "sprites/hair/estrela-pop__chestnut.png",
+            "walk": "sprites/hair/estrela-pop__chestnut--walk.png",
+            "swatch": "#b6550e"
           },
           {
             "color": "raven",
             "label": "Preto",
-            "swatch": "#0d384d",
-            "file": "sprites/hair/estrela-pop__raven.png"
+            "file": "sprites/hair/estrela-pop__raven.png",
+            "walk": "sprites/hair/estrela-pop__raven--walk.png",
+            "swatch": "#0d384d"
           },
           {
             "color": "redhead",
             "label": "Acaju",
-            "swatch": "#c7341b",
-            "file": "sprites/hair/estrela-pop__redhead.png"
+            "file": "sprites/hair/estrela-pop__redhead.png",
+            "walk": "sprites/hair/estrela-pop__redhead--walk.png",
+            "swatch": "#c7341b"
           },
           {
             "color": "platinum",
             "label": "Platinado",
-            "swatch": "#eddf95",
-            "file": "sprites/hair/estrela-pop__platinum.png"
+            "file": "sprites/hair/estrela-pop__platinum.png",
+            "walk": "sprites/hair/estrela-pop__platinum--walk.png",
+            "swatch": "#eddf95"
           },
           {
             "color": "pink",
             "label": "Rosa",
-            "swatch": "#e976c4",
-            "file": "sprites/hair/estrela-pop__pink.png"
+            "file": "sprites/hair/estrela-pop__pink.png",
+            "walk": "sprites/hair/estrela-pop__pink--walk.png",
+            "swatch": "#e976c4"
           },
           {
             "color": "purple",
             "label": "Roxo",
-            "swatch": "#a966dd",
-            "file": "sprites/hair/estrela-pop__purple.png"
+            "file": "sprites/hair/estrela-pop__purple.png",
+            "walk": "sprites/hair/estrela-pop__purple--walk.png",
+            "swatch": "#a966dd"
           },
           {
             "color": "blue",
             "label": "Azul",
-            "swatch": "#0074cb",
-            "file": "sprites/hair/estrela-pop__blue.png"
+            "file": "sprites/hair/estrela-pop__blue.png",
+            "walk": "sprites/hair/estrela-pop__blue--walk.png",
+            "swatch": "#0074cb"
           }
         ]
       },
@@ -660,56 +755,65 @@
           {
             "color": "blonde",
             "label": "Loiro",
-            "swatch": "#fccf56",
-            "file": "sprites/hair/curtinho__blonde.png"
+            "file": "sprites/hair/curtinho__blonde.png",
+            "walk": "sprites/hair/curtinho__blonde--walk.png",
+            "swatch": "#fccf56"
           },
           {
             "color": "carrot",
             "label": "Ruivo",
-            "swatch": "#f68764",
-            "file": "sprites/hair/curtinho__carrot.png"
+            "file": "sprites/hair/curtinho__carrot.png",
+            "walk": "sprites/hair/curtinho__carrot--walk.png",
+            "swatch": "#f68764"
           },
           {
             "color": "chestnut",
             "label": "Castanho",
-            "swatch": "#b6550e",
-            "file": "sprites/hair/curtinho__chestnut.png"
+            "file": "sprites/hair/curtinho__chestnut.png",
+            "walk": "sprites/hair/curtinho__chestnut--walk.png",
+            "swatch": "#b6550e"
           },
           {
             "color": "raven",
             "label": "Preto",
-            "swatch": "#0d384d",
-            "file": "sprites/hair/curtinho__raven.png"
+            "file": "sprites/hair/curtinho__raven.png",
+            "walk": "sprites/hair/curtinho__raven--walk.png",
+            "swatch": "#0d384d"
           },
           {
             "color": "redhead",
             "label": "Acaju",
-            "swatch": "#c7341b",
-            "file": "sprites/hair/curtinho__redhead.png"
+            "file": "sprites/hair/curtinho__redhead.png",
+            "walk": "sprites/hair/curtinho__redhead--walk.png",
+            "swatch": "#c7341b"
           },
           {
             "color": "platinum",
             "label": "Platinado",
-            "swatch": "#eddf95",
-            "file": "sprites/hair/curtinho__platinum.png"
+            "file": "sprites/hair/curtinho__platinum.png",
+            "walk": "sprites/hair/curtinho__platinum--walk.png",
+            "swatch": "#eddf95"
           },
           {
             "color": "pink",
             "label": "Rosa",
-            "swatch": "#e976c4",
-            "file": "sprites/hair/curtinho__pink.png"
+            "file": "sprites/hair/curtinho__pink.png",
+            "walk": "sprites/hair/curtinho__pink--walk.png",
+            "swatch": "#e976c4"
           },
           {
             "color": "purple",
             "label": "Roxo",
-            "swatch": "#a966dd",
-            "file": "sprites/hair/curtinho__purple.png"
+            "file": "sprites/hair/curtinho__purple.png",
+            "walk": "sprites/hair/curtinho__purple--walk.png",
+            "swatch": "#a966dd"
           },
           {
             "color": "blue",
             "label": "Azul",
-            "swatch": "#0074cb",
-            "file": "sprites/hair/curtinho__blue.png"
+            "file": "sprites/hair/curtinho__blue.png",
+            "walk": "sprites/hair/curtinho__blue--walk.png",
+            "swatch": "#0074cb"
           }
         ]
       },
@@ -722,56 +826,65 @@
           {
             "color": "blonde",
             "label": "Loiro",
-            "swatch": "#fccf56",
-            "file": "sprites/hair/trancinhas__blonde.png"
+            "file": "sprites/hair/trancinhas__blonde.png",
+            "walk": "sprites/hair/trancinhas__blonde--walk.png",
+            "swatch": "#fccf56"
           },
           {
             "color": "carrot",
             "label": "Ruivo",
-            "swatch": "#f68764",
-            "file": "sprites/hair/trancinhas__carrot.png"
+            "file": "sprites/hair/trancinhas__carrot.png",
+            "walk": "sprites/hair/trancinhas__carrot--walk.png",
+            "swatch": "#f68764"
           },
           {
             "color": "chestnut",
             "label": "Castanho",
-            "swatch": "#b6550e",
-            "file": "sprites/hair/trancinhas__chestnut.png"
+            "file": "sprites/hair/trancinhas__chestnut.png",
+            "walk": "sprites/hair/trancinhas__chestnut--walk.png",
+            "swatch": "#b6550e"
           },
           {
             "color": "raven",
             "label": "Preto",
-            "swatch": "#0d384d",
-            "file": "sprites/hair/trancinhas__raven.png"
+            "file": "sprites/hair/trancinhas__raven.png",
+            "walk": "sprites/hair/trancinhas__raven--walk.png",
+            "swatch": "#0d384d"
           },
           {
             "color": "redhead",
             "label": "Acaju",
-            "swatch": "#c7341b",
-            "file": "sprites/hair/trancinhas__redhead.png"
+            "file": "sprites/hair/trancinhas__redhead.png",
+            "walk": "sprites/hair/trancinhas__redhead--walk.png",
+            "swatch": "#c7341b"
           },
           {
             "color": "platinum",
             "label": "Platinado",
-            "swatch": "#eddf95",
-            "file": "sprites/hair/trancinhas__platinum.png"
+            "file": "sprites/hair/trancinhas__platinum.png",
+            "walk": "sprites/hair/trancinhas__platinum--walk.png",
+            "swatch": "#eddf95"
           },
           {
             "color": "pink",
             "label": "Rosa",
-            "swatch": "#e976c4",
-            "file": "sprites/hair/trancinhas__pink.png"
+            "file": "sprites/hair/trancinhas__pink.png",
+            "walk": "sprites/hair/trancinhas__pink--walk.png",
+            "swatch": "#e976c4"
           },
           {
             "color": "purple",
             "label": "Roxo",
-            "swatch": "#a966dd",
-            "file": "sprites/hair/trancinhas__purple.png"
+            "file": "sprites/hair/trancinhas__purple.png",
+            "walk": "sprites/hair/trancinhas__purple--walk.png",
+            "swatch": "#a966dd"
           },
           {
             "color": "blue",
             "label": "Azul",
-            "swatch": "#0074cb",
-            "file": "sprites/hair/trancinhas__blue.png"
+            "file": "sprites/hair/trancinhas__blue.png",
+            "walk": "sprites/hair/trancinhas__blue--walk.png",
+            "swatch": "#0074cb"
           }
         ]
       }
@@ -786,62 +899,72 @@
           {
             "color": "pink",
             "label": "Rosa",
-            "swatch": "#c36072",
-            "file": "sprites/torso/blusa__pink.png"
+            "file": "sprites/torso/blusa__pink.png",
+            "walk": "sprites/torso/blusa__pink--walk.png",
+            "swatch": "#c36072"
           },
           {
             "color": "sky",
             "label": "Celeste",
-            "swatch": "#c6eefd",
-            "file": "sprites/torso/blusa__sky.png"
+            "file": "sprites/torso/blusa__sky.png",
+            "walk": "sprites/torso/blusa__sky--walk.png",
+            "swatch": "#c6eefd"
           },
           {
             "color": "lavender",
             "label": "Lilas",
-            "swatch": "#a966dd",
-            "file": "sprites/torso/blusa__lavender.png"
+            "file": "sprites/torso/blusa__lavender.png",
+            "walk": "sprites/torso/blusa__lavender--walk.png",
+            "swatch": "#a966dd"
           },
           {
             "color": "yellow",
             "label": "Amarelo",
-            "swatch": "#f3c03f",
-            "file": "sprites/torso/blusa__yellow.png"
+            "file": "sprites/torso/blusa__yellow.png",
+            "walk": "sprites/torso/blusa__yellow--walk.png",
+            "swatch": "#f3c03f"
           },
           {
             "color": "green",
             "label": "Verde",
-            "swatch": "#2f8136",
-            "file": "sprites/torso/blusa__green.png"
+            "file": "sprites/torso/blusa__green.png",
+            "walk": "sprites/torso/blusa__green--walk.png",
+            "swatch": "#2f8136"
           },
           {
             "color": "red",
             "label": "Vermelho",
-            "swatch": "#ab1e1e",
-            "file": "sprites/torso/blusa__red.png"
+            "file": "sprites/torso/blusa__red.png",
+            "walk": "sprites/torso/blusa__red--walk.png",
+            "swatch": "#ab1e1e"
           },
           {
             "color": "purple",
             "label": "Roxo",
-            "swatch": "#621e78",
-            "file": "sprites/torso/blusa__purple.png"
+            "file": "sprites/torso/blusa__purple.png",
+            "walk": "sprites/torso/blusa__purple--walk.png",
+            "swatch": "#621e78"
           },
           {
             "color": "white",
             "label": "Branco",
-            "swatch": "#e5e6c7",
-            "file": "sprites/torso/blusa__white.png"
+            "file": "sprites/torso/blusa__white.png",
+            "walk": "sprites/torso/blusa__white--walk.png",
+            "swatch": "#e5e6c7"
           },
           {
             "color": "teal",
             "label": "Turquesa",
-            "swatch": "#0098b2",
-            "file": "sprites/torso/blusa__teal.png"
+            "file": "sprites/torso/blusa__teal.png",
+            "walk": "sprites/torso/blusa__teal--walk.png",
+            "swatch": "#0098b2"
           },
           {
             "color": "navy",
             "label": "Marinho",
-            "swatch": "#3c49ad",
-            "file": "sprites/torso/blusa__navy.png"
+            "file": "sprites/torso/blusa__navy.png",
+            "walk": "sprites/torso/blusa__navy--walk.png",
+            "swatch": "#3c49ad"
           }
         ]
       },
@@ -854,62 +977,72 @@
           {
             "color": "pink",
             "label": "Rosa",
-            "swatch": "#c36072",
-            "file": "sprites/torso/camiseta__pink.png"
+            "file": "sprites/torso/camiseta__pink.png",
+            "walk": "sprites/torso/camiseta__pink--walk.png",
+            "swatch": "#c36072"
           },
           {
             "color": "sky",
             "label": "Celeste",
-            "swatch": "#c6eefd",
-            "file": "sprites/torso/camiseta__sky.png"
+            "file": "sprites/torso/camiseta__sky.png",
+            "walk": "sprites/torso/camiseta__sky--walk.png",
+            "swatch": "#c6eefd"
           },
           {
             "color": "lavender",
             "label": "Lilas",
-            "swatch": "#a966dd",
-            "file": "sprites/torso/camiseta__lavender.png"
+            "file": "sprites/torso/camiseta__lavender.png",
+            "walk": "sprites/torso/camiseta__lavender--walk.png",
+            "swatch": "#a966dd"
           },
           {
             "color": "yellow",
             "label": "Amarelo",
-            "swatch": "#f3c03f",
-            "file": "sprites/torso/camiseta__yellow.png"
+            "file": "sprites/torso/camiseta__yellow.png",
+            "walk": "sprites/torso/camiseta__yellow--walk.png",
+            "swatch": "#f3c03f"
           },
           {
             "color": "green",
             "label": "Verde",
-            "swatch": "#2f8136",
-            "file": "sprites/torso/camiseta__green.png"
+            "file": "sprites/torso/camiseta__green.png",
+            "walk": "sprites/torso/camiseta__green--walk.png",
+            "swatch": "#2f8136"
           },
           {
             "color": "red",
             "label": "Vermelho",
-            "swatch": "#ab1e1e",
-            "file": "sprites/torso/camiseta__red.png"
+            "file": "sprites/torso/camiseta__red.png",
+            "walk": "sprites/torso/camiseta__red--walk.png",
+            "swatch": "#ab1e1e"
           },
           {
             "color": "purple",
             "label": "Roxo",
-            "swatch": "#621e78",
-            "file": "sprites/torso/camiseta__purple.png"
+            "file": "sprites/torso/camiseta__purple.png",
+            "walk": "sprites/torso/camiseta__purple--walk.png",
+            "swatch": "#621e78"
           },
           {
             "color": "white",
             "label": "Branco",
-            "swatch": "#e5e6c7",
-            "file": "sprites/torso/camiseta__white.png"
+            "file": "sprites/torso/camiseta__white.png",
+            "walk": "sprites/torso/camiseta__white--walk.png",
+            "swatch": "#e5e6c7"
           },
           {
             "color": "teal",
             "label": "Turquesa",
-            "swatch": "#0098b2",
-            "file": "sprites/torso/camiseta__teal.png"
+            "file": "sprites/torso/camiseta__teal.png",
+            "walk": "sprites/torso/camiseta__teal--walk.png",
+            "swatch": "#0098b2"
           },
           {
             "color": "navy",
             "label": "Marinho",
-            "swatch": "#3c49ad",
-            "file": "sprites/torso/camiseta__navy.png"
+            "file": "sprites/torso/camiseta__navy.png",
+            "walk": "sprites/torso/camiseta__navy--walk.png",
+            "swatch": "#3c49ad"
           }
         ]
       },
@@ -922,62 +1055,72 @@
           {
             "color": "pink",
             "label": "Rosa",
-            "swatch": "#c36072",
-            "file": "sprites/torso/gola-canoa__pink.png"
+            "file": "sprites/torso/gola-canoa__pink.png",
+            "walk": "sprites/torso/gola-canoa__pink--walk.png",
+            "swatch": "#c36072"
           },
           {
             "color": "sky",
             "label": "Celeste",
-            "swatch": "#c6eefd",
-            "file": "sprites/torso/gola-canoa__sky.png"
+            "file": "sprites/torso/gola-canoa__sky.png",
+            "walk": "sprites/torso/gola-canoa__sky--walk.png",
+            "swatch": "#c6eefd"
           },
           {
             "color": "lavender",
             "label": "Lilas",
-            "swatch": "#a966dd",
-            "file": "sprites/torso/gola-canoa__lavender.png"
+            "file": "sprites/torso/gola-canoa__lavender.png",
+            "walk": "sprites/torso/gola-canoa__lavender--walk.png",
+            "swatch": "#a966dd"
           },
           {
             "color": "yellow",
             "label": "Amarelo",
-            "swatch": "#f3c03f",
-            "file": "sprites/torso/gola-canoa__yellow.png"
+            "file": "sprites/torso/gola-canoa__yellow.png",
+            "walk": "sprites/torso/gola-canoa__yellow--walk.png",
+            "swatch": "#f3c03f"
           },
           {
             "color": "green",
             "label": "Verde",
-            "swatch": "#2f8136",
-            "file": "sprites/torso/gola-canoa__green.png"
+            "file": "sprites/torso/gola-canoa__green.png",
+            "walk": "sprites/torso/gola-canoa__green--walk.png",
+            "swatch": "#2f8136"
           },
           {
             "color": "red",
             "label": "Vermelho",
-            "swatch": "#ab1e1e",
-            "file": "sprites/torso/gola-canoa__red.png"
+            "file": "sprites/torso/gola-canoa__red.png",
+            "walk": "sprites/torso/gola-canoa__red--walk.png",
+            "swatch": "#ab1e1e"
           },
           {
             "color": "purple",
             "label": "Roxo",
-            "swatch": "#621e78",
-            "file": "sprites/torso/gola-canoa__purple.png"
+            "file": "sprites/torso/gola-canoa__purple.png",
+            "walk": "sprites/torso/gola-canoa__purple--walk.png",
+            "swatch": "#621e78"
           },
           {
             "color": "white",
             "label": "Branco",
-            "swatch": "#e5e6c7",
-            "file": "sprites/torso/gola-canoa__white.png"
+            "file": "sprites/torso/gola-canoa__white.png",
+            "walk": "sprites/torso/gola-canoa__white--walk.png",
+            "swatch": "#e5e6c7"
           },
           {
             "color": "teal",
             "label": "Turquesa",
-            "swatch": "#0098b2",
-            "file": "sprites/torso/gola-canoa__teal.png"
+            "file": "sprites/torso/gola-canoa__teal.png",
+            "walk": "sprites/torso/gola-canoa__teal--walk.png",
+            "swatch": "#0098b2"
           },
           {
             "color": "navy",
             "label": "Marinho",
-            "swatch": "#3c49ad",
-            "file": "sprites/torso/gola-canoa__navy.png"
+            "file": "sprites/torso/gola-canoa__navy.png",
+            "walk": "sprites/torso/gola-canoa__navy--walk.png",
+            "swatch": "#3c49ad"
           }
         ]
       },
@@ -990,62 +1133,72 @@
           {
             "color": "pink",
             "label": "Rosa",
-            "swatch": "#c36072",
-            "file": "sprites/torso/casaquinho__pink.png"
+            "file": "sprites/torso/casaquinho__pink.png",
+            "walk": "sprites/torso/casaquinho__pink--walk.png",
+            "swatch": "#c36072"
           },
           {
             "color": "sky",
             "label": "Celeste",
-            "swatch": "#c6eefd",
-            "file": "sprites/torso/casaquinho__sky.png"
+            "file": "sprites/torso/casaquinho__sky.png",
+            "walk": "sprites/torso/casaquinho__sky--walk.png",
+            "swatch": "#c6eefd"
           },
           {
             "color": "lavender",
             "label": "Lilas",
-            "swatch": "#a966dd",
-            "file": "sprites/torso/casaquinho__lavender.png"
+            "file": "sprites/torso/casaquinho__lavender.png",
+            "walk": "sprites/torso/casaquinho__lavender--walk.png",
+            "swatch": "#a966dd"
           },
           {
             "color": "yellow",
             "label": "Amarelo",
-            "swatch": "#f3c03f",
-            "file": "sprites/torso/casaquinho__yellow.png"
+            "file": "sprites/torso/casaquinho__yellow.png",
+            "walk": "sprites/torso/casaquinho__yellow--walk.png",
+            "swatch": "#f3c03f"
           },
           {
             "color": "green",
             "label": "Verde",
-            "swatch": "#2f8136",
-            "file": "sprites/torso/casaquinho__green.png"
+            "file": "sprites/torso/casaquinho__green.png",
+            "walk": "sprites/torso/casaquinho__green--walk.png",
+            "swatch": "#2f8136"
           },
           {
             "color": "red",
             "label": "Vermelho",
-            "swatch": "#ab1e1e",
-            "file": "sprites/torso/casaquinho__red.png"
+            "file": "sprites/torso/casaquinho__red.png",
+            "walk": "sprites/torso/casaquinho__red--walk.png",
+            "swatch": "#ab1e1e"
           },
           {
             "color": "purple",
             "label": "Roxo",
-            "swatch": "#621e78",
-            "file": "sprites/torso/casaquinho__purple.png"
+            "file": "sprites/torso/casaquinho__purple.png",
+            "walk": "sprites/torso/casaquinho__purple--walk.png",
+            "swatch": "#621e78"
           },
           {
             "color": "white",
             "label": "Branco",
-            "swatch": "#e5e6c7",
-            "file": "sprites/torso/casaquinho__white.png"
+            "file": "sprites/torso/casaquinho__white.png",
+            "walk": "sprites/torso/casaquinho__white--walk.png",
+            "swatch": "#e5e6c7"
           },
           {
             "color": "teal",
             "label": "Turquesa",
-            "swatch": "#0098b2",
-            "file": "sprites/torso/casaquinho__teal.png"
+            "file": "sprites/torso/casaquinho__teal.png",
+            "walk": "sprites/torso/casaquinho__teal--walk.png",
+            "swatch": "#0098b2"
           },
           {
             "color": "navy",
             "label": "Marinho",
-            "swatch": "#3c49ad",
-            "file": "sprites/torso/casaquinho__navy.png"
+            "file": "sprites/torso/casaquinho__navy.png",
+            "walk": "sprites/torso/casaquinho__navy--walk.png",
+            "swatch": "#3c49ad"
           }
         ]
       },
@@ -1058,62 +1211,72 @@
           {
             "color": "pink",
             "label": "Rosa",
-            "swatch": "#c36072",
-            "file": "sprites/torso/polo__pink.png"
+            "file": "sprites/torso/polo__pink.png",
+            "walk": "sprites/torso/polo__pink--walk.png",
+            "swatch": "#c36072"
           },
           {
             "color": "sky",
             "label": "Celeste",
-            "swatch": "#c6eefd",
-            "file": "sprites/torso/polo__sky.png"
+            "file": "sprites/torso/polo__sky.png",
+            "walk": "sprites/torso/polo__sky--walk.png",
+            "swatch": "#c6eefd"
           },
           {
             "color": "lavender",
             "label": "Lilas",
-            "swatch": "#a966dd",
-            "file": "sprites/torso/polo__lavender.png"
+            "file": "sprites/torso/polo__lavender.png",
+            "walk": "sprites/torso/polo__lavender--walk.png",
+            "swatch": "#a966dd"
           },
           {
             "color": "yellow",
             "label": "Amarelo",
-            "swatch": "#f3c03f",
-            "file": "sprites/torso/polo__yellow.png"
+            "file": "sprites/torso/polo__yellow.png",
+            "walk": "sprites/torso/polo__yellow--walk.png",
+            "swatch": "#f3c03f"
           },
           {
             "color": "green",
             "label": "Verde",
-            "swatch": "#2f8136",
-            "file": "sprites/torso/polo__green.png"
+            "file": "sprites/torso/polo__green.png",
+            "walk": "sprites/torso/polo__green--walk.png",
+            "swatch": "#2f8136"
           },
           {
             "color": "red",
             "label": "Vermelho",
-            "swatch": "#ab1e1e",
-            "file": "sprites/torso/polo__red.png"
+            "file": "sprites/torso/polo__red.png",
+            "walk": "sprites/torso/polo__red--walk.png",
+            "swatch": "#ab1e1e"
           },
           {
             "color": "purple",
             "label": "Roxo",
-            "swatch": "#621e78",
-            "file": "sprites/torso/polo__purple.png"
+            "file": "sprites/torso/polo__purple.png",
+            "walk": "sprites/torso/polo__purple--walk.png",
+            "swatch": "#621e78"
           },
           {
             "color": "white",
             "label": "Branco",
-            "swatch": "#e5e6c7",
-            "file": "sprites/torso/polo__white.png"
+            "file": "sprites/torso/polo__white.png",
+            "walk": "sprites/torso/polo__white--walk.png",
+            "swatch": "#e5e6c7"
           },
           {
             "color": "teal",
             "label": "Turquesa",
-            "swatch": "#0098b2",
-            "file": "sprites/torso/polo__teal.png"
+            "file": "sprites/torso/polo__teal.png",
+            "walk": "sprites/torso/polo__teal--walk.png",
+            "swatch": "#0098b2"
           },
           {
             "color": "navy",
             "label": "Marinho",
-            "swatch": "#3c49ad",
-            "file": "sprites/torso/polo__navy.png"
+            "file": "sprites/torso/polo__navy.png",
+            "walk": "sprites/torso/polo__navy--walk.png",
+            "swatch": "#3c49ad"
           }
         ]
       },
@@ -1126,62 +1289,72 @@
           {
             "color": "pink",
             "label": "Rosa",
-            "swatch": "#c36072",
-            "file": "sprites/torso/moletom__pink.png"
+            "file": "sprites/torso/moletom__pink.png",
+            "walk": "sprites/torso/moletom__pink--walk.png",
+            "swatch": "#c36072"
           },
           {
             "color": "sky",
             "label": "Celeste",
-            "swatch": "#c6eefd",
-            "file": "sprites/torso/moletom__sky.png"
+            "file": "sprites/torso/moletom__sky.png",
+            "walk": "sprites/torso/moletom__sky--walk.png",
+            "swatch": "#c6eefd"
           },
           {
             "color": "lavender",
             "label": "Lilas",
-            "swatch": "#a966dd",
-            "file": "sprites/torso/moletom__lavender.png"
+            "file": "sprites/torso/moletom__lavender.png",
+            "walk": "sprites/torso/moletom__lavender--walk.png",
+            "swatch": "#a966dd"
           },
           {
             "color": "yellow",
             "label": "Amarelo",
-            "swatch": "#f3c03f",
-            "file": "sprites/torso/moletom__yellow.png"
+            "file": "sprites/torso/moletom__yellow.png",
+            "walk": "sprites/torso/moletom__yellow--walk.png",
+            "swatch": "#f3c03f"
           },
           {
             "color": "green",
             "label": "Verde",
-            "swatch": "#2f8136",
-            "file": "sprites/torso/moletom__green.png"
+            "file": "sprites/torso/moletom__green.png",
+            "walk": "sprites/torso/moletom__green--walk.png",
+            "swatch": "#2f8136"
           },
           {
             "color": "red",
             "label": "Vermelho",
-            "swatch": "#ab1e1e",
-            "file": "sprites/torso/moletom__red.png"
+            "file": "sprites/torso/moletom__red.png",
+            "walk": "sprites/torso/moletom__red--walk.png",
+            "swatch": "#ab1e1e"
           },
           {
             "color": "purple",
             "label": "Roxo",
-            "swatch": "#621e78",
-            "file": "sprites/torso/moletom__purple.png"
+            "file": "sprites/torso/moletom__purple.png",
+            "walk": "sprites/torso/moletom__purple--walk.png",
+            "swatch": "#621e78"
           },
           {
             "color": "white",
             "label": "Branco",
-            "swatch": "#e5e6c7",
-            "file": "sprites/torso/moletom__white.png"
+            "file": "sprites/torso/moletom__white.png",
+            "walk": "sprites/torso/moletom__white--walk.png",
+            "swatch": "#e5e6c7"
           },
           {
             "color": "teal",
             "label": "Turquesa",
-            "swatch": "#0098b2",
-            "file": "sprites/torso/moletom__teal.png"
+            "file": "sprites/torso/moletom__teal.png",
+            "walk": "sprites/torso/moletom__teal--walk.png",
+            "swatch": "#0098b2"
           },
           {
             "color": "navy",
             "label": "Marinho",
-            "swatch": "#3c49ad",
-            "file": "sprites/torso/moletom__navy.png"
+            "file": "sprites/torso/moletom__navy.png",
+            "walk": "sprites/torso/moletom__navy--walk.png",
+            "swatch": "#3c49ad"
           }
         ]
       }
@@ -1196,62 +1369,72 @@
           {
             "color": "pink",
             "label": "Rosa",
-            "swatch": "#c36072",
-            "file": "sprites/legs/saia__pink.png"
+            "file": "sprites/legs/saia__pink.png",
+            "walk": "sprites/legs/saia__pink--walk.png",
+            "swatch": "#c36072"
           },
           {
             "color": "sky",
             "label": "Celeste",
-            "swatch": "#c6eefd",
-            "file": "sprites/legs/saia__sky.png"
+            "file": "sprites/legs/saia__sky.png",
+            "walk": "sprites/legs/saia__sky--walk.png",
+            "swatch": "#c6eefd"
           },
           {
             "color": "lavender",
             "label": "Lilas",
-            "swatch": "#a966dd",
-            "file": "sprites/legs/saia__lavender.png"
+            "file": "sprites/legs/saia__lavender.png",
+            "walk": "sprites/legs/saia__lavender--walk.png",
+            "swatch": "#a966dd"
           },
           {
             "color": "yellow",
             "label": "Amarelo",
-            "swatch": "#f3c03f",
-            "file": "sprites/legs/saia__yellow.png"
+            "file": "sprites/legs/saia__yellow.png",
+            "walk": "sprites/legs/saia__yellow--walk.png",
+            "swatch": "#f3c03f"
           },
           {
             "color": "green",
             "label": "Verde",
-            "swatch": "#2f8136",
-            "file": "sprites/legs/saia__green.png"
+            "file": "sprites/legs/saia__green.png",
+            "walk": "sprites/legs/saia__green--walk.png",
+            "swatch": "#2f8136"
           },
           {
             "color": "red",
             "label": "Vermelho",
-            "swatch": "#ab1e1e",
-            "file": "sprites/legs/saia__red.png"
+            "file": "sprites/legs/saia__red.png",
+            "walk": "sprites/legs/saia__red--walk.png",
+            "swatch": "#ab1e1e"
           },
           {
             "color": "purple",
             "label": "Roxo",
-            "swatch": "#621e78",
-            "file": "sprites/legs/saia__purple.png"
+            "file": "sprites/legs/saia__purple.png",
+            "walk": "sprites/legs/saia__purple--walk.png",
+            "swatch": "#621e78"
           },
           {
             "color": "white",
             "label": "Branco",
-            "swatch": "#e5e6c7",
-            "file": "sprites/legs/saia__white.png"
+            "file": "sprites/legs/saia__white.png",
+            "walk": "sprites/legs/saia__white--walk.png",
+            "swatch": "#e5e6c7"
           },
           {
             "color": "teal",
             "label": "Turquesa",
-            "swatch": "#0098b2",
-            "file": "sprites/legs/saia__teal.png"
+            "file": "sprites/legs/saia__teal.png",
+            "walk": "sprites/legs/saia__teal--walk.png",
+            "swatch": "#0098b2"
           },
           {
             "color": "navy",
             "label": "Marinho",
-            "swatch": "#3c49ad",
-            "file": "sprites/legs/saia__navy.png"
+            "file": "sprites/legs/saia__navy.png",
+            "walk": "sprites/legs/saia__navy--walk.png",
+            "swatch": "#3c49ad"
           }
         ]
       },
@@ -1264,62 +1447,72 @@
           {
             "color": "pink",
             "label": "Rosa",
-            "swatch": "#c36072",
-            "file": "sprites/legs/saia-longa__pink.png"
+            "file": "sprites/legs/saia-longa__pink.png",
+            "walk": "sprites/legs/saia-longa__pink--walk.png",
+            "swatch": "#c36072"
           },
           {
             "color": "sky",
             "label": "Celeste",
-            "swatch": "#c6eefd",
-            "file": "sprites/legs/saia-longa__sky.png"
+            "file": "sprites/legs/saia-longa__sky.png",
+            "walk": "sprites/legs/saia-longa__sky--walk.png",
+            "swatch": "#c6eefd"
           },
           {
             "color": "lavender",
             "label": "Lilas",
-            "swatch": "#a966dd",
-            "file": "sprites/legs/saia-longa__lavender.png"
+            "file": "sprites/legs/saia-longa__lavender.png",
+            "walk": "sprites/legs/saia-longa__lavender--walk.png",
+            "swatch": "#a966dd"
           },
           {
             "color": "yellow",
             "label": "Amarelo",
-            "swatch": "#f3c03f",
-            "file": "sprites/legs/saia-longa__yellow.png"
+            "file": "sprites/legs/saia-longa__yellow.png",
+            "walk": "sprites/legs/saia-longa__yellow--walk.png",
+            "swatch": "#f3c03f"
           },
           {
             "color": "green",
             "label": "Verde",
-            "swatch": "#2f8136",
-            "file": "sprites/legs/saia-longa__green.png"
+            "file": "sprites/legs/saia-longa__green.png",
+            "walk": "sprites/legs/saia-longa__green--walk.png",
+            "swatch": "#2f8136"
           },
           {
             "color": "red",
             "label": "Vermelho",
-            "swatch": "#ab1e1e",
-            "file": "sprites/legs/saia-longa__red.png"
+            "file": "sprites/legs/saia-longa__red.png",
+            "walk": "sprites/legs/saia-longa__red--walk.png",
+            "swatch": "#ab1e1e"
           },
           {
             "color": "purple",
             "label": "Roxo",
-            "swatch": "#621e78",
-            "file": "sprites/legs/saia-longa__purple.png"
+            "file": "sprites/legs/saia-longa__purple.png",
+            "walk": "sprites/legs/saia-longa__purple--walk.png",
+            "swatch": "#621e78"
           },
           {
             "color": "white",
             "label": "Branco",
-            "swatch": "#e5e6c7",
-            "file": "sprites/legs/saia-longa__white.png"
+            "file": "sprites/legs/saia-longa__white.png",
+            "walk": "sprites/legs/saia-longa__white--walk.png",
+            "swatch": "#e5e6c7"
           },
           {
             "color": "teal",
             "label": "Turquesa",
-            "swatch": "#0098b2",
-            "file": "sprites/legs/saia-longa__teal.png"
+            "file": "sprites/legs/saia-longa__teal.png",
+            "walk": "sprites/legs/saia-longa__teal--walk.png",
+            "swatch": "#0098b2"
           },
           {
             "color": "navy",
             "label": "Marinho",
-            "swatch": "#3c49ad",
-            "file": "sprites/legs/saia-longa__navy.png"
+            "file": "sprites/legs/saia-longa__navy.png",
+            "walk": "sprites/legs/saia-longa__navy--walk.png",
+            "swatch": "#3c49ad"
           }
         ]
       },
@@ -1332,62 +1525,72 @@
           {
             "color": "pink",
             "label": "Rosa",
-            "swatch": "#c36072",
-            "file": "sprites/legs/saia-princesa__pink.png"
+            "file": "sprites/legs/saia-princesa__pink.png",
+            "walk": "sprites/legs/saia-princesa__pink--walk.png",
+            "swatch": "#c36072"
           },
           {
             "color": "sky",
             "label": "Celeste",
-            "swatch": "#c6eefd",
-            "file": "sprites/legs/saia-princesa__sky.png"
+            "file": "sprites/legs/saia-princesa__sky.png",
+            "walk": "sprites/legs/saia-princesa__sky--walk.png",
+            "swatch": "#c6eefd"
           },
           {
             "color": "lavender",
             "label": "Lilas",
-            "swatch": "#a966dd",
-            "file": "sprites/legs/saia-princesa__lavender.png"
+            "file": "sprites/legs/saia-princesa__lavender.png",
+            "walk": "sprites/legs/saia-princesa__lavender--walk.png",
+            "swatch": "#a966dd"
           },
           {
             "color": "yellow",
             "label": "Amarelo",
-            "swatch": "#f3c03f",
-            "file": "sprites/legs/saia-princesa__yellow.png"
+            "file": "sprites/legs/saia-princesa__yellow.png",
+            "walk": "sprites/legs/saia-princesa__yellow--walk.png",
+            "swatch": "#f3c03f"
           },
           {
             "color": "green",
             "label": "Verde",
-            "swatch": "#2f8136",
-            "file": "sprites/legs/saia-princesa__green.png"
+            "file": "sprites/legs/saia-princesa__green.png",
+            "walk": "sprites/legs/saia-princesa__green--walk.png",
+            "swatch": "#2f8136"
           },
           {
             "color": "red",
             "label": "Vermelho",
-            "swatch": "#ab1e1e",
-            "file": "sprites/legs/saia-princesa__red.png"
+            "file": "sprites/legs/saia-princesa__red.png",
+            "walk": "sprites/legs/saia-princesa__red--walk.png",
+            "swatch": "#ab1e1e"
           },
           {
             "color": "purple",
             "label": "Roxo",
-            "swatch": "#621e78",
-            "file": "sprites/legs/saia-princesa__purple.png"
+            "file": "sprites/legs/saia-princesa__purple.png",
+            "walk": "sprites/legs/saia-princesa__purple--walk.png",
+            "swatch": "#621e78"
           },
           {
             "color": "white",
             "label": "Branco",
-            "swatch": "#e5e6c7",
-            "file": "sprites/legs/saia-princesa__white.png"
+            "file": "sprites/legs/saia-princesa__white.png",
+            "walk": "sprites/legs/saia-princesa__white--walk.png",
+            "swatch": "#e5e6c7"
           },
           {
             "color": "teal",
             "label": "Turquesa",
-            "swatch": "#0098b2",
-            "file": "sprites/legs/saia-princesa__teal.png"
+            "file": "sprites/legs/saia-princesa__teal.png",
+            "walk": "sprites/legs/saia-princesa__teal--walk.png",
+            "swatch": "#0098b2"
           },
           {
             "color": "navy",
             "label": "Marinho",
-            "swatch": "#3c49ad",
-            "file": "sprites/legs/saia-princesa__navy.png"
+            "file": "sprites/legs/saia-princesa__navy.png",
+            "walk": "sprites/legs/saia-princesa__navy--walk.png",
+            "swatch": "#3c49ad"
           }
         ]
       },
@@ -1400,62 +1603,72 @@
           {
             "color": "pink",
             "label": "Rosa",
-            "swatch": "#c36072",
-            "file": "sprites/legs/saia-babado__pink.png"
+            "file": "sprites/legs/saia-babado__pink.png",
+            "walk": "sprites/legs/saia-babado__pink--walk.png",
+            "swatch": "#c36072"
           },
           {
             "color": "sky",
             "label": "Celeste",
-            "swatch": "#c6eefd",
-            "file": "sprites/legs/saia-babado__sky.png"
+            "file": "sprites/legs/saia-babado__sky.png",
+            "walk": "sprites/legs/saia-babado__sky--walk.png",
+            "swatch": "#c6eefd"
           },
           {
             "color": "lavender",
             "label": "Lilas",
-            "swatch": "#a966dd",
-            "file": "sprites/legs/saia-babado__lavender.png"
+            "file": "sprites/legs/saia-babado__lavender.png",
+            "walk": "sprites/legs/saia-babado__lavender--walk.png",
+            "swatch": "#a966dd"
           },
           {
             "color": "yellow",
             "label": "Amarelo",
-            "swatch": "#f3c03f",
-            "file": "sprites/legs/saia-babado__yellow.png"
+            "file": "sprites/legs/saia-babado__yellow.png",
+            "walk": "sprites/legs/saia-babado__yellow--walk.png",
+            "swatch": "#f3c03f"
           },
           {
             "color": "green",
             "label": "Verde",
-            "swatch": "#2f8136",
-            "file": "sprites/legs/saia-babado__green.png"
+            "file": "sprites/legs/saia-babado__green.png",
+            "walk": "sprites/legs/saia-babado__green--walk.png",
+            "swatch": "#2f8136"
           },
           {
             "color": "red",
             "label": "Vermelho",
-            "swatch": "#ab1e1e",
-            "file": "sprites/legs/saia-babado__red.png"
+            "file": "sprites/legs/saia-babado__red.png",
+            "walk": "sprites/legs/saia-babado__red--walk.png",
+            "swatch": "#ab1e1e"
           },
           {
             "color": "purple",
             "label": "Roxo",
-            "swatch": "#621e78",
-            "file": "sprites/legs/saia-babado__purple.png"
+            "file": "sprites/legs/saia-babado__purple.png",
+            "walk": "sprites/legs/saia-babado__purple--walk.png",
+            "swatch": "#621e78"
           },
           {
             "color": "white",
             "label": "Branco",
-            "swatch": "#e5e6c7",
-            "file": "sprites/legs/saia-babado__white.png"
+            "file": "sprites/legs/saia-babado__white.png",
+            "walk": "sprites/legs/saia-babado__white--walk.png",
+            "swatch": "#e5e6c7"
           },
           {
             "color": "teal",
             "label": "Turquesa",
-            "swatch": "#0098b2",
-            "file": "sprites/legs/saia-babado__teal.png"
+            "file": "sprites/legs/saia-babado__teal.png",
+            "walk": "sprites/legs/saia-babado__teal--walk.png",
+            "swatch": "#0098b2"
           },
           {
             "color": "navy",
             "label": "Marinho",
-            "swatch": "#3c49ad",
-            "file": "sprites/legs/saia-babado__navy.png"
+            "file": "sprites/legs/saia-babado__navy.png",
+            "walk": "sprites/legs/saia-babado__navy--walk.png",
+            "swatch": "#3c49ad"
           }
         ]
       },
@@ -1468,62 +1681,72 @@
           {
             "color": "pink",
             "label": "Rosa",
-            "swatch": "#c36072",
-            "file": "sprites/legs/legging__pink.png"
+            "file": "sprites/legs/legging__pink.png",
+            "walk": "sprites/legs/legging__pink--walk.png",
+            "swatch": "#c36072"
           },
           {
             "color": "sky",
             "label": "Celeste",
-            "swatch": "#c6eefd",
-            "file": "sprites/legs/legging__sky.png"
+            "file": "sprites/legs/legging__sky.png",
+            "walk": "sprites/legs/legging__sky--walk.png",
+            "swatch": "#c6eefd"
           },
           {
             "color": "lavender",
             "label": "Lilas",
-            "swatch": "#a966dd",
-            "file": "sprites/legs/legging__lavender.png"
+            "file": "sprites/legs/legging__lavender.png",
+            "walk": "sprites/legs/legging__lavender--walk.png",
+            "swatch": "#a966dd"
           },
           {
             "color": "yellow",
             "label": "Amarelo",
-            "swatch": "#f3c03f",
-            "file": "sprites/legs/legging__yellow.png"
+            "file": "sprites/legs/legging__yellow.png",
+            "walk": "sprites/legs/legging__yellow--walk.png",
+            "swatch": "#f3c03f"
           },
           {
             "color": "green",
             "label": "Verde",
-            "swatch": "#2f8136",
-            "file": "sprites/legs/legging__green.png"
+            "file": "sprites/legs/legging__green.png",
+            "walk": "sprites/legs/legging__green--walk.png",
+            "swatch": "#2f8136"
           },
           {
             "color": "red",
             "label": "Vermelho",
-            "swatch": "#ab1e1e",
-            "file": "sprites/legs/legging__red.png"
+            "file": "sprites/legs/legging__red.png",
+            "walk": "sprites/legs/legging__red--walk.png",
+            "swatch": "#ab1e1e"
           },
           {
             "color": "purple",
             "label": "Roxo",
-            "swatch": "#621e78",
-            "file": "sprites/legs/legging__purple.png"
+            "file": "sprites/legs/legging__purple.png",
+            "walk": "sprites/legs/legging__purple--walk.png",
+            "swatch": "#621e78"
           },
           {
             "color": "white",
             "label": "Branco",
-            "swatch": "#e5e6c7",
-            "file": "sprites/legs/legging__white.png"
+            "file": "sprites/legs/legging__white.png",
+            "walk": "sprites/legs/legging__white--walk.png",
+            "swatch": "#e5e6c7"
           },
           {
             "color": "teal",
             "label": "Turquesa",
-            "swatch": "#0098b2",
-            "file": "sprites/legs/legging__teal.png"
+            "file": "sprites/legs/legging__teal.png",
+            "walk": "sprites/legs/legging__teal--walk.png",
+            "swatch": "#0098b2"
           },
           {
             "color": "navy",
             "label": "Marinho",
-            "swatch": "#3c49ad",
-            "file": "sprites/legs/legging__navy.png"
+            "file": "sprites/legs/legging__navy.png",
+            "walk": "sprites/legs/legging__navy--walk.png",
+            "swatch": "#3c49ad"
           }
         ]
       },
@@ -1536,62 +1759,72 @@
           {
             "color": "pink",
             "label": "Rosa",
-            "swatch": "#c36072",
-            "file": "sprites/legs/calca__pink.png"
+            "file": "sprites/legs/calca__pink.png",
+            "walk": "sprites/legs/calca__pink--walk.png",
+            "swatch": "#c36072"
           },
           {
             "color": "sky",
             "label": "Celeste",
-            "swatch": "#c6eefd",
-            "file": "sprites/legs/calca__sky.png"
+            "file": "sprites/legs/calca__sky.png",
+            "walk": "sprites/legs/calca__sky--walk.png",
+            "swatch": "#c6eefd"
           },
           {
             "color": "lavender",
             "label": "Lilas",
-            "swatch": "#a966dd",
-            "file": "sprites/legs/calca__lavender.png"
+            "file": "sprites/legs/calca__lavender.png",
+            "walk": "sprites/legs/calca__lavender--walk.png",
+            "swatch": "#a966dd"
           },
           {
             "color": "yellow",
             "label": "Amarelo",
-            "swatch": "#f3c03f",
-            "file": "sprites/legs/calca__yellow.png"
+            "file": "sprites/legs/calca__yellow.png",
+            "walk": "sprites/legs/calca__yellow--walk.png",
+            "swatch": "#f3c03f"
           },
           {
             "color": "green",
             "label": "Verde",
-            "swatch": "#2f8136",
-            "file": "sprites/legs/calca__green.png"
+            "file": "sprites/legs/calca__green.png",
+            "walk": "sprites/legs/calca__green--walk.png",
+            "swatch": "#2f8136"
           },
           {
             "color": "red",
             "label": "Vermelho",
-            "swatch": "#ab1e1e",
-            "file": "sprites/legs/calca__red.png"
+            "file": "sprites/legs/calca__red.png",
+            "walk": "sprites/legs/calca__red--walk.png",
+            "swatch": "#ab1e1e"
           },
           {
             "color": "purple",
             "label": "Roxo",
-            "swatch": "#621e78",
-            "file": "sprites/legs/calca__purple.png"
+            "file": "sprites/legs/calca__purple.png",
+            "walk": "sprites/legs/calca__purple--walk.png",
+            "swatch": "#621e78"
           },
           {
             "color": "white",
             "label": "Branco",
-            "swatch": "#e5e6c7",
-            "file": "sprites/legs/calca__white.png"
+            "file": "sprites/legs/calca__white.png",
+            "walk": "sprites/legs/calca__white--walk.png",
+            "swatch": "#e5e6c7"
           },
           {
             "color": "teal",
             "label": "Turquesa",
-            "swatch": "#0098b2",
-            "file": "sprites/legs/calca__teal.png"
+            "file": "sprites/legs/calca__teal.png",
+            "walk": "sprites/legs/calca__teal--walk.png",
+            "swatch": "#0098b2"
           },
           {
             "color": "navy",
             "label": "Marinho",
-            "swatch": "#3c49ad",
-            "file": "sprites/legs/calca__navy.png"
+            "file": "sprites/legs/calca__navy.png",
+            "walk": "sprites/legs/calca__navy--walk.png",
+            "swatch": "#3c49ad"
           }
         ]
       },
@@ -1604,62 +1837,72 @@
           {
             "color": "pink",
             "label": "Rosa",
-            "swatch": "#c36072",
-            "file": "sprites/legs/calca-social__pink.png"
+            "file": "sprites/legs/calca-social__pink.png",
+            "walk": "sprites/legs/calca-social__pink--walk.png",
+            "swatch": "#c36072"
           },
           {
             "color": "sky",
             "label": "Celeste",
-            "swatch": "#c6eefd",
-            "file": "sprites/legs/calca-social__sky.png"
+            "file": "sprites/legs/calca-social__sky.png",
+            "walk": "sprites/legs/calca-social__sky--walk.png",
+            "swatch": "#c6eefd"
           },
           {
             "color": "lavender",
             "label": "Lilas",
-            "swatch": "#a966dd",
-            "file": "sprites/legs/calca-social__lavender.png"
+            "file": "sprites/legs/calca-social__lavender.png",
+            "walk": "sprites/legs/calca-social__lavender--walk.png",
+            "swatch": "#a966dd"
           },
           {
             "color": "yellow",
             "label": "Amarelo",
-            "swatch": "#f3c03f",
-            "file": "sprites/legs/calca-social__yellow.png"
+            "file": "sprites/legs/calca-social__yellow.png",
+            "walk": "sprites/legs/calca-social__yellow--walk.png",
+            "swatch": "#f3c03f"
           },
           {
             "color": "green",
             "label": "Verde",
-            "swatch": "#2f8136",
-            "file": "sprites/legs/calca-social__green.png"
+            "file": "sprites/legs/calca-social__green.png",
+            "walk": "sprites/legs/calca-social__green--walk.png",
+            "swatch": "#2f8136"
           },
           {
             "color": "red",
             "label": "Vermelho",
-            "swatch": "#ab1e1e",
-            "file": "sprites/legs/calca-social__red.png"
+            "file": "sprites/legs/calca-social__red.png",
+            "walk": "sprites/legs/calca-social__red--walk.png",
+            "swatch": "#ab1e1e"
           },
           {
             "color": "purple",
             "label": "Roxo",
-            "swatch": "#621e78",
-            "file": "sprites/legs/calca-social__purple.png"
+            "file": "sprites/legs/calca-social__purple.png",
+            "walk": "sprites/legs/calca-social__purple--walk.png",
+            "swatch": "#621e78"
           },
           {
             "color": "white",
             "label": "Branco",
-            "swatch": "#e5e6c7",
-            "file": "sprites/legs/calca-social__white.png"
+            "file": "sprites/legs/calca-social__white.png",
+            "walk": "sprites/legs/calca-social__white--walk.png",
+            "swatch": "#e5e6c7"
           },
           {
             "color": "teal",
             "label": "Turquesa",
-            "swatch": "#0098b2",
-            "file": "sprites/legs/calca-social__teal.png"
+            "file": "sprites/legs/calca-social__teal.png",
+            "walk": "sprites/legs/calca-social__teal--walk.png",
+            "swatch": "#0098b2"
           },
           {
             "color": "navy",
             "label": "Marinho",
-            "swatch": "#3c49ad",
-            "file": "sprites/legs/calca-social__navy.png"
+            "file": "sprites/legs/calca-social__navy.png",
+            "walk": "sprites/legs/calca-social__navy--walk.png",
+            "swatch": "#3c49ad"
           }
         ]
       }
@@ -1674,62 +1917,72 @@
           {
             "color": "pink",
             "label": "Rosa",
-            "swatch": "#c36072",
-            "file": "sprites/feet/sapatilha__pink.png"
+            "file": "sprites/feet/sapatilha__pink.png",
+            "walk": "sprites/feet/sapatilha__pink--walk.png",
+            "swatch": "#c36072"
           },
           {
             "color": "sky",
             "label": "Celeste",
-            "swatch": "#c6eefd",
-            "file": "sprites/feet/sapatilha__sky.png"
+            "file": "sprites/feet/sapatilha__sky.png",
+            "walk": "sprites/feet/sapatilha__sky--walk.png",
+            "swatch": "#c6eefd"
           },
           {
             "color": "lavender",
             "label": "Lilas",
-            "swatch": "#a966dd",
-            "file": "sprites/feet/sapatilha__lavender.png"
+            "file": "sprites/feet/sapatilha__lavender.png",
+            "walk": "sprites/feet/sapatilha__lavender--walk.png",
+            "swatch": "#a966dd"
           },
           {
             "color": "yellow",
             "label": "Amarelo",
-            "swatch": "#f3c03f",
-            "file": "sprites/feet/sapatilha__yellow.png"
+            "file": "sprites/feet/sapatilha__yellow.png",
+            "walk": "sprites/feet/sapatilha__yellow--walk.png",
+            "swatch": "#f3c03f"
           },
           {
             "color": "green",
             "label": "Verde",
-            "swatch": "#2f8136",
-            "file": "sprites/feet/sapatilha__green.png"
+            "file": "sprites/feet/sapatilha__green.png",
+            "walk": "sprites/feet/sapatilha__green--walk.png",
+            "swatch": "#2f8136"
           },
           {
             "color": "red",
             "label": "Vermelho",
-            "swatch": "#ab1e1e",
-            "file": "sprites/feet/sapatilha__red.png"
+            "file": "sprites/feet/sapatilha__red.png",
+            "walk": "sprites/feet/sapatilha__red--walk.png",
+            "swatch": "#ab1e1e"
           },
           {
             "color": "purple",
             "label": "Roxo",
-            "swatch": "#621e78",
-            "file": "sprites/feet/sapatilha__purple.png"
+            "file": "sprites/feet/sapatilha__purple.png",
+            "walk": "sprites/feet/sapatilha__purple--walk.png",
+            "swatch": "#621e78"
           },
           {
             "color": "white",
             "label": "Branco",
-            "swatch": "#e5e6c7",
-            "file": "sprites/feet/sapatilha__white.png"
+            "file": "sprites/feet/sapatilha__white.png",
+            "walk": "sprites/feet/sapatilha__white--walk.png",
+            "swatch": "#e5e6c7"
           },
           {
             "color": "teal",
             "label": "Turquesa",
-            "swatch": "#0098b2",
-            "file": "sprites/feet/sapatilha__teal.png"
+            "file": "sprites/feet/sapatilha__teal.png",
+            "walk": "sprites/feet/sapatilha__teal--walk.png",
+            "swatch": "#0098b2"
           },
           {
             "color": "navy",
             "label": "Marinho",
-            "swatch": "#3c49ad",
-            "file": "sprites/feet/sapatilha__navy.png"
+            "file": "sprites/feet/sapatilha__navy.png",
+            "walk": "sprites/feet/sapatilha__navy--walk.png",
+            "swatch": "#3c49ad"
           }
         ]
       },
@@ -1742,62 +1995,72 @@
           {
             "color": "pink",
             "label": "Rosa",
-            "swatch": "#c36072",
-            "file": "sprites/feet/tenis__pink.png"
+            "file": "sprites/feet/tenis__pink.png",
+            "walk": "sprites/feet/tenis__pink--walk.png",
+            "swatch": "#c36072"
           },
           {
             "color": "sky",
             "label": "Celeste",
-            "swatch": "#c6eefd",
-            "file": "sprites/feet/tenis__sky.png"
+            "file": "sprites/feet/tenis__sky.png",
+            "walk": "sprites/feet/tenis__sky--walk.png",
+            "swatch": "#c6eefd"
           },
           {
             "color": "lavender",
             "label": "Lilas",
-            "swatch": "#a966dd",
-            "file": "sprites/feet/tenis__lavender.png"
+            "file": "sprites/feet/tenis__lavender.png",
+            "walk": "sprites/feet/tenis__lavender--walk.png",
+            "swatch": "#a966dd"
           },
           {
             "color": "yellow",
             "label": "Amarelo",
-            "swatch": "#f3c03f",
-            "file": "sprites/feet/tenis__yellow.png"
+            "file": "sprites/feet/tenis__yellow.png",
+            "walk": "sprites/feet/tenis__yellow--walk.png",
+            "swatch": "#f3c03f"
           },
           {
             "color": "green",
             "label": "Verde",
-            "swatch": "#2f8136",
-            "file": "sprites/feet/tenis__green.png"
+            "file": "sprites/feet/tenis__green.png",
+            "walk": "sprites/feet/tenis__green--walk.png",
+            "swatch": "#2f8136"
           },
           {
             "color": "red",
             "label": "Vermelho",
-            "swatch": "#ab1e1e",
-            "file": "sprites/feet/tenis__red.png"
+            "file": "sprites/feet/tenis__red.png",
+            "walk": "sprites/feet/tenis__red--walk.png",
+            "swatch": "#ab1e1e"
           },
           {
             "color": "purple",
             "label": "Roxo",
-            "swatch": "#621e78",
-            "file": "sprites/feet/tenis__purple.png"
+            "file": "sprites/feet/tenis__purple.png",
+            "walk": "sprites/feet/tenis__purple--walk.png",
+            "swatch": "#621e78"
           },
           {
             "color": "white",
             "label": "Branco",
-            "swatch": "#e5e6c7",
-            "file": "sprites/feet/tenis__white.png"
+            "file": "sprites/feet/tenis__white.png",
+            "walk": "sprites/feet/tenis__white--walk.png",
+            "swatch": "#e5e6c7"
           },
           {
             "color": "teal",
             "label": "Turquesa",
-            "swatch": "#0098b2",
-            "file": "sprites/feet/tenis__teal.png"
+            "file": "sprites/feet/tenis__teal.png",
+            "walk": "sprites/feet/tenis__teal--walk.png",
+            "swatch": "#0098b2"
           },
           {
             "color": "navy",
             "label": "Marinho",
-            "swatch": "#3c49ad",
-            "file": "sprites/feet/tenis__navy.png"
+            "file": "sprites/feet/tenis__navy.png",
+            "walk": "sprites/feet/tenis__navy--walk.png",
+            "swatch": "#3c49ad"
           }
         ]
       },
@@ -1810,62 +2073,72 @@
           {
             "color": "pink",
             "label": "Rosa",
-            "swatch": "#c36072",
-            "file": "sprites/feet/sapato-boneca__pink.png"
+            "file": "sprites/feet/sapato-boneca__pink.png",
+            "walk": "sprites/feet/sapato-boneca__pink--walk.png",
+            "swatch": "#c36072"
           },
           {
             "color": "sky",
             "label": "Celeste",
-            "swatch": "#c6eefd",
-            "file": "sprites/feet/sapato-boneca__sky.png"
+            "file": "sprites/feet/sapato-boneca__sky.png",
+            "walk": "sprites/feet/sapato-boneca__sky--walk.png",
+            "swatch": "#c6eefd"
           },
           {
             "color": "lavender",
             "label": "Lilas",
-            "swatch": "#a966dd",
-            "file": "sprites/feet/sapato-boneca__lavender.png"
+            "file": "sprites/feet/sapato-boneca__lavender.png",
+            "walk": "sprites/feet/sapato-boneca__lavender--walk.png",
+            "swatch": "#a966dd"
           },
           {
             "color": "yellow",
             "label": "Amarelo",
-            "swatch": "#f3c03f",
-            "file": "sprites/feet/sapato-boneca__yellow.png"
+            "file": "sprites/feet/sapato-boneca__yellow.png",
+            "walk": "sprites/feet/sapato-boneca__yellow--walk.png",
+            "swatch": "#f3c03f"
           },
           {
             "color": "green",
             "label": "Verde",
-            "swatch": "#2f8136",
-            "file": "sprites/feet/sapato-boneca__green.png"
+            "file": "sprites/feet/sapato-boneca__green.png",
+            "walk": "sprites/feet/sapato-boneca__green--walk.png",
+            "swatch": "#2f8136"
           },
           {
             "color": "red",
             "label": "Vermelho",
-            "swatch": "#ab1e1e",
-            "file": "sprites/feet/sapato-boneca__red.png"
+            "file": "sprites/feet/sapato-boneca__red.png",
+            "walk": "sprites/feet/sapato-boneca__red--walk.png",
+            "swatch": "#ab1e1e"
           },
           {
             "color": "purple",
             "label": "Roxo",
-            "swatch": "#621e78",
-            "file": "sprites/feet/sapato-boneca__purple.png"
+            "file": "sprites/feet/sapato-boneca__purple.png",
+            "walk": "sprites/feet/sapato-boneca__purple--walk.png",
+            "swatch": "#621e78"
           },
           {
             "color": "white",
             "label": "Branco",
-            "swatch": "#e5e6c7",
-            "file": "sprites/feet/sapato-boneca__white.png"
+            "file": "sprites/feet/sapato-boneca__white.png",
+            "walk": "sprites/feet/sapato-boneca__white--walk.png",
+            "swatch": "#e5e6c7"
           },
           {
             "color": "teal",
             "label": "Turquesa",
-            "swatch": "#0098b2",
-            "file": "sprites/feet/sapato-boneca__teal.png"
+            "file": "sprites/feet/sapato-boneca__teal.png",
+            "walk": "sprites/feet/sapato-boneca__teal--walk.png",
+            "swatch": "#0098b2"
           },
           {
             "color": "navy",
             "label": "Marinho",
-            "swatch": "#3c49ad",
-            "file": "sprites/feet/sapato-boneca__navy.png"
+            "file": "sprites/feet/sapato-boneca__navy.png",
+            "walk": "sprites/feet/sapato-boneca__navy--walk.png",
+            "swatch": "#3c49ad"
           }
         ]
       },
@@ -1878,62 +2151,72 @@
           {
             "color": "pink",
             "label": "Rosa",
-            "swatch": "#c36072",
-            "file": "sprites/feet/pantufa__pink.png"
+            "file": "sprites/feet/pantufa__pink.png",
+            "walk": "sprites/feet/pantufa__pink--walk.png",
+            "swatch": "#c36072"
           },
           {
             "color": "sky",
             "label": "Celeste",
-            "swatch": "#c6eefd",
-            "file": "sprites/feet/pantufa__sky.png"
+            "file": "sprites/feet/pantufa__sky.png",
+            "walk": "sprites/feet/pantufa__sky--walk.png",
+            "swatch": "#c6eefd"
           },
           {
             "color": "lavender",
             "label": "Lilas",
-            "swatch": "#a966dd",
-            "file": "sprites/feet/pantufa__lavender.png"
+            "file": "sprites/feet/pantufa__lavender.png",
+            "walk": "sprites/feet/pantufa__lavender--walk.png",
+            "swatch": "#a966dd"
           },
           {
             "color": "yellow",
             "label": "Amarelo",
-            "swatch": "#f3c03f",
-            "file": "sprites/feet/pantufa__yellow.png"
+            "file": "sprites/feet/pantufa__yellow.png",
+            "walk": "sprites/feet/pantufa__yellow--walk.png",
+            "swatch": "#f3c03f"
           },
           {
             "color": "green",
             "label": "Verde",
-            "swatch": "#2f8136",
-            "file": "sprites/feet/pantufa__green.png"
+            "file": "sprites/feet/pantufa__green.png",
+            "walk": "sprites/feet/pantufa__green--walk.png",
+            "swatch": "#2f8136"
           },
           {
             "color": "red",
             "label": "Vermelho",
-            "swatch": "#ab1e1e",
-            "file": "sprites/feet/pantufa__red.png"
+            "file": "sprites/feet/pantufa__red.png",
+            "walk": "sprites/feet/pantufa__red--walk.png",
+            "swatch": "#ab1e1e"
           },
           {
             "color": "purple",
             "label": "Roxo",
-            "swatch": "#621e78",
-            "file": "sprites/feet/pantufa__purple.png"
+            "file": "sprites/feet/pantufa__purple.png",
+            "walk": "sprites/feet/pantufa__purple--walk.png",
+            "swatch": "#621e78"
           },
           {
             "color": "white",
             "label": "Branco",
-            "swatch": "#e5e6c7",
-            "file": "sprites/feet/pantufa__white.png"
+            "file": "sprites/feet/pantufa__white.png",
+            "walk": "sprites/feet/pantufa__white--walk.png",
+            "swatch": "#e5e6c7"
           },
           {
             "color": "teal",
             "label": "Turquesa",
-            "swatch": "#0098b2",
-            "file": "sprites/feet/pantufa__teal.png"
+            "file": "sprites/feet/pantufa__teal.png",
+            "walk": "sprites/feet/pantufa__teal--walk.png",
+            "swatch": "#0098b2"
           },
           {
             "color": "navy",
             "label": "Marinho",
-            "swatch": "#3c49ad",
-            "file": "sprites/feet/pantufa__navy.png"
+            "file": "sprites/feet/pantufa__navy.png",
+            "walk": "sprites/feet/pantufa__navy--walk.png",
+            "swatch": "#3c49ad"
           }
         ]
       },
@@ -1946,62 +2229,72 @@
           {
             "color": "pink",
             "label": "Rosa",
-            "swatch": "#c36072",
-            "file": "sprites/feet/bota__pink.png"
+            "file": "sprites/feet/bota__pink.png",
+            "walk": "sprites/feet/bota__pink--walk.png",
+            "swatch": "#c36072"
           },
           {
             "color": "sky",
             "label": "Celeste",
-            "swatch": "#c6eefd",
-            "file": "sprites/feet/bota__sky.png"
+            "file": "sprites/feet/bota__sky.png",
+            "walk": "sprites/feet/bota__sky--walk.png",
+            "swatch": "#c6eefd"
           },
           {
             "color": "lavender",
             "label": "Lilas",
-            "swatch": "#a966dd",
-            "file": "sprites/feet/bota__lavender.png"
+            "file": "sprites/feet/bota__lavender.png",
+            "walk": "sprites/feet/bota__lavender--walk.png",
+            "swatch": "#a966dd"
           },
           {
             "color": "yellow",
             "label": "Amarelo",
-            "swatch": "#f3c03f",
-            "file": "sprites/feet/bota__yellow.png"
+            "file": "sprites/feet/bota__yellow.png",
+            "walk": "sprites/feet/bota__yellow--walk.png",
+            "swatch": "#f3c03f"
           },
           {
             "color": "green",
             "label": "Verde",
-            "swatch": "#2f8136",
-            "file": "sprites/feet/bota__green.png"
+            "file": "sprites/feet/bota__green.png",
+            "walk": "sprites/feet/bota__green--walk.png",
+            "swatch": "#2f8136"
           },
           {
             "color": "red",
             "label": "Vermelho",
-            "swatch": "#ab1e1e",
-            "file": "sprites/feet/bota__red.png"
+            "file": "sprites/feet/bota__red.png",
+            "walk": "sprites/feet/bota__red--walk.png",
+            "swatch": "#ab1e1e"
           },
           {
             "color": "purple",
             "label": "Roxo",
-            "swatch": "#621e78",
-            "file": "sprites/feet/bota__purple.png"
+            "file": "sprites/feet/bota__purple.png",
+            "walk": "sprites/feet/bota__purple--walk.png",
+            "swatch": "#621e78"
           },
           {
             "color": "white",
             "label": "Branco",
-            "swatch": "#e5e6c7",
-            "file": "sprites/feet/bota__white.png"
+            "file": "sprites/feet/bota__white.png",
+            "walk": "sprites/feet/bota__white--walk.png",
+            "swatch": "#e5e6c7"
           },
           {
             "color": "teal",
             "label": "Turquesa",
-            "swatch": "#0098b2",
-            "file": "sprites/feet/bota__teal.png"
+            "file": "sprites/feet/bota__teal.png",
+            "walk": "sprites/feet/bota__teal--walk.png",
+            "swatch": "#0098b2"
           },
           {
             "color": "navy",
             "label": "Marinho",
-            "swatch": "#3c49ad",
-            "file": "sprites/feet/bota__navy.png"
+            "file": "sprites/feet/bota__navy.png",
+            "walk": "sprites/feet/bota__navy--walk.png",
+            "swatch": "#3c49ad"
           }
         ]
       },
@@ -2014,62 +2307,72 @@
           {
             "color": "pink",
             "label": "Rosa",
-            "swatch": "#c36072",
-            "file": "sprites/feet/sandalia__pink.png"
+            "file": "sprites/feet/sandalia__pink.png",
+            "walk": "sprites/feet/sandalia__pink--walk.png",
+            "swatch": "#c36072"
           },
           {
             "color": "sky",
             "label": "Celeste",
-            "swatch": "#c6eefd",
-            "file": "sprites/feet/sandalia__sky.png"
+            "file": "sprites/feet/sandalia__sky.png",
+            "walk": "sprites/feet/sandalia__sky--walk.png",
+            "swatch": "#c6eefd"
           },
           {
             "color": "lavender",
             "label": "Lilas",
-            "swatch": "#a966dd",
-            "file": "sprites/feet/sandalia__lavender.png"
+            "file": "sprites/feet/sandalia__lavender.png",
+            "walk": "sprites/feet/sandalia__lavender--walk.png",
+            "swatch": "#a966dd"
           },
           {
             "color": "yellow",
             "label": "Amarelo",
-            "swatch": "#f3c03f",
-            "file": "sprites/feet/sandalia__yellow.png"
+            "file": "sprites/feet/sandalia__yellow.png",
+            "walk": "sprites/feet/sandalia__yellow--walk.png",
+            "swatch": "#f3c03f"
           },
           {
             "color": "green",
             "label": "Verde",
-            "swatch": "#2f8136",
-            "file": "sprites/feet/sandalia__green.png"
+            "file": "sprites/feet/sandalia__green.png",
+            "walk": "sprites/feet/sandalia__green--walk.png",
+            "swatch": "#2f8136"
           },
           {
             "color": "red",
             "label": "Vermelho",
-            "swatch": "#ab1e1e",
-            "file": "sprites/feet/sandalia__red.png"
+            "file": "sprites/feet/sandalia__red.png",
+            "walk": "sprites/feet/sandalia__red--walk.png",
+            "swatch": "#ab1e1e"
           },
           {
             "color": "purple",
             "label": "Roxo",
-            "swatch": "#621e78",
-            "file": "sprites/feet/sandalia__purple.png"
+            "file": "sprites/feet/sandalia__purple.png",
+            "walk": "sprites/feet/sandalia__purple--walk.png",
+            "swatch": "#621e78"
           },
           {
             "color": "white",
             "label": "Branco",
-            "swatch": "#e5e6c7",
-            "file": "sprites/feet/sandalia__white.png"
+            "file": "sprites/feet/sandalia__white.png",
+            "walk": "sprites/feet/sandalia__white--walk.png",
+            "swatch": "#e5e6c7"
           },
           {
             "color": "teal",
             "label": "Turquesa",
-            "swatch": "#0098b2",
-            "file": "sprites/feet/sandalia__teal.png"
+            "file": "sprites/feet/sandalia__teal.png",
+            "walk": "sprites/feet/sandalia__teal--walk.png",
+            "swatch": "#0098b2"
           },
           {
             "color": "navy",
             "label": "Marinho",
-            "swatch": "#3c49ad",
-            "file": "sprites/feet/sandalia__navy.png"
+            "file": "sprites/feet/sandalia__navy.png",
+            "walk": "sprites/feet/sandalia__navy--walk.png",
+            "swatch": "#3c49ad"
           }
         ]
       }
@@ -2084,62 +2387,72 @@
           {
             "color": "pink",
             "label": "Rosa",
-            "swatch": "#c36072",
-            "file": "sprites/hat/tiara__pink.png"
+            "file": "sprites/hat/tiara__pink.png",
+            "walk": "sprites/hat/tiara__pink--walk.png",
+            "swatch": "#c36072"
           },
           {
             "color": "sky",
             "label": "Celeste",
-            "swatch": "#c6eefd",
-            "file": "sprites/hat/tiara__sky.png"
+            "file": "sprites/hat/tiara__sky.png",
+            "walk": "sprites/hat/tiara__sky--walk.png",
+            "swatch": "#c6eefd"
           },
           {
             "color": "lavender",
             "label": "Lilas",
-            "swatch": "#a966dd",
-            "file": "sprites/hat/tiara__lavender.png"
+            "file": "sprites/hat/tiara__lavender.png",
+            "walk": "sprites/hat/tiara__lavender--walk.png",
+            "swatch": "#a966dd"
           },
           {
             "color": "yellow",
             "label": "Amarelo",
-            "swatch": "#f3c03f",
-            "file": "sprites/hat/tiara__yellow.png"
+            "file": "sprites/hat/tiara__yellow.png",
+            "walk": "sprites/hat/tiara__yellow--walk.png",
+            "swatch": "#f3c03f"
           },
           {
             "color": "green",
             "label": "Verde",
-            "swatch": "#2f8136",
-            "file": "sprites/hat/tiara__green.png"
+            "file": "sprites/hat/tiara__green.png",
+            "walk": "sprites/hat/tiara__green--walk.png",
+            "swatch": "#2f8136"
           },
           {
             "color": "red",
             "label": "Vermelho",
-            "swatch": "#ab1e1e",
-            "file": "sprites/hat/tiara__red.png"
+            "file": "sprites/hat/tiara__red.png",
+            "walk": "sprites/hat/tiara__red--walk.png",
+            "swatch": "#ab1e1e"
           },
           {
             "color": "purple",
             "label": "Roxo",
-            "swatch": "#621e78",
-            "file": "sprites/hat/tiara__purple.png"
+            "file": "sprites/hat/tiara__purple.png",
+            "walk": "sprites/hat/tiara__purple--walk.png",
+            "swatch": "#621e78"
           },
           {
             "color": "white",
             "label": "Branco",
-            "swatch": "#e5e6c7",
-            "file": "sprites/hat/tiara__white.png"
+            "file": "sprites/hat/tiara__white.png",
+            "walk": "sprites/hat/tiara__white--walk.png",
+            "swatch": "#e5e6c7"
           },
           {
             "color": "teal",
             "label": "Turquesa",
-            "swatch": "#0098b2",
-            "file": "sprites/hat/tiara__teal.png"
+            "file": "sprites/hat/tiara__teal.png",
+            "walk": "sprites/hat/tiara__teal--walk.png",
+            "swatch": "#0098b2"
           },
           {
             "color": "navy",
             "label": "Marinho",
-            "swatch": "#3c49ad",
-            "file": "sprites/hat/tiara__navy.png"
+            "file": "sprites/hat/tiara__navy.png",
+            "walk": "sprites/hat/tiara__navy--walk.png",
+            "swatch": "#3c49ad"
           }
         ]
       },
@@ -2152,62 +2465,72 @@
           {
             "color": "pink",
             "label": "Rosa",
-            "swatch": "#c36072",
-            "file": "sprites/hat/faixa__pink.png"
+            "file": "sprites/hat/faixa__pink.png",
+            "walk": "sprites/hat/faixa__pink--walk.png",
+            "swatch": "#c36072"
           },
           {
             "color": "sky",
             "label": "Celeste",
-            "swatch": "#c6eefd",
-            "file": "sprites/hat/faixa__sky.png"
+            "file": "sprites/hat/faixa__sky.png",
+            "walk": "sprites/hat/faixa__sky--walk.png",
+            "swatch": "#c6eefd"
           },
           {
             "color": "lavender",
             "label": "Lilas",
-            "swatch": "#a966dd",
-            "file": "sprites/hat/faixa__lavender.png"
+            "file": "sprites/hat/faixa__lavender.png",
+            "walk": "sprites/hat/faixa__lavender--walk.png",
+            "swatch": "#a966dd"
           },
           {
             "color": "yellow",
             "label": "Amarelo",
-            "swatch": "#f3c03f",
-            "file": "sprites/hat/faixa__yellow.png"
+            "file": "sprites/hat/faixa__yellow.png",
+            "walk": "sprites/hat/faixa__yellow--walk.png",
+            "swatch": "#f3c03f"
           },
           {
             "color": "green",
             "label": "Verde",
-            "swatch": "#2f8136",
-            "file": "sprites/hat/faixa__green.png"
+            "file": "sprites/hat/faixa__green.png",
+            "walk": "sprites/hat/faixa__green--walk.png",
+            "swatch": "#2f8136"
           },
           {
             "color": "red",
             "label": "Vermelho",
-            "swatch": "#ab1e1e",
-            "file": "sprites/hat/faixa__red.png"
+            "file": "sprites/hat/faixa__red.png",
+            "walk": "sprites/hat/faixa__red--walk.png",
+            "swatch": "#ab1e1e"
           },
           {
             "color": "purple",
             "label": "Roxo",
-            "swatch": "#621e78",
-            "file": "sprites/hat/faixa__purple.png"
+            "file": "sprites/hat/faixa__purple.png",
+            "walk": "sprites/hat/faixa__purple--walk.png",
+            "swatch": "#621e78"
           },
           {
             "color": "white",
             "label": "Branco",
-            "swatch": "#e5e6c7",
-            "file": "sprites/hat/faixa__white.png"
+            "file": "sprites/hat/faixa__white.png",
+            "walk": "sprites/hat/faixa__white--walk.png",
+            "swatch": "#e5e6c7"
           },
           {
             "color": "teal",
             "label": "Turquesa",
-            "swatch": "#0098b2",
-            "file": "sprites/hat/faixa__teal.png"
+            "file": "sprites/hat/faixa__teal.png",
+            "walk": "sprites/hat/faixa__teal--walk.png",
+            "swatch": "#0098b2"
           },
           {
             "color": "navy",
             "label": "Marinho",
-            "swatch": "#3c49ad",
-            "file": "sprites/hat/faixa__navy.png"
+            "file": "sprites/hat/faixa__navy.png",
+            "walk": "sprites/hat/faixa__navy--walk.png",
+            "swatch": "#3c49ad"
           }
         ]
       },
@@ -2220,62 +2543,72 @@
           {
             "color": "pink",
             "label": "Rosa",
-            "swatch": "#c36072",
-            "file": "sprites/hat/lenco__pink.png"
+            "file": "sprites/hat/lenco__pink.png",
+            "walk": "sprites/hat/lenco__pink--walk.png",
+            "swatch": "#c36072"
           },
           {
             "color": "sky",
             "label": "Celeste",
-            "swatch": "#c6eefd",
-            "file": "sprites/hat/lenco__sky.png"
+            "file": "sprites/hat/lenco__sky.png",
+            "walk": "sprites/hat/lenco__sky--walk.png",
+            "swatch": "#c6eefd"
           },
           {
             "color": "lavender",
             "label": "Lilas",
-            "swatch": "#a966dd",
-            "file": "sprites/hat/lenco__lavender.png"
+            "file": "sprites/hat/lenco__lavender.png",
+            "walk": "sprites/hat/lenco__lavender--walk.png",
+            "swatch": "#a966dd"
           },
           {
             "color": "yellow",
             "label": "Amarelo",
-            "swatch": "#f3c03f",
-            "file": "sprites/hat/lenco__yellow.png"
+            "file": "sprites/hat/lenco__yellow.png",
+            "walk": "sprites/hat/lenco__yellow--walk.png",
+            "swatch": "#f3c03f"
           },
           {
             "color": "green",
             "label": "Verde",
-            "swatch": "#2f8136",
-            "file": "sprites/hat/lenco__green.png"
+            "file": "sprites/hat/lenco__green.png",
+            "walk": "sprites/hat/lenco__green--walk.png",
+            "swatch": "#2f8136"
           },
           {
             "color": "red",
             "label": "Vermelho",
-            "swatch": "#ab1e1e",
-            "file": "sprites/hat/lenco__red.png"
+            "file": "sprites/hat/lenco__red.png",
+            "walk": "sprites/hat/lenco__red--walk.png",
+            "swatch": "#ab1e1e"
           },
           {
             "color": "purple",
             "label": "Roxo",
-            "swatch": "#621e78",
-            "file": "sprites/hat/lenco__purple.png"
+            "file": "sprites/hat/lenco__purple.png",
+            "walk": "sprites/hat/lenco__purple--walk.png",
+            "swatch": "#621e78"
           },
           {
             "color": "white",
             "label": "Branco",
-            "swatch": "#e5e6c7",
-            "file": "sprites/hat/lenco__white.png"
+            "file": "sprites/hat/lenco__white.png",
+            "walk": "sprites/hat/lenco__white--walk.png",
+            "swatch": "#e5e6c7"
           },
           {
             "color": "teal",
             "label": "Turquesa",
-            "swatch": "#0098b2",
-            "file": "sprites/hat/lenco__teal.png"
+            "file": "sprites/hat/lenco__teal.png",
+            "walk": "sprites/hat/lenco__teal--walk.png",
+            "swatch": "#0098b2"
           },
           {
             "color": "navy",
             "label": "Marinho",
-            "swatch": "#3c49ad",
-            "file": "sprites/hat/lenco__navy.png"
+            "file": "sprites/hat/lenco__navy.png",
+            "walk": "sprites/hat/lenco__navy--walk.png",
+            "swatch": "#3c49ad"
           }
         ]
       },
@@ -2288,62 +2621,72 @@
           {
             "color": "pink",
             "label": "Rosa",
-            "swatch": "#c36072",
-            "file": "sprites/hat/capuz__pink.png"
+            "file": "sprites/hat/capuz__pink.png",
+            "walk": "sprites/hat/capuz__pink--walk.png",
+            "swatch": "#c36072"
           },
           {
             "color": "sky",
             "label": "Celeste",
-            "swatch": "#c6eefd",
-            "file": "sprites/hat/capuz__sky.png"
+            "file": "sprites/hat/capuz__sky.png",
+            "walk": "sprites/hat/capuz__sky--walk.png",
+            "swatch": "#c6eefd"
           },
           {
             "color": "lavender",
             "label": "Lilas",
-            "swatch": "#a966dd",
-            "file": "sprites/hat/capuz__lavender.png"
+            "file": "sprites/hat/capuz__lavender.png",
+            "walk": "sprites/hat/capuz__lavender--walk.png",
+            "swatch": "#a966dd"
           },
           {
             "color": "yellow",
             "label": "Amarelo",
-            "swatch": "#f3c03f",
-            "file": "sprites/hat/capuz__yellow.png"
+            "file": "sprites/hat/capuz__yellow.png",
+            "walk": "sprites/hat/capuz__yellow--walk.png",
+            "swatch": "#f3c03f"
           },
           {
             "color": "green",
             "label": "Verde",
-            "swatch": "#2f8136",
-            "file": "sprites/hat/capuz__green.png"
+            "file": "sprites/hat/capuz__green.png",
+            "walk": "sprites/hat/capuz__green--walk.png",
+            "swatch": "#2f8136"
           },
           {
             "color": "red",
             "label": "Vermelho",
-            "swatch": "#ab1e1e",
-            "file": "sprites/hat/capuz__red.png"
+            "file": "sprites/hat/capuz__red.png",
+            "walk": "sprites/hat/capuz__red--walk.png",
+            "swatch": "#ab1e1e"
           },
           {
             "color": "purple",
             "label": "Roxo",
-            "swatch": "#621e78",
-            "file": "sprites/hat/capuz__purple.png"
+            "file": "sprites/hat/capuz__purple.png",
+            "walk": "sprites/hat/capuz__purple--walk.png",
+            "swatch": "#621e78"
           },
           {
             "color": "white",
             "label": "Branco",
-            "swatch": "#e5e6c7",
-            "file": "sprites/hat/capuz__white.png"
+            "file": "sprites/hat/capuz__white.png",
+            "walk": "sprites/hat/capuz__white--walk.png",
+            "swatch": "#e5e6c7"
           },
           {
             "color": "teal",
             "label": "Turquesa",
-            "swatch": "#0098b2",
-            "file": "sprites/hat/capuz__teal.png"
+            "file": "sprites/hat/capuz__teal.png",
+            "walk": "sprites/hat/capuz__teal--walk.png",
+            "swatch": "#0098b2"
           },
           {
             "color": "navy",
             "label": "Marinho",
-            "swatch": "#3c49ad",
-            "file": "sprites/hat/capuz__navy.png"
+            "file": "sprites/hat/capuz__navy.png",
+            "walk": "sprites/hat/capuz__navy--walk.png",
+            "swatch": "#3c49ad"
           }
         ]
       },
@@ -2356,62 +2699,72 @@
           {
             "color": "pink",
             "label": "Rosa",
-            "swatch": "#c36072",
-            "file": "sprites/hat/chapeu__pink.png"
+            "file": "sprites/hat/chapeu__pink.png",
+            "walk": "sprites/hat/chapeu__pink--walk.png",
+            "swatch": "#c36072"
           },
           {
             "color": "sky",
             "label": "Celeste",
-            "swatch": "#c6eefd",
-            "file": "sprites/hat/chapeu__sky.png"
+            "file": "sprites/hat/chapeu__sky.png",
+            "walk": "sprites/hat/chapeu__sky--walk.png",
+            "swatch": "#c6eefd"
           },
           {
             "color": "lavender",
             "label": "Lilas",
-            "swatch": "#a966dd",
-            "file": "sprites/hat/chapeu__lavender.png"
+            "file": "sprites/hat/chapeu__lavender.png",
+            "walk": "sprites/hat/chapeu__lavender--walk.png",
+            "swatch": "#a966dd"
           },
           {
             "color": "yellow",
             "label": "Amarelo",
-            "swatch": "#f3c03f",
-            "file": "sprites/hat/chapeu__yellow.png"
+            "file": "sprites/hat/chapeu__yellow.png",
+            "walk": "sprites/hat/chapeu__yellow--walk.png",
+            "swatch": "#f3c03f"
           },
           {
             "color": "green",
             "label": "Verde",
-            "swatch": "#2f8136",
-            "file": "sprites/hat/chapeu__green.png"
+            "file": "sprites/hat/chapeu__green.png",
+            "walk": "sprites/hat/chapeu__green--walk.png",
+            "swatch": "#2f8136"
           },
           {
             "color": "red",
             "label": "Vermelho",
-            "swatch": "#ab1e1e",
-            "file": "sprites/hat/chapeu__red.png"
+            "file": "sprites/hat/chapeu__red.png",
+            "walk": "sprites/hat/chapeu__red--walk.png",
+            "swatch": "#ab1e1e"
           },
           {
             "color": "purple",
             "label": "Roxo",
-            "swatch": "#621e78",
-            "file": "sprites/hat/chapeu__purple.png"
+            "file": "sprites/hat/chapeu__purple.png",
+            "walk": "sprites/hat/chapeu__purple--walk.png",
+            "swatch": "#621e78"
           },
           {
             "color": "white",
             "label": "Branco",
-            "swatch": "#e5e6c7",
-            "file": "sprites/hat/chapeu__white.png"
+            "file": "sprites/hat/chapeu__white.png",
+            "walk": "sprites/hat/chapeu__white--walk.png",
+            "swatch": "#e5e6c7"
           },
           {
             "color": "teal",
             "label": "Turquesa",
-            "swatch": "#0098b2",
-            "file": "sprites/hat/chapeu__teal.png"
+            "file": "sprites/hat/chapeu__teal.png",
+            "walk": "sprites/hat/chapeu__teal--walk.png",
+            "swatch": "#0098b2"
           },
           {
             "color": "navy",
             "label": "Marinho",
-            "swatch": "#3c49ad",
-            "file": "sprites/hat/chapeu__navy.png"
+            "file": "sprites/hat/chapeu__navy.png",
+            "walk": "sprites/hat/chapeu__navy--walk.png",
+            "swatch": "#3c49ad"
           }
         ]
       },
@@ -2424,62 +2777,72 @@
           {
             "color": "pink",
             "label": "Rosa",
-            "swatch": "#c36072",
-            "file": "sprites/hat/gorro-natal__pink.png"
+            "file": "sprites/hat/gorro-natal__pink.png",
+            "walk": "sprites/hat/gorro-natal__pink--walk.png",
+            "swatch": "#c36072"
           },
           {
             "color": "sky",
             "label": "Celeste",
-            "swatch": "#c6eefd",
-            "file": "sprites/hat/gorro-natal__sky.png"
+            "file": "sprites/hat/gorro-natal__sky.png",
+            "walk": "sprites/hat/gorro-natal__sky--walk.png",
+            "swatch": "#c6eefd"
           },
           {
             "color": "lavender",
             "label": "Lilas",
-            "swatch": "#a966dd",
-            "file": "sprites/hat/gorro-natal__lavender.png"
+            "file": "sprites/hat/gorro-natal__lavender.png",
+            "walk": "sprites/hat/gorro-natal__lavender--walk.png",
+            "swatch": "#a966dd"
           },
           {
             "color": "yellow",
             "label": "Amarelo",
-            "swatch": "#f3c03f",
-            "file": "sprites/hat/gorro-natal__yellow.png"
+            "file": "sprites/hat/gorro-natal__yellow.png",
+            "walk": "sprites/hat/gorro-natal__yellow--walk.png",
+            "swatch": "#f3c03f"
           },
           {
             "color": "green",
             "label": "Verde",
-            "swatch": "#2f8136",
-            "file": "sprites/hat/gorro-natal__green.png"
+            "file": "sprites/hat/gorro-natal__green.png",
+            "walk": "sprites/hat/gorro-natal__green--walk.png",
+            "swatch": "#2f8136"
           },
           {
             "color": "red",
             "label": "Vermelho",
-            "swatch": "#ab1e1e",
-            "file": "sprites/hat/gorro-natal__red.png"
+            "file": "sprites/hat/gorro-natal__red.png",
+            "walk": "sprites/hat/gorro-natal__red--walk.png",
+            "swatch": "#ab1e1e"
           },
           {
             "color": "purple",
             "label": "Roxo",
-            "swatch": "#621e78",
-            "file": "sprites/hat/gorro-natal__purple.png"
+            "file": "sprites/hat/gorro-natal__purple.png",
+            "walk": "sprites/hat/gorro-natal__purple--walk.png",
+            "swatch": "#621e78"
           },
           {
             "color": "white",
             "label": "Branco",
-            "swatch": "#e5e6c7",
-            "file": "sprites/hat/gorro-natal__white.png"
+            "file": "sprites/hat/gorro-natal__white.png",
+            "walk": "sprites/hat/gorro-natal__white--walk.png",
+            "swatch": "#e5e6c7"
           },
           {
             "color": "teal",
             "label": "Turquesa",
-            "swatch": "#0098b2",
-            "file": "sprites/hat/gorro-natal__teal.png"
+            "file": "sprites/hat/gorro-natal__teal.png",
+            "walk": "sprites/hat/gorro-natal__teal--walk.png",
+            "swatch": "#0098b2"
           },
           {
             "color": "navy",
             "label": "Marinho",
-            "swatch": "#3c49ad",
-            "file": "sprites/hat/gorro-natal__navy.png"
+            "file": "sprites/hat/gorro-natal__navy.png",
+            "walk": "sprites/hat/gorro-natal__navy--walk.png",
+            "swatch": "#3c49ad"
           }
         ]
       },
@@ -2492,26 +2855,30 @@
           {
             "color": "gold",
             "label": "Dourado",
-            "swatch": "#4f2313",
-            "file": "sprites/hat/coroa__gold.png"
+            "file": "sprites/hat/coroa__gold.png",
+            "walk": "sprites/hat/coroa__gold--walk.png",
+            "swatch": "#4f2313"
           },
           {
             "color": "silver",
             "label": "Prateado",
-            "swatch": "#2e2533",
-            "file": "sprites/hat/coroa__silver.png"
+            "file": "sprites/hat/coroa__silver.png",
+            "walk": "sprites/hat/coroa__silver--walk.png",
+            "swatch": "#2e2533"
           },
           {
             "color": "crown_red",
             "label": "Rubi",
-            "swatch": "#400000",
-            "file": "sprites/hat/coroa__crown_red.png"
+            "file": "sprites/hat/coroa__crown_red.png",
+            "walk": "sprites/hat/coroa__crown_red--walk.png",
+            "swatch": "#400000"
           },
           {
             "color": "purple",
             "label": "Roxo",
-            "swatch": "#261044",
-            "file": "sprites/hat/coroa__purple.png"
+            "file": "sprites/hat/coroa__purple.png",
+            "walk": "sprites/hat/coroa__purple--walk.png",
+            "swatch": "#261044"
           }
         ]
       },
@@ -2524,20 +2891,23 @@
           {
             "color": "tiara_gold",
             "label": "Dourada",
-            "swatch": "#a3761c",
-            "file": "sprites/hat/tiara-princesa__tiara_gold.png"
+            "file": "sprites/hat/tiara-princesa__tiara_gold.png",
+            "walk": "sprites/hat/tiara-princesa__tiara_gold--walk.png",
+            "swatch": "#a3761c"
           },
           {
             "color": "tiara_silver",
             "label": "Prateada",
-            "swatch": "#797979",
-            "file": "sprites/hat/tiara-princesa__tiara_silver.png"
+            "file": "sprites/hat/tiara-princesa__tiara_silver.png",
+            "walk": "sprites/hat/tiara-princesa__tiara_silver--walk.png",
+            "swatch": "#797979"
           },
           {
             "color": "tiara_purple",
             "label": "Lilas",
-            "swatch": "#976ed9",
-            "file": "sprites/hat/tiara-princesa__tiara_purple.png"
+            "file": "sprites/hat/tiara-princesa__tiara_purple.png",
+            "walk": "sprites/hat/tiara-princesa__tiara_purple--walk.png",
+            "swatch": "#976ed9"
           }
         ]
       }

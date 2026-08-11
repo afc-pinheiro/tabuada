@@ -1,11 +1,17 @@
 export type Category = 'body' | 'head' | 'eyes' | 'hair' | 'torso' | 'legs' | 'feet' | 'hat'
 
+/** Poses disponiveis para cada peca (ver POSES em tools/build_assets.py). */
+export type Pose = 'idle' | 'walk'
+
 export interface Variant {
   color: string
   label: string
   /** Cor representativa da peca, para as bolinhas de paleta na interface. */
   swatch: string
+  /** Pose parada, de frente. */
   file: string
+  /** Pose andando para a direita. Ausente quando a folha nao existe no LPC. */
+  walk?: string
 }
 
 export interface Item {
@@ -18,6 +24,8 @@ export interface Item {
 
 export interface Catalog {
   z: Record<Category, number>
+  /** Quantidade de quadros de cada pose, para montar a animacao em CSS. */
+  frames: Record<Pose, number>
   categories: Record<Category, Item[]>
 }
 
