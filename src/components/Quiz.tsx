@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Character } from './Character'
 import { MEDAL_EMOJI, QUESTIONS_PER_ROUND, STARS_PER_HIT, medalFor, mixedRound, roundForTable } from '../game/quiz'
 import type { Question } from '../game/quiz'
@@ -16,9 +16,10 @@ interface Props {
 type Phase = 'playing' | 'done'
 
 export function Quiz({ table, outfit, unlockedTables, onFinish, onExit }: Props) {
-  const questions = useMemo<Question[]>(
-    () => (table === 'mix' ? mixedRound(unlockedTables) : roundForTable(table)),
-    [table, unlockedTables],
+  // Sorteado uma vez na montagem: o Quiz desmonta ao sair da tela, entao cada
+  // rodada nova ganha o seu proprio conjunto. Nada de re-sortear no meio.
+  const [questions] = useState<Question[]>(() =>
+    table === 'mix' ? mixedRound(unlockedTables) : roundForTable(table),
   )
 
   const [index, setIndex] = useState(0)

@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import { Closet } from './components/Closet'
 import { Home } from './components/Home'
 import { Quiz } from './components/Quiz'
@@ -29,9 +29,17 @@ export default function App() {
     return () => window.clearTimeout(id)
   }, [toast])
 
-  const unlockedTables = Object.entries(save.progress)
-    .filter(([, p]) => p.medal > 0)
-    .map(([table]) => Number(table))
+  // `progress` tambem guarda a chave 'mix', que nao e uma tabuada. Memorizado por
+  // valor: se a identidade do array mudasse a cada render, o useMemo do Quiz
+  // sortearia perguntas novas no meio da rodada.
+  const unlockedKey = Object.entries(save.progress)
+    .filter(([table, p]) => p.medal > 0 && /^\d+$/.test(table))
+    .map(([table]) => table)
+    .join(',')
+  const unlockedTables = useMemo(
+    () => (unlockedKey ? unlockedKey.split(',').map(Number) : []),
+    [unlockedKey],
+  )
 
   const finishRound = useCallback(
     (table: number | 'mix', result: { hits: number; stars: number }) => {

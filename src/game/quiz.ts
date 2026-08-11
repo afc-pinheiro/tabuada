@@ -41,11 +41,24 @@ function distractors(a: number, b: number): number[] {
   return shuffle([...pool].filter((n) => n > 0))
 }
 
-export function makeQuestion(a: number, b: number): Question {
+/**
+ * Um fator invalido (NaN, 0, negativo) envenena toda a aritmetica seguinte e
+ * chega a travar a geracao de alternativas. Melhor cair num fator valido do que
+ * congelar a tela na cara da criança.
+ */
+function saneFactor(value: number): number {
+  return Number.isInteger(value) && value >= 1 && value <= 99 ? value : 1
+}
+
+export function makeQuestion(rawA: number, rawB: number): Question {
+  const a = saneFactor(rawA)
+  const b = saneFactor(rawB)
   const answer = a * b
   const wrong = distractors(a, b).slice(0, 3)
-  while (wrong.length < 3) {
-    const candidate = answer + wrong.length + 3
+  // Completa com valores acima da resposta. O passo cresce a cada tentativa, entao
+  // sempre termina — um `candidate` fixo repetido travaria o loop.
+  for (let step = 2; wrong.length < 3; step++) {
+    const candidate = answer + step
     if (!wrong.includes(candidate)) wrong.push(candidate)
   }
   return { a, b, answer, options: shuffle([answer, ...wrong]) }
@@ -58,7 +71,8 @@ export function roundForTable(table: number): Question[] {
 
 /** Rodada mista: sorteia tabuada e fator a cada pergunta. */
 export function mixedRound(unlocked: number[]): Question[] {
-  const pool = unlocked.length ? unlocked : [...TABLES]
+  const valid = unlocked.filter((n) => Number.isInteger(n) && n > 0)
+  const pool = valid.length ? valid : [...TABLES]
   return Array.from({ length: QUESTIONS_PER_ROUND }, () => {
     const a = pool[Math.floor(Math.random() * pool.length)]
     const b = 1 + Math.floor(Math.random() * 10)
