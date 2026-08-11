@@ -1,4 +1,4 @@
-import { CATEGORIES, catalog, findItem, spriteUrl } from '../game/catalog'
+import { CATEGORIES, DRESS_HIDES, catalog, findItem, spriteUrl } from '../game/catalog'
 import type { Category, Outfit, Pose } from '../game/types'
 
 interface Props {
@@ -17,7 +17,9 @@ interface Layer {
 
 export function buildLayers(outfit: Outfit, pose: Pose): Layer[] {
   const layers: Layer[] = []
+  const wearingDress = Boolean(outfit.dress)
   for (const category of CATEGORIES) {
+    if (wearingDress && DRESS_HIDES.includes(category)) continue
     const worn = outfit[category]
     if (!worn) continue
     const url = spriteUrl(category, worn, pose)
@@ -73,5 +75,7 @@ export function ItemThumb({
   const outfit: Outfit = { ...base, [category]: { item: itemId, color } }
   // Um chapeu esconderia o cabelo que esta sendo escolhido.
   if (category === 'hair') outfit.hat = null
+  // ...e o vestido esconderia a blusa ou a saia.
+  if (DRESS_HIDES.includes(category)) outfit.dress = null
   return <Character outfit={outfit} scale={scale} className="character--thumb" />
 }

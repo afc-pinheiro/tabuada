@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
-import { Character } from './Character'
+import { Character, ItemThumb } from './Character'
 import { Trail, sceneFor } from './Trail'
 import { MEDAL_EMOJI, QUESTIONS_PER_ROUND, STARS_PER_HIT, medalFor, mixedRound, roundForTable } from '../game/quiz'
 import type { Question } from '../game/quiz'
+import type { Prize } from '../game/reward'
 import { sfx } from '../game/sfx'
 import type { Outfit } from '../game/types'
 
@@ -10,7 +11,8 @@ interface Props {
   table: number | 'mix'
   outfit: Outfit
   unlockedTables: number[]
-  onFinish: (result: { hits: number; stars: number }) => void
+  /** Aplica o resultado e devolve o presente sorteado, se houver. */
+  onFinish: (result: { hits: number; stars: number }) => Prize | null
   onExit: () => void
 }
 
@@ -29,6 +31,7 @@ export function Quiz({ table, outfit, unlockedTables, onFinish, onExit }: Props)
   const [stars, setStars] = useState(0)
   const [picked, setPicked] = useState<number | null>(null)
   const [phase, setPhase] = useState<Phase>('playing')
+  const [prize, setPrize] = useState<Prize | null>(null)
   const reported = useRef(false)
 
   const question = questions[index]
@@ -38,7 +41,7 @@ export function Quiz({ table, outfit, unlockedTables, onFinish, onExit }: Props)
     if (phase !== 'done' || reported.current) return
     reported.current = true
     sfx.fanfare()
-    onFinish({ hits, stars })
+    setPrize(onFinish({ hits, stars }))
   }, [phase, hits, stars, onFinish])
 
   function choose(option: number) {
@@ -76,6 +79,23 @@ export function Quiz({ table, outfit, unlockedTables, onFinish, onExit }: Props)
           {hits} de {questions.length} {medal > 0 && <span className="result__medal">{MEDAL_EMOJI[medal]}</span>}
         </p>
         <p className="result__stars">+{stars} ⭐</p>
+
+        {prize && (
+          <div className="prize">
+            <p className="prize__title">🎁 Tinha um presente no baú!</p>
+            <div className="prize__card">
+              <ItemThumb
+                base={outfit}
+                category={prize.category}
+                itemId={prize.item.id}
+                color={prize.color}
+                scale={1.8}
+              />
+              <span className="prize__name">{prize.item.name}</span>
+            </div>
+            <p className="prize__hint">Já está vestido em você ✨</p>
+          </div>
+        )}
         <div className="row">
           <button className="btn btn--primary" onClick={onExit}>
             Voltar

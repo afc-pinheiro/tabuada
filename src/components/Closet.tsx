@@ -1,6 +1,13 @@
 import { useState } from 'react'
 import { Character, ItemThumb } from './Character'
-import { CATEGORY_EMOJI, CATEGORY_LABEL, DRESS_CATEGORIES, itemsOf, ownedKey } from '../game/catalog'
+import {
+  CATEGORY_EMOJI,
+  CATEGORY_LABEL,
+  DRESS_CATEGORIES,
+  OPTIONAL_CATEGORIES,
+  itemsOf,
+  ownedKey,
+} from '../game/catalog'
 import { sfx } from '../game/sfx'
 import type { Category, Outfit } from '../game/types'
 
@@ -19,9 +26,9 @@ export function Closet({ stars, outfit, owned, onWear, onExit }: Props) {
   const items = itemsOf(tab).filter((item) => owned.includes(ownedKey(tab, item.id)))
   const worn = outfit[tab]
   const wornItem = items.find((i) => i.id === worn?.item) ?? items[0]
-  const canRemove = tab === 'hat'
+  const canRemove = OPTIONAL_CATEGORIES.includes(tab)
   // Pele e olhos tem uma peça só: a grade de itens não acrescenta nada, só as cores.
-  const showItems = items.length > 1
+  const showItems = items.length > 1 || canRemove
 
   function pickItem(itemId: string) {
     sfx.click()

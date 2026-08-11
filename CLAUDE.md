@@ -15,17 +15,33 @@ sortearia contas que a criança ainda não praticou.
 
 Uma fase = 10 perguntas de múltipla escolha. A tela mostra a **trilha**: a personagem
 começa na esquerda e **caminha um passo a cada acerto** até o presente no fim do
-caminho. Cada acerto dá 3 ⭐, e a partir da 4ª seguida vale +2 de bônus. Estrelas
-compram peças na lojinha; comprar já veste a peça. Cada peça vem com todas as cores — a
-compra é por item, nunca por cor. Medalhas: 🥉 6+ acertos, 🥈 8+, 🥇 10.
+caminho. Cada acerto dá 3 ⭐, e a partir da 4ª seguida vale +2 de bônus.
+Medalhas: 🥉 6+ acertos, 🥈 8+, 🥇 10.
+
+O presente do fim da fase dá **estrelas e uma peça de roupa** (`src/game/reward.ts`).
+O sorteio só entra em cena a partir de 5 acertos, nunca repete peça já possuída e é
+enviesado para as baratas — assim a lojinha continua valendo a pena em vez de ser
+esvaziada pelos presentes. A peça já vem vestida.
+
+Estrelas compram peças na lojinha; comprar também já veste. Cada peça vem com todas as
+cores — a compra é por item, nunca por cor.
 
 ## Personagem em camadas
 
 O personagem é uma pilha de PNGs de 64×64 desenhados no mesmo quadro, ordenados por `z`:
 
 ```
-body 10 → head 20 → eyes 25 → legs 30 → feet 35 → torso 40 → hair 60 → hat 70
+body 10 → head 20 → eyes 25 → legs 30 → feet 35 → torso 40 → dress 45
+       → neck 50 → arms 55 → hair 60 → face 65 → hat 70
 ```
+
+Os óculos (`face`) ficam acima do cabelo de propósito: com franja, sumiriam.
+
+**Vestido cobre tronco e pernas.** Quando `outfit.dress` está preenchido, `buildLayers`
+pula as categorias de `DRESS_HIDES`. Por isso só entra em `dress` uma peça que cubra da
+cintura pra baixo — várias folhas do LPC que parecem vestido são sobreposições (o
+`bodice` é um maiô, `kimono/sleeves` são só as mangas) e deixariam a personagem sem
+roupa nas pernas. O script barra isso em `check_dress_coverage`.
 
 Existem duas poses, definidas em `POSES` no script de assets e refletidas em
 `catalog.frames`:
@@ -77,7 +93,10 @@ Docker não roda Python.
   para `makeQuestion` já congelou a aba inteira num loop infinito.
 - As perguntas da rodada são sorteadas **uma vez**, na montagem do `Quiz`. Não voltar a
   derivá-las de props que mudam de identidade a cada render.
-- `npm test` cobre exatamente esses casos. Rodar antes de mexer em `src/game/quiz.ts`.
+- Toda peça precisa da folha `walk`; sem ela a roupa sumiria no meio da fase. O script
+  descarta a variante inteira e avisa, em vez de gerar só o `idle`.
+- `npm test` cobre esses casos e as regras do presente. Rodar antes de mexer em
+  `src/game/quiz.ts` ou `src/game/reward.ts`.
 
 ## Convenções
 

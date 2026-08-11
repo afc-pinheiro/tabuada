@@ -3,13 +3,42 @@ import type { Catalog, Category, Item, Pose, Worn } from './types'
 
 export const catalog = raw as unknown as Catalog
 
-export const CATEGORIES: Category[] = ['body', 'head', 'eyes', 'hair', 'torso', 'legs', 'feet', 'hat']
+export const CATEGORIES: Category[] = [
+  'body',
+  'head',
+  'eyes',
+  'legs',
+  'feet',
+  'torso',
+  'dress',
+  'neck',
+  'arms',
+  'hair',
+  'face',
+  'hat',
+]
 
 /** Categorias vendidas na lojinha e trocaveis no guarda-roupa. */
-export const DRESS_CATEGORIES: Category[] = ['hair', 'torso', 'legs', 'feet', 'hat']
+export const DRESS_CATEGORIES: Category[] = [
+  'hair',
+  'torso',
+  'dress',
+  'legs',
+  'feet',
+  'hat',
+  'neck',
+  'face',
+  'arms',
+]
 
 /** `head` acompanha `body`: a mesma cor de pele vale para os dois. */
 export const SKIN_CATEGORIES: Category[] = ['body', 'head']
+
+/** Um vestido cobre tronco e pernas: essas camadas saem de cena. */
+export const DRESS_HIDES: Category[] = ['torso', 'legs']
+
+/** Categorias em que "sem nada" e uma escolha valida. */
+export const OPTIONAL_CATEGORIES: Category[] = ['hat', 'dress', 'neck', 'face', 'arms']
 
 export const CATEGORY_LABEL: Record<Category, string> = {
   body: 'Pele',
@@ -17,9 +46,13 @@ export const CATEGORY_LABEL: Record<Category, string> = {
   eyes: 'Olhos',
   hair: 'Cabelo',
   torso: 'Blusa',
+  dress: 'Vestido',
   legs: 'Saia / calça',
   feet: 'Sapato',
   hat: 'Cabeça',
+  neck: 'Colar',
+  face: 'Óculos',
+  arms: 'Mãos',
 }
 
 export const CATEGORY_EMOJI: Record<Category, string> = {
@@ -28,9 +61,13 @@ export const CATEGORY_EMOJI: Record<Category, string> = {
   eyes: '👀',
   hair: '💇',
   torso: '👚',
+  dress: '👗',
   legs: '👖',
   feet: '👟',
   hat: '👑',
+  neck: '📿',
+  face: '👓',
+  arms: '🧤',
 }
 
 export function itemsOf(category: Category): Item[] {

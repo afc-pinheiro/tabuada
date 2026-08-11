@@ -1,4 +1,16 @@
-export type Category = 'body' | 'head' | 'eyes' | 'hair' | 'torso' | 'legs' | 'feet' | 'hat'
+export type Category =
+  | 'body'
+  | 'head'
+  | 'eyes'
+  | 'hair'
+  | 'torso'
+  | 'dress'
+  | 'legs'
+  | 'feet'
+  | 'hat'
+  | 'neck'
+  | 'face'
+  | 'arms'
 
 /** Poses disponiveis para cada peca (ver POSES em tools/build_assets.py). */
 export type Pose = 'idle' | 'walk'

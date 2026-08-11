@@ -4,7 +4,9 @@ import { Home } from './components/Home'
 import { Quiz } from './components/Quiz'
 import { Shop } from './components/Shop'
 import { SKIN_CATEGORIES, findItem, ownedKey } from './game/catalog'
-import { medalFor } from './game/quiz'
+import { QUESTIONS_PER_ROUND, medalFor } from './game/quiz'
+import { drawPrize } from './game/reward'
+import type { Prize } from './game/reward'
 import { loadSave, persistSave } from './game/save'
 import { sfx } from './game/sfx'
 import type { Category, SaveData } from './game/types'
@@ -42,14 +44,22 @@ export default function App() {
   )
 
   const finishRound = useCallback(
-    (table: number | 'mix', result: { hits: number; stars: number }) => {
+    (table: number | 'mix', result: { hits: number; stars: number }): Prize | null => {
+      // O sorteio fica fora do updater de propósito: em StrictMode o updater roda
+      // duas vezes, e o presente exibido tem que ser o mesmo que foi guardado.
+      const prize = drawPrize(save, result.hits, QUESTIONS_PER_ROUND)
       setSave((prev) => {
         const key = table === 'mix' ? 'mix' : String(table)
         const previous = prev.progress[key] ?? { best: 0, rounds: 0, medal: 0 as const }
         const medal = medalFor(result.hits)
+        const outfit = prize
+          ? { ...prev.outfit, [prize.category]: { item: prize.item.id, color: prize.color } }
+          : prev.outfit
         return {
           ...prev,
           stars: prev.stars + result.stars,
+          owned: prize ? [...prev.owned, ownedKey(prize.category, prize.item.id)] : prev.owned,
+          outfit,
           progress: {
             ...prev.progress,
             [key]: {
@@ -60,8 +70,9 @@ export default function App() {
           },
         }
       })
+      return prize
     },
-    [],
+    [save],
   )
 
   function wear(category: Category, itemId: string | null, color?: string) {

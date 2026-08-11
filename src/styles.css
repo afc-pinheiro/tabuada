@@ -320,7 +320,8 @@ body {
 
 .logo {
   font-family: var(--pixel);
-  font-size: 15px;
+  font-size: 13px;
+  white-space: nowrap;
   line-height: 1.6;
   margin: 0;
   color: var(--lemon);
@@ -671,6 +672,43 @@ body {
   font-size: 20px;
   color: var(--lemon);
   margin: 0;
+}
+
+/* ---------- presente do bau ---------- */
+
+.prize {
+  width: 100%;
+  background: linear-gradient(180deg, rgba(255, 215, 94, 0.22), rgba(255, 215, 94, 0.08));
+  border: 3px solid var(--lemon);
+  border-radius: 20px;
+  padding: 12px;
+  text-align: center;
+  animation: pop 0.5s ease;
+}
+
+.prize__title {
+  margin: 0 0 8px;
+  font-weight: 800;
+  color: var(--lemon);
+}
+
+.prize__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.prize__name {
+  font-family: var(--pixel);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.prize__hint {
+  margin: 6px 0 0;
+  font-size: 14px;
+  color: var(--ink-dim);
 }
 
 /* ---------- abas, cards e cores ---------- */

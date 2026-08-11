@@ -28,6 +28,9 @@ Ele escreve `public/sprites/`, `src/data/catalog.json` e `CREDITS.md`. Cada peç
 duas poses: parada de frente (2 quadros) e andando de perfil (9 quadros). Só precisa
 rodar de novo quando o catálogo em `CATALOG_SPEC` mudar — a saída fica versionada.
 
+São 12 categorias (cabelo, blusa, vestido, saia/calça, sapato, cabeça, colar, óculos,
+mãos, além de pele, rosto e olhos) e mais de 100 peças, cada uma em várias cores.
+
 ## Deploy
 
 `git push` na `main` → GitHub Actions builda a imagem Docker (Vite + nginx), publica em
