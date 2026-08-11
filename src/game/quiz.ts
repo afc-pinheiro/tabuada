@@ -69,15 +69,18 @@ export function roundForTable(table: number): Question[] {
   return shuffle(TABLES.map((b) => b)).slice(0, QUESTIONS_PER_ROUND).map((b) => makeQuestion(table, b))
 }
 
-/** Rodada mista: sorteia tabuada e fator a cada pergunta. */
+/**
+ * Rodada mista entre as tabuadas ja medalhadas. Sorteia combinacoes distintas em
+ * vez de sortear fator a fator: com poucas tabuadas liberadas, o sorteio solto
+ * repetia a mesma conta varias vezes na mesma rodada.
+ */
 export function mixedRound(unlocked: number[]): Question[] {
   const valid = unlocked.filter((n) => Number.isInteger(n) && n > 0)
   const pool = valid.length ? valid : [...TABLES]
-  return Array.from({ length: QUESTIONS_PER_ROUND }, () => {
-    const a = pool[Math.floor(Math.random() * pool.length)]
-    const b = 1 + Math.floor(Math.random() * 10)
-    return makeQuestion(a, b)
-  })
+  const pairs = pool.flatMap((a) => TABLES.map((b) => [a, b] as const))
+  return shuffle(pairs)
+    .slice(0, QUESTIONS_PER_ROUND)
+    .map(([a, b]) => makeQuestion(a, b))
 }
 
 export function medalFor(hits: number): 0 | 1 | 2 | 3 {

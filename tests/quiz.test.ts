@@ -42,6 +42,17 @@ check(
   'rodada mista so com NaN gera perguntas validas',
 )
 
+// Com uma tabuada so liberada, a rodada ainda precisa ter 10 contas diferentes.
+for (const liberadas of [[3], [2, 7], [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]]) {
+  const round = mixedRound(liberadas)
+  const distintas = new Set(round.map((q) => `${q.a}x${q.b}`))
+  check(distintas.size === QUESTIONS_PER_ROUND, `rodada mista com ${liberadas}: ${distintas.size} contas distintas`)
+  check(
+    round.every((q) => liberadas.includes(q.a)),
+    `rodada mista com ${liberadas}: pergunta fora das tabuadas liberadas`,
+  )
+}
+
 for (let table = 1; table <= 10; table++) {
   const round = roundForTable(table)
   check(round.length === QUESTIONS_PER_ROUND, `tabuada ${table}: ${round.length} perguntas`)
