@@ -2,7 +2,8 @@
 
 Jogo de tabuada com personagem para vestir. Um mapa de fases leva pelas tabuadas de 1 a
 10; em cada fase a personagem caminha por um cenário, um passo a cada acerto, até o
-presente no fim da trilha. Acertar rende estrelas, estrelas compram roupinhas na lojinha
+presente no fim da trilha. Quem trava numa conta pede ajuda e vê a multiplicação virar
+grupos para contar ("3 grupos de 9"), sem receber a resposta pronta. Acertar rende estrelas, estrelas compram roupinhas na lojinha
 e o guarda-roupa monta o visual. Tudo em pixel art e tudo salvo no `localStorage` do
 próprio navegador (sem login, sem servidor, sem dados saindo do aparelho).
 

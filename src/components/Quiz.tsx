@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { Character, ItemThumb } from './Character'
+import { Groups } from './Groups'
 import { Trail, sceneFor } from './Trail'
 import { MEDAL_EMOJI, QUESTIONS_PER_ROUND, STARS_PER_HIT, medalFor, mixedRound, roundForTable } from '../game/quiz'
 import type { Question } from '../game/quiz'
@@ -32,10 +33,20 @@ export function Quiz({ table, outfit, unlockedTables, onFinish, onExit }: Props)
   const [picked, setPicked] = useState<number | null>(null)
   const [phase, setPhase] = useState<Phase>('playing')
   const [prize, setPrize] = useState<Prize | null>(null)
+  /** Ajuda pedida pela criança. */
+  const [helping, setHelping] = useState(false)
+  /** Ajuda mostrada automaticamente depois de um erro. */
+  const [teaching, setTeaching] = useState(false)
   const reported = useRef(false)
 
   const question = questions[index]
   const locked = picked !== null
+  const showGroups = helping || teaching
+
+  function askHelp() {
+    sfx.click()
+    setHelping(true)
+  }
 
   useEffect(() => {
     if (phase !== 'done' || reported.current) return
@@ -44,29 +55,34 @@ export function Quiz({ table, outfit, unlockedTables, onFinish, onExit }: Props)
     setPrize(onFinish({ hits, stars }))
   }, [phase, hits, stars, onFinish])
 
+  function advance() {
+    setPicked(null)
+    setHelping(false)
+    setTeaching(false)
+    if (index + 1 >= questions.length) setPhase('done')
+    else setIndex((i) => i + 1)
+  }
+
   function choose(option: number) {
     if (locked) return
     setPicked(option)
-    const right = option === question.answer
-    if (right) {
+    if (option === question.answer) {
       const bonus = streak >= 3 ? 2 : 0
       sfx.correct()
       setHits((h) => h + 1)
       setStreak((s) => s + 1)
       setStars((s) => s + STARS_PER_HIT + bonus)
+      // No ultimo acerto vale esperar a caminhada terminar: e a hora em que ela
+      // chega no presente, o ponto alto da fase.
+      const last = index + 1 >= questions.length
+      window.setTimeout(advance, last ? 1600 : 650)
     } else {
       sfx.wrong()
       setStreak(0)
+      // Errar e a melhor hora pra ensinar: mostra o agrupamento e espera ela
+      // dizer que entendeu, em vez de arrastar pra proxima pergunta.
+      setTeaching(true)
     }
-    // No ultimo acerto vale esperar a caminhada terminar: e a hora em que ela
-    // chega no presente, o ponto alto da fase.
-    const last = index + 1 >= questions.length
-    const wait = right ? (last ? 1600 : 650) : 1200
-    window.setTimeout(() => {
-      setPicked(null)
-      if (last) setPhase('done')
-      else setIndex((i) => i + 1)
-    }, wait)
   }
 
   if (phase === 'done') {
@@ -143,6 +159,29 @@ export function Quiz({ table, outfit, unlockedTables, onFinish, onExit }: Props)
           )
         })}
       </div>
+
+      {teaching && <p className="quiz__teach">Quase! Vamos contar juntas 👇</p>}
+
+      {showGroups ? (
+        <Groups
+          // Remontar a cada pergunta reinicia a contagem do zero.
+          key={`${index}-${teaching}`}
+          a={question.a}
+          b={question.b}
+          scene={sceneFor(table)}
+          reveal={teaching}
+        />
+      ) : (
+        <button className="btn btn--help" onClick={askHelp}>
+          🤔 Me ajuda a contar
+        </button>
+      )}
+
+      {teaching && (
+        <button className="btn btn--primary btn--wide" onClick={advance}>
+          Entendi! 👍
+        </button>
+      )}
     </section>
   )
 }

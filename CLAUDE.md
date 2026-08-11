@@ -18,6 +18,23 @@ começa na esquerda e **caminha um passo a cada acerto** até o presente no fim 
 caminho. Cada acerto dá 3 ⭐, e a partir da 4ª seguida vale +2 de bônus.
 Medalhas: 🥉 6+ acertos, 🥈 8+, 🥇 10.
 
+## Ajuda para fazer a conta
+
+A conta pode ser vista como **grupos** (`src/components/Groups.tsx`): `3 × 9` vira 3
+caixinhas com 9 elementos cada, que entram uma por vez enquanto o total sobe de 9 em 9.
+É a contagem de pulinhos que a criança faz em voz alta, só que visível. O elemento
+contado é o do cenário da fase (🌼 campo, 🐚 praia, 🍄 floresta, ❄️ neve, ⭐ noite).
+
+Aparece de dois jeitos, e a diferença entre eles é a parte importante:
+
+| Situação | `reveal` | Linha final |
+| --- | --- | --- |
+| Ela toca em "Me ajuda a contar" | `false` | `54 + 9 = ?` — dá os grupos, não a resposta |
+| Ela errou | `true` | `7 × 9 = 63` — aqui o objetivo é explicar |
+
+Errar não avança sozinho: mostra os grupos e espera o "Entendi! 👍", para ela ter tempo
+de contar. Pedir ajuda não custa nem tira estrelas — o objetivo é aprender, não pontuar.
+
 O presente do fim da fase dá **estrelas e uma peça de roupa** (`src/game/reward.ts`).
 O sorteio só entra em cena a partir de 5 acertos, nunca repete peça já possuída e é
 enviesado para as baratas — assim a lojinha continua valendo a pena em vez de ser
@@ -95,8 +112,9 @@ Docker não roda Python.
   derivá-las de props que mudam de identidade a cada render.
 - Toda peça precisa da folha `walk`; sem ela a roupa sumiria no meio da fase. O script
   descarta a variante inteira e avisa, em vez de gerar só o `idle`.
-- `npm test` cobre esses casos e as regras do presente. Rodar antes de mexer em
-  `src/game/quiz.ts` ou `src/game/reward.ts`.
+- `npm test` cobre esses casos, as regras do presente e o vazamento da resposta na
+  ajuda (com 1 grupo, qualquer número na linha já entrega o resultado). Rodar antes de
+  mexer em `src/game/quiz.ts`, `src/game/reward.ts` ou `src/components/Groups.tsx`.
 
 ## Convenções
 

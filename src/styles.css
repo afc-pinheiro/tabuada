@@ -674,6 +674,108 @@ body {
   margin: 0;
 }
 
+/* ---------- ajuda: grupos de ---------- */
+
+.quiz__teach {
+  margin: 0;
+  font-weight: 800;
+  color: var(--lemon);
+}
+
+.btn--help {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: none;
+  font-size: 16px;
+  color: var(--ink-dim);
+}
+
+.btn--wide {
+  width: 100%;
+  flex: none;
+}
+
+.groups {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.28);
+  border-radius: 20px;
+  padding: 12px 10px;
+  text-align: center;
+}
+
+.groups__legend {
+  margin: 0 0 10px;
+  font-weight: 800;
+  color: var(--ink-dim);
+}
+
+.groups__board {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.group {
+  display: grid;
+  gap: 1px;
+  padding: 5px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 2px dashed rgba(255, 255, 255, 0.18);
+  /* Cada grupo entra inteiro; ate la fica invisivel mas ocupando o lugar, para
+     o quadro nao dar solavanco a cada grupo que aparece. */
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.group--in {
+  opacity: 1;
+  transform: scale(1);
+  border-color: var(--lemon);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+.group__token {
+  font-size: var(--token);
+  line-height: 1.15;
+  opacity: 0;
+}
+
+.group--in .group__token {
+  animation: token-in 0.3s ease forwards;
+}
+
+@keyframes token-in {
+  from {
+    opacity: 0;
+    transform: translateY(-6px) scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.groups__count {
+  margin: 10px 0 0;
+  min-height: 1.6em;
+  font-family: var(--pixel);
+  font-size: 15px;
+  color: var(--lemon);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .group,
+  .group__token {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+}
+
 /* ---------- presente do bau ---------- */
 
 .prize {
